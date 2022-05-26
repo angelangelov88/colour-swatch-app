@@ -1,3 +1,4 @@
+import { BanIconComponent } from "./components/BanIconComponent";
 import { ColourThemeSwatch } from "./components/ColourThemeSwatch";
 
 function App() {
@@ -6,30 +7,55 @@ function App() {
       <div>
         <ColourThemeSwatch 
         color="blue" 
-        className="p-6" 
+        className="" 
        />
 
 
         <ColourThemeSwatch 
           color="purple"
-          className="p-6"
+          className=""
     
         />
         <ColourThemeSwatch 
           color="primary"
-          className="p-6"
+          className=""
         />
         <ColourThemeSwatch 
-          color="red"
-          className="p-6"
+          color="lightblue"
+          className=""
+        />
+        <ColourThemeSwatch 
+          color="cyan"
+          className=""
+        />
+        <ColourThemeSwatch 
+          color="teal"
+          className=""
         />
         <ColourThemeSwatch 
           color="green"
-          className="p-6"
+          className=""
         />
         <ColourThemeSwatch 
           color="yellow"
-          className="p-6"
+          className=""
+        />
+        <ColourThemeSwatch 
+          color="red"
+          className=""
+        />
+        <ColourThemeSwatch 
+          color="gray"
+          className=""
+        />
+        {/* <ColourThemeSwatch 
+          color="void"
+          className=
+          "text-gray-60"
+        /> */}
+        <BanIconComponent 
+          color="void"
+          className="text-gray-60"
         />
       </div>
     </div>
