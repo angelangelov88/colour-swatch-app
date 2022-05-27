@@ -14,7 +14,8 @@ function App() {
       <ColourThemeSwatch color="yellow" />
       <ColourThemeSwatch color="red" />
       <ColourThemeSwatch color="gray" />
-      <BanIconComponent color="void" />
+      <ColourThemeSwatch color="void" />
+      {/* <BanIconComponent color="void" /> */}
     </div>
   );
 }
