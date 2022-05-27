@@ -3,61 +3,18 @@ import { ColourThemeSwatch } from "./components/ColourThemeSwatch";
 
 function App() {
   return (
-    <div className="App">
-      <div>
-        <ColourThemeSwatch 
-        color="blue" 
-        className="" 
-       />
-
-
-        <ColourThemeSwatch 
-          color="purple"
-          className=""
-    
-        />
-        <ColourThemeSwatch 
-          color="primary"
-          className=""
-        />
-        <ColourThemeSwatch 
-          color="lightblue"
-          className=""
-        />
-        <ColourThemeSwatch 
-          color="cyan"
-          className=""
-        />
-        <ColourThemeSwatch 
-          color="teal"
-          className=""
-        />
-        <ColourThemeSwatch 
-          color="green"
-          className=""
-        />
-        <ColourThemeSwatch 
-          color="yellow"
-          className=""
-        />
-        <ColourThemeSwatch 
-          color="red"
-          className=""
-        />
-        <ColourThemeSwatch 
-          color="gray"
-          className=""
-        />
-        {/* <ColourThemeSwatch 
-          color="void"
-          className=
-          "text-gray-60"
-        /> */}
-        <BanIconComponent 
-          color="void"
-          className="text-gray-60"
-        />
-      </div>
+    <div className="App flex">
+      <ColourThemeSwatch color="primary" />
+      <ColourThemeSwatch color="purple" />
+      <ColourThemeSwatch color="blue"  />
+      <ColourThemeSwatch color="lightblue" />
+      <ColourThemeSwatch color="cyan" />
+      <ColourThemeSwatch color="teal" />
+      <ColourThemeSwatch color="green" />
+      <ColourThemeSwatch color="yellow" />
+      <ColourThemeSwatch color="red" />
+      <ColourThemeSwatch color="gray" />
+      <BanIconComponent color="void" />
     </div>
   );
 }
