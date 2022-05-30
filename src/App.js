@@ -1,17 +1,17 @@
-import { ColourThemeSwatch } from "./components/ColourThemeSwatch";
+// import { ColourThemeSwatch } from "./components/ColourThemeSwatch";
 import { IdentifierIcon } from "./components/IdentifierIcon";
 
 function App() {
   return (
-    <div className="App">
+    <div className="App bg-gray-30">
       {/* <ColourThemeSwatch color="primary" /> */}
       <IdentifierIcon 
-        color="yellow"
-        size="lg"
+        color="purple"
+        size="md"
         type="initials"
         statusIndicator={true}
         status={true}
-        initials="ll"
+        initials="DM"
       />
     </div>
   );
