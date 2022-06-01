@@ -8,18 +8,20 @@ import { useState } from 'react'
 const Tooltip = (props) => {
   let {
     className,
+    Icon,
     theme,
     selected,
     infoHeader,
     infoText,
     link,
-    pointerPosition,
+    tooltipPosition,
     arrowPosition
   } = props
 
+
   const [clicked, setClicked] = useState(false)
   const handleClick = () => {
-    if (selected === "click") {
+    if (selected === 'click') {
       setClicked(!clicked)
     }
   }
@@ -37,36 +39,36 @@ const Tooltip = (props) => {
     theme === "light" ? "bg-white text-gray-80" : "bg-black text-white",
     "absolute w-28 h-28 flex-col justify-evenly items-center rounded-lg text-sm shadow-[0_10px_15px_-3px_rgba(0,0,0,0.1)] after:absolute after:content:none after:border-[10px] after:border-transparent",
 
-    (pointerPosition === "bottom" && arrowPosition === "centre") && "bottom-8 -left-11 -ml-0.5 after:left-[40.5%] after:-bottom-[8px] after:border-b-0 after:border-t-[white]",
+    (tooltipPosition === "bottom" && arrowPosition === "centre") && "bottom-8 -left-11 -ml-0.5 after:left-[40.5%] after:-bottom-[8px] after:border-b-0 after:border-t-[white]",
     
-    (pointerPosition === "bottom" && arrowPosition === "centre" && theme === "dark") && "after:border-t-[black]",
+    (tooltipPosition === "bottom" && arrowPosition === "centre" && theme === "dark") && "after:border-t-[black]",
 
-    (pointerPosition === "bottom" && arrowPosition === "left") && "bottom-8 -left-2 after:left-[7%] after:-bottom-[8px] after:border-b-0 after:border-t-[white]",
+    (tooltipPosition === "bottom" && arrowPosition === "left") && "bottom-8 -left-2 after:left-[7%] after:-bottom-[8px] after:border-b-0 after:border-t-[white]",
 
-    (pointerPosition === "bottom" && arrowPosition === "left" && theme === "dark") && "after:border-t-[black]",
+    (tooltipPosition === "bottom" && arrowPosition === "left" && theme === "dark") && "after:border-t-[black]",
 
-    (pointerPosition === "bottom" && arrowPosition === "right") && "bottom-8 -right-2 -ml-0.5 after:right-[7%] after:-bottom-[8px] after:border-b-0 after:border-t-[white]",
+    (tooltipPosition === "bottom" && arrowPosition === "right") && "bottom-8 -right-2 -ml-0.5 after:right-[7%] after:-bottom-[8px] after:border-b-0 after:border-t-[white]",
 
-    (pointerPosition === "bottom" && arrowPosition === "right" && theme === "dark") && "after:border-t-[black]",
+    (tooltipPosition === "bottom" && arrowPosition === "right" && theme === "dark") && "after:border-t-[black]",
 
-    pointerPosition === "top" && "top-8 -left-11 -ml-0.5 after:left-[41%] after:-top-4 after:border-b-[white] after:border-t-8",
+    tooltipPosition === "top" && "top-8 -left-11 -ml-0.5 after:left-[41%] after:-top-4 after:border-b-[white] after:border-t-8",
     
-    (pointerPosition === "top" && theme === "dark") && "after:!border-b-[black]",
+    (tooltipPosition === "top" && theme === "dark") && "after:!border-b-[black]",
     
-    pointerPosition === "left" && "-top-12 left-8 after:-left-4 after:bottom-[40%] after:border-r-[white] after:border-t-10 after:border-l-8",
+    tooltipPosition === "left" && "-top-12 left-8 after:-left-4 after:bottom-[40%] after:border-r-[white] after:border-t-10 after:border-l-8",
 
-    (pointerPosition === "left" && theme === "dark") && "after:border-r-[black] ",
+    (tooltipPosition === "left" && theme === "dark") && "after:border-r-[black] ",
 
-    pointerPosition === "right" && "-top-11 right-8 -mt-0.5 after:-right-5 after:bottom-[43%] after:border-b-8 after:border-l-[white]",
+    tooltipPosition === "right" && "-top-11 right-8 -mt-0.5 after:-right-5 after:bottom-[43%] after:border-b-8 after:border-l-[white]",
 
-    (pointerPosition === "right" && theme === "dark") && "after:border-l-[black] ",
+    (tooltipPosition === "right" && theme === "dark") && "after:border-l-[black] ",
 
     className
   )
 
   return ( 
     <div className={classes}>
-      <InformationCircleIcon 
+      <Icon 
         className="w-5 cursor-pointer"
         onClick={handleClick}
       />
@@ -80,17 +82,19 @@ const Tooltip = (props) => {
 }
 
 Tooltip.defaultProps = {
+  Icon: {InformationCircleIcon},
   theme: "light",
   selected: "hover",
   infoHeader: "Info Header",
   infoText: "Info Text",
   link: "https://legalesign.com",
-  pointerPosition: "bottom",
+  tooltipPosition: "bottom",
   arrowPosition: "centre"
 }
 
 Tooltip.propTypes = {
   className: PropTypes.string,
+  Icon: PropTypes.object,
   theme:PropTypes.oneOf([
     "dark",
     "light"
@@ -102,7 +106,7 @@ Tooltip.propTypes = {
   infoHeader: PropTypes.string,
   infoText: PropTypes.string,
   link: PropTypes.string,
-  pointerPosition: PropTypes.oneOf([
+  tooltipPosition: PropTypes.oneOf([
     "bottom",
     "top",
     "left",
