@@ -4,13 +4,14 @@ import PropTypes from 'prop-types'
 import { InformationCircleIcon } from '@heroicons/react/outline'
 import { useState } from 'react'
 
-
 const Tooltip = (props) => {
   let {
     className,
-    Icon,
     theme,
     selected,
+    elementToClick,
+    Icon,
+    clickOnText,
     infoHeader,
     infoText,
     link,
@@ -68,10 +69,19 @@ const Tooltip = (props) => {
 
   return ( 
     <div className={classes}>
-      <Icon 
-        className="w-5 cursor-pointer"
-        onClick={handleClick}
-      />
+      {elementToClick === "icon" ?
+        <Icon 
+          className="w-5 cursor-pointer"
+          onClick={handleClick}
+        />
+        : 
+        <div
+          className="cursor-pointer"
+          onClick={handleClick}
+        >
+          {clickOnText}
+        </div>
+      }
       <div className={tooltipClasses}>
         <h3 className="font-semibold">{infoHeader}</h3>
         <p>{infoText}</p>
@@ -82,9 +92,11 @@ const Tooltip = (props) => {
 }
 
 Tooltip.defaultProps = {
-  Icon: {InformationCircleIcon},
   theme: "light",
   selected: "hover",
+  elementToClick: "icon",
+  Icon: {InformationCircleIcon},
+  clickOnText: "Please click here",
   infoHeader: "Info Header",
   infoText: "Info Text",
   link: "https://legalesign.com",
@@ -94,7 +106,6 @@ Tooltip.defaultProps = {
 
 Tooltip.propTypes = {
   className: PropTypes.string,
-  Icon: PropTypes.object,
   theme:PropTypes.oneOf([
     "dark",
     "light"
@@ -103,6 +114,12 @@ Tooltip.propTypes = {
     "hover",
     "click",
   ]),
+  elementToClick: PropTypes.oneOf([
+    "icon",
+    "div"
+  ]),
+  Icon: PropTypes.object,
+  clickOnText: PropTypes.string,
   infoHeader: PropTypes.string,
   infoText: PropTypes.string,
   link: PropTypes.string,

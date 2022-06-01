@@ -1,7 +1,6 @@
 import React from 'react'
 import classNames from 'classnames'
 import PropTypes from 'prop-types'
-import { DocumentIcon } from '@heroicons/react/outline'
 
 const IdentifierIcon = (props) => {
   let {
@@ -9,6 +8,7 @@ const IdentifierIcon = (props) => {
     className,
     size,
     type,
+    Icon,
     statusIndicator,
     status,
     initials
@@ -44,7 +44,7 @@ const IdentifierIcon = (props) => {
     <div className={classes}>
       { type === "initials" ?
         <span>{initials}</span>:
-        <DocumentIcon className="w-full p-2" />
+        <Icon className="w-full p-2" />
       }
       <div className={dotClasses}></div>
     </div>
@@ -55,6 +55,7 @@ IdentifierIcon.defaultProps = {
   color: "primary",
   size: "lg",
   type: "initials",
+  Icon: "DocumentIcon",
   statusIndicator: true,
   status: true,
   initials: ""
@@ -77,6 +78,7 @@ IdentifierIcon.propTypes = {
   ]),
   size: PropTypes.oneOf(["xs", "sm", "md", "lg"]),
   type: PropTypes.oneOf(["initials", "icon"]),
+  Icon: PropTypes.object,
   statusIndicator: PropTypes.bool,
   status: PropTypes.bool,
   initials: PropTypes.string
