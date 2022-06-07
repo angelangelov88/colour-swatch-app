@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -5,7 +9,6 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  /* background-color: gainsboro; */
 }
 
 code {
@@ -45,7 +48,3 @@ code {
 .arrow:after {
   transform: rotate(135deg) skewY(-45deg) scale(.707,1.414) translate(50%);
 } */
-
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
