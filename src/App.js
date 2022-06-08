@@ -1,4 +1,4 @@
-// import { ColourThemeSwatch } from "./components/ColourThemeSwatch";
+import { ColourThemeSwatch } from "./components/ColourThemeSwatch";
 import { IdentifierIcon } from "./components/IdentifierIcon";
 import { Tooltip } from "./components/Tooltip";
 import { InformationCircleIcon } from '@heroicons/react/outline'
@@ -15,42 +15,42 @@ function App() {
       {/* <IdentifierIcon 
         color="purple"
         size="lg"
-        type="icon"
+        type="initials"
         Icon={DocumentIcon}
         statusIndicator={true}
         status={true}
-        initials="DM"
+        initials="gJ"
       /> */}
       {/* <Tooltip
-        theme="light"
+        // theme="dark"
         selected="click"
-        elementToClick="icon"
+        // elementToClick="icon"
         Icon={InformationCircleIcon}
-        clickOnText="Please click here"
-        infoHeader="Info Header"
-        infoText="Info Text"
+        clickOnText="jmjjkjk"
+        infoHeader="Info Heghghghghadger"
+        infoText="Info Texghghghghght"
         link="https://test.com"
         tooltipPosition="bottom"
         arrowPosition="centre"
       /> */}
       <Tag 
-        // children="Tag"
-        // size="lg"
-        // dot={true}
-        // color="purple"
+        children="Tag"
+        size="sm"
+        dot={true}
+        color="green"
         iconType="plus"
-        // iconSize="lg" //not in use currently but an option for future
-      />
-      <AddRemoveBtnComponent 
+        iconSize="sm"
+      /> 
+      {/* <AddRemoveBtnComponent 
         icon="x"
-        color="yellow"
+        color="green"
         iconSize="lg"
-      />
+      /> */}
       <AddTag 
         // children="Add Tag"
-        // size="lg"
+        size="sm"
         iconType="plus"
-        // iconSize="lg" //not in use currently but an option for future
+        iconSize="lg"
       />
     </div>
   );

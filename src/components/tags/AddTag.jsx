@@ -13,18 +13,23 @@ const AddTag = (props) => {
   } = props
 
   const classes = classNames(
-    "font-ibm inline-flex items-center font-medium w-20 rounded-full text-gray-90 hover:cursor-pointer hover:text-primary-light active:bg-primary-10 active:cursor-default",
-    size === "sm" && "px-2 py-0.5 text-xs",
-    size === "lg" && "py-1 text-sm",
+    "font-ibm inline-flex items-center font-medium rounded-full text-gray-90 border-4 border-transparent group", 
+    "hover:cursor-pointer hover:text-primary-light", 
+    "active:bg-primary-10 active:cursor-default", 
+    "focus:outline focus:outline-4 focus:outline-primary-10",
+    size === "sm" && "w-20 h-5 text-xs",
+    size === "lg" && "w-24 h-6 text-sm",
     
     className
-  );
+  )
 
   return (
     <div className={classes}>
       <AddRemoveBtnComponent 
         icon={iconType}
+        color="no colour"
         iconSize={iconSize}
+        className="text-gray-60 group-hover:text-primary-light"
       />
       <span>{children}</span>
     </div>

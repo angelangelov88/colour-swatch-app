@@ -15,9 +15,9 @@ const Tag = (props) => {
   } = props
 
   const classes = classNames(
-    "font-ibm inline-flex items-center font-medium rounded-full",
-    size === "sm" && "px-2 py-0.5 text-xs",
-    size === "lg" && "px-3 py-1 text-sm",
+    "font-ibm inline-flex items-center font-medium rounded-full pl-2",
+    size === "sm" && "h-5 py-0.5 pr-0.5 text-xs",
+    size === "lg" && "h-6 py-1 pr-1 text-sm",
     color === "primary" && "bg-primary-20 text-primary-90",
     color === "gray" && "bg-gray-20 text-gray-90",
     color === "purple" && "bg-purple-20 text-purple-90",
@@ -28,12 +28,13 @@ const Tag = (props) => {
     color === "green" && "bg-green-20 text-green-90",
     color === "yellow" && "bg-yellow-20 text-yellow-90",
     color === "red" && "bg-red-20 text-red-90",
-    
+    (dot === false && iconType === "none") && "!pr-1.5",
+
     className
-  );
+  )
 
   const dotClasses = classNames(
-    "w-1.5 h-1.5 mr-2 rounded-lg",
+    "w-1.5 h-1.5 mr-1.5 rounded-lg",
     color === "primary" && "bg-primary-60",
     color === "gray" && "bg-gray-60",
     color === "purple" && "bg-purple-60",
@@ -51,7 +52,7 @@ const Tag = (props) => {
   return (
     <div className={classes}>
       <span className={dotClasses}></span>
-        <span className="mr-1">{children}</span>
+        <span className="mr-0.5">{children}</span>
         <AddRemoveBtnComponent 
           color={color}
           icon={iconType}
@@ -62,7 +63,7 @@ const Tag = (props) => {
 }
 
 Tag.defaultProps = {
-  children: "Tag",
+  children: undefined,
   size: "lg",
   color: 'primary',
   dot: true,
@@ -89,11 +90,6 @@ Tag.propTypes = {
   dot: PropTypes.bool,
   iconType: PropTypes.oneOf(["plus","x","none"]),
   iconSize: PropTypes.oneOf(["sm", "lg"]),
-  // removeButton: PropTypes.bool, // @todo
-  // outline: PropTypes.bool, // @todo
-  // mode: PropTypes.oneOf(['light', 'dark']), // @todo
-  // removeAdd: PropTypes.oneOf(["remove", "add"]), // @todo
-  // iconOnly: PropTypes.bool, // @todo
 }
 
 export { Tag }

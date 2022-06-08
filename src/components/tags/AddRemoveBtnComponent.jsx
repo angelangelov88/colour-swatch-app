@@ -28,7 +28,7 @@ const classes = classNames(
   color === "red" && "text-red-60 hover:text-red-80 hover:bg-red-30 active:text-red-10 active:bg-red-50",
 
   className
-);
+)
 
   return (
     <div className={classes}>
