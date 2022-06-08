@@ -10,7 +10,7 @@ import { AddTag } from "./components/tags/AddTag";
 
 function App() {
   return (
-    <div className="App m-32">
+    <div className="App m-32 mt-52">
       {/* <ColourThemeSwatch color="primary" /> */}
       {/* <IdentifierIcon 
         color="purple"
@@ -21,37 +21,36 @@ function App() {
         status={true}
         initials="gJ"
       /> */}
-      {/* <Tooltip
-        // theme="dark"
-        selected="click"
-        // elementToClick="icon"
+      <Tooltip
+        // selected="click"
         Icon={InformationCircleIcon}
-        clickOnText="jmjjkjk"
-        infoHeader="Info Heghghghghadger"
-        infoText="Info Texghghghghght"
-        link="https://test.com"
+        // clickOnText="Click here"
         tooltipPosition="bottom"
         arrowPosition="centre"
-      /> */}
-      <Tag 
+      >
+        <h3 className="m-1 font-semibold">Info Header</h3>
+        <p className="m-1 font-redhat">Please use this field to add additional information</p>
+        <a href="https://test.com" className="m-1 text-blue-60 dark:text-blue-50">Link</a>
+      </Tooltip>
+      {/* <Tag 
         children="Tag"
         size="sm"
         dot={true}
         color="green"
         iconType="plus"
         iconSize="sm"
-      /> 
-      {/* <AddRemoveBtnComponent 
+      />
+      <AddRemoveBtnComponent 
         icon="x"
         color="green"
         iconSize="lg"
-      /> */}
+      />
       <AddTag 
         // children="Add Tag"
         size="sm"
         iconType="plus"
         iconSize="lg"
-      />
+      /> */}
     </div>
   );
 }
