@@ -1,6 +1,6 @@
-import { ColourThemeSwatch } from "./components/ColourThemeSwatch/ColourThemeSwatch";
-import { IdentifierIcon } from "./components/IdentifierIcon/IdentifierIcon";
-import { Tooltip } from "./components/Tooltip/Tooltip";
+import { ColourThemeSwatch } from "./components/colourThemeSwatch/ColourThemeSwatch";
+import { IdentifierIcon } from "./components/identifierIcon/IdentifierIcon";
+import { Tooltip } from "./components/tooltip/Tooltip";
 import { BanIconComponent } from "./components/BanIconComponent/BanIconComponent";
 import { InformationCircleIcon } from '@heroicons/react/outline'
 import { DocumentIcon } from '@heroicons/react/outline'
