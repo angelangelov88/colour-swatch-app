@@ -1,7 +1,7 @@
 import React from 'react'
 import classNames from 'classnames'
 import PropTypes from 'prop-types'
-import { AddRemoveBtnComponent } from './AddRemoveBtnComponent'
+import { AddRemoveIconComponent } from './AddRemoveIconComponent'
 
 const AddTag = (props) => {
   let {
@@ -9,26 +9,23 @@ const AddTag = (props) => {
     className,
     size,
     iconType,
-    iconSize
   } = props
 
   const classes = classNames(
-    "font-ibm inline-flex items-center font-medium rounded-full text-gray-90 border-4 border-transparent group", 
+    "font-ibm inline-flex items-center w-max pr-2 font-medium rounded-full text-gray-90 border-4 border-transparent group", 
     "hover:cursor-pointer hover:text-primary-light", 
     "active:bg-primary-10 active:cursor-default", 
     "focus:outline focus:outline-4 focus:outline-primary-10",
-    size === "sm" && "w-20 h-5 text-xs",
-    size === "lg" && "w-24 h-6 text-sm",
-    
+    size === "sm" && "h-5 text-xs",
+    size === "lg" && "h-6 text-sm",
     className
   )
 
   return (
-    <div className={classes}>
-      <AddRemoveBtnComponent 
+    <div className={classes} tabIndex={0}>
+      <AddRemoveIconComponent 
         icon={iconType}
-        color="no colour"
-        iconSize={iconSize}
+        iconSize={size}
         className="text-gray-60 group-hover:text-primary-light"
       />
       <span>{children}</span>
@@ -39,16 +36,14 @@ const AddTag = (props) => {
 AddTag.defaultProps = {
   children: "Add Tag",
   size: "lg",
-  iconType: "x",
-  iconSize: "lg"
+  iconType: "add",
 }
 
 AddTag.propTypes = {
   children: PropTypes.node,
   className: PropTypes.string,
   size: PropTypes.oneOf(["sm", "lg"]),
-  iconType: PropTypes.oneOf(["plus","x","none"]),
-  iconSize: PropTypes.oneOf(["sm", "lg"]),
+  iconType: PropTypes.oneOf(["add","remove"]),
 }
 
 export { AddTag }

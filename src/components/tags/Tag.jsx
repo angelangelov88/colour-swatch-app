@@ -1,7 +1,7 @@
 import React from 'react'
 import classNames from 'classnames'
 import PropTypes from 'prop-types'
-import { AddRemoveBtnComponent } from './AddRemoveBtnComponent'
+import { AddRemoveIconComponent } from './AddRemoveIconComponent'
 
 const Tag = (props) => {
   let {
@@ -10,10 +10,12 @@ const Tag = (props) => {
     size,
     color,
     dot,
+    icon,
     iconType,
-    iconSize
+    iconOnly
   } = props
 
+  
   const classes = classNames(
     "font-ibm inline-flex items-center font-medium rounded-full pl-2",
     size === "sm" && "h-5 py-0.5 pr-0.5 text-xs",
@@ -28,8 +30,8 @@ const Tag = (props) => {
     color === "green" && "bg-green-20 text-green-90",
     color === "yellow" && "bg-yellow-20 text-yellow-90",
     color === "red" && "bg-red-20 text-red-90",
-    (dot === false && iconType === "none") && "!pr-1.5",
-
+    !icon && "pr-1.5",
+    iconOnly && "!p-1",
     className
   )
 
@@ -49,26 +51,29 @@ const Tag = (props) => {
     className
   )
 
+
   return (
-    <div className={classes}>
-      <span className={dotClasses}></span>
-        <span className="mr-0.5">{children}</span>
-        <AddRemoveBtnComponent 
+    <div className={classes} tabIndex={0}>
+      { !iconOnly && <span className={dotClasses}></span> }
+      { !iconOnly && <span className="mr-0.5">{children}</span> }
+      {icon && 
+        <AddRemoveIconComponent 
           color={color}
           icon={iconType}
-          iconSize={iconSize}
         />
-      </div>
+      }
+    </div>
   )
 }
 
 Tag.defaultProps = {
   children: undefined,
   size: "lg",
-  color: 'primary',
+  color: "primary",
   dot: true,
-  iconType: "x",
-  iconSize: "lg"
+  icon: true,
+  iconType: "add",
+  iconOnly: false
 }
 
 Tag.propTypes = {
@@ -88,8 +93,9 @@ Tag.propTypes = {
     "red",
   ]),
   dot: PropTypes.bool,
-  iconType: PropTypes.oneOf(["plus","x","none"]),
-  iconSize: PropTypes.oneOf(["sm", "lg"]),
+  icon: PropTypes.bool,
+  iconType: PropTypes.oneOf(["add","remove"]),
+  iconOnly: PropTypes.bool
 }
 
 export { Tag }

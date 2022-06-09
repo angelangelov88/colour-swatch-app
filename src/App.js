@@ -4,7 +4,7 @@ import { Tooltip } from "./components/Tooltip";
 import { InformationCircleIcon } from '@heroicons/react/outline'
 import { DocumentIcon } from '@heroicons/react/outline'
 import { Tag } from "./components/tags/Tag";
-import { AddRemoveBtnComponent } from "./components/tags/AddRemoveBtnComponent";
+import { AddRemoveBtnComponent } from "./components/tags/AddRemoveIconComponent";
 import { AddTag } from "./components/tags/AddTag";
 
 
@@ -21,7 +21,7 @@ function App() {
         status={true}
         initials="gJ"
       /> */}
-      <Tooltip
+      {/* <Tooltip
         // selected="click"
         Icon={InformationCircleIcon}
         // clickOnText="Click here"
@@ -31,26 +31,26 @@ function App() {
         <h3 className="m-1 font-semibold">Info Header</h3>
         <p className="m-1 font-redhat">Please use this field to add additional information</p>
         <a href="https://test.com" className="m-1 text-blue-60 dark:text-blue-50">Link</a>
-      </Tooltip>
+      </Tooltip> */}
       {/* <Tag 
         children="Tag"
-        size="sm"
+        size="lg"
+        color="yellow"
         dot={true}
-        color="green"
-        iconType="plus"
-        iconSize="sm"
-      />
-      <AddRemoveBtnComponent 
+        icon={true}
+        iconType="remove"
+        iconOnly={false}
+      /> */}
+      {/* <AddRemoveBtnComponent 
         icon="x"
         color="green"
         iconSize="lg"
-      />
-      <AddTag 
-        // children="Add Tag"
-        size="sm"
-        iconType="plus"
-        iconSize="lg"
       /> */}
+      <AddTag 
+        // children="Remove Tag"
+        // size="lg"
+        // iconType="add"
+      />
     </div>
   );
 }
