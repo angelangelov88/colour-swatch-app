@@ -1,0 +1,55 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render with props color=red 1`] = `
+<div
+  className="flex items-center justify-center w-6 h-6 rounded border group hover:cursor-pointer hover:outline hover:outline-4 active:shadow-[inset_0_0_4px_rgba(0,0,0,0.5)] hover:shadow-[0_1px_3px_rgba(112,53,13,0.25)] bg-red-60 text-red-80 active:text-red-90 border-red-80 outline-red-30"
+  onClick={[Function]}
+>
+  <span
+    className="group-hover:block hidden"
+  >
+    <svg
+      aria-hidden="true"
+      className="w-5 h-5"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth={2}
+      viewBox="0 0 24 24"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+    </svg>
+  </span>
+</div>
+`;
+
+exports[`should render with props color=yellow 1`] = `
+<div
+  className="flex items-center justify-center w-6 h-6 rounded border group hover:cursor-pointer hover:outline hover:outline-4 active:shadow-[inset_0_0_4px_rgba(0,0,0,0.5)] hover:shadow-[0_1px_3px_rgba(112,53,13,0.25)] bg-yellow-60 text-yellow-80 active:text-yellow-90 border-yellow-80 outline-yellow-30"
+  onClick={[Function]}
+>
+  <span
+    className="group-hover:block hidden"
+  >
+    <svg
+      aria-hidden="true"
+      className="w-5 h-5"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth={2}
+      viewBox="0 0 24 24"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+    </svg>
+  </span>
+</div>
+`;

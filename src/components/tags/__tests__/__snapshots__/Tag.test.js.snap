@@ -1,0 +1,277 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render a large size tag with dot and children as text 1`] = `
+<div
+  className="font-ibm inline-flex items-center font-medium rounded-full pl-2 h-6 py-1 pr-1 text-sm bg-primary-20 text-primary-90 pr-1.5"
+  tabIndex={0}
+>
+  <span
+    className="w-1.5 h-1.5 mr-1.5 rounded-lg bg-primary-60 block"
+  />
+  <span
+    className="mr-0.5"
+  >
+    Tag
+  </span>
+</div>
+`;
+
+exports[`should render a large size tag with dot and text added as div 1`] = `
+<div
+  className="font-ibm inline-flex items-center font-medium rounded-full pl-2 h-6 py-1 pr-1 text-sm bg-primary-20 text-primary-90 pr-1.5"
+  tabIndex={0}
+>
+  <span
+    className="w-1.5 h-1.5 mr-1.5 rounded-lg bg-primary-60 block"
+  />
+  <span
+    className="mr-0.5"
+  >
+    Add Tag
+  </span>
+</div>
+`;
+
+exports[`should render a large size tag with dot, icon(remove) and children as text 1`] = `
+<div
+  className="font-ibm inline-flex items-center font-medium rounded-full pl-2 h-6 py-1 pr-1 text-sm bg-primary-20 text-primary-90"
+  tabIndex={0}
+>
+  <span
+    className="w-1.5 h-1.5 mr-1.5 rounded-lg bg-primary-60 block"
+  />
+  <span
+    className="mr-0.5"
+  >
+    Tag
+  </span>
+  <div
+    className="font-ibm flex items-center justify-center rounded-xl hover:cursor-pointer w-4 h-4 p-0.5 text-primary-60 hover:text-primary-80 hover:bg-primary-30 active:text-primary-10 active:bg-primary-50"
+  >
+    <svg
+      aria-hidden="true"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth={2}
+      viewBox="0 0 24 24"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M6 18L18 6M6 6l12 12"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+    </svg>
+  </div>
+</div>
+`;
+
+exports[`should render a large size tag with dot, icon(remove) and text that states - Add me 1`] = `
+<div
+  className="font-ibm inline-flex items-center font-medium rounded-full pl-2 h-6 py-1 pr-1 text-sm bg-primary-20 text-primary-90"
+  tabIndex={0}
+>
+  <span
+    className="w-1.5 h-1.5 mr-1.5 rounded-lg bg-primary-60 block"
+  />
+  <span
+    className="mr-0.5"
+  >
+    Add me
+  </span>
+  <div
+    className="font-ibm flex items-center justify-center rounded-xl hover:cursor-pointer w-4 h-4 p-0.5 text-primary-60 hover:text-primary-80 hover:bg-primary-30 active:text-primary-10 active:bg-primary-50"
+  >
+    <svg
+      aria-hidden="true"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth={2}
+      viewBox="0 0 24 24"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M6 18L18 6M6 6l12 12"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+    </svg>
+  </div>
+</div>
+`;
+
+exports[`should render a large size tag with icon(add) and children as text 1`] = `
+<div
+  className="font-ibm inline-flex items-center font-medium rounded-full pl-2 h-6 py-1 pr-1 text-sm bg-primary-20 text-primary-90"
+  tabIndex={0}
+>
+  <span
+    className="w-1.5 h-1.5 mr-1.5 rounded-lg bg-primary-60 hidden"
+  />
+  <span
+    className="mr-0.5"
+  >
+    Tag
+  </span>
+  <div
+    className="font-ibm flex items-center justify-center rounded-xl hover:cursor-pointer w-4 h-4 p-0.5 text-primary-60 hover:text-primary-80 hover:bg-primary-30 active:text-primary-10 active:bg-primary-50"
+  >
+    <svg
+      aria-hidden="true"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth={2}
+      viewBox="0 0 24 24"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M12 4v16m8-8H4"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+    </svg>
+  </div>
+</div>
+`;
+
+exports[`should render a large size tag with icon(add) only 1`] = `
+<div
+  className="font-ibm inline-flex items-center font-medium rounded-full pl-2 h-6 py-1 pr-1 text-sm bg-primary-20 text-primary-90 !p-1"
+  tabIndex={0}
+>
+  <div
+    className="font-ibm flex items-center justify-center rounded-xl hover:cursor-pointer w-4 h-4 p-0.5 text-primary-60 hover:text-primary-80 hover:bg-primary-30 active:text-primary-10 active:bg-primary-50"
+  >
+    <svg
+      aria-hidden="true"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth={2}
+      viewBox="0 0 24 24"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M12 4v16m8-8H4"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+    </svg>
+  </div>
+</div>
+`;
+
+exports[`should render a large size tag with icon(remove) and children as text 1`] = `
+<div
+  className="font-ibm inline-flex items-center font-medium rounded-full pl-2 h-6 py-1 pr-1 text-sm bg-primary-20 text-primary-90"
+  tabIndex={0}
+>
+  <span
+    className="w-1.5 h-1.5 mr-1.5 rounded-lg bg-primary-60 hidden"
+  />
+  <span
+    className="mr-0.5"
+  >
+    Tag
+  </span>
+  <div
+    className="font-ibm flex items-center justify-center rounded-xl hover:cursor-pointer w-4 h-4 p-0.5 text-primary-60 hover:text-primary-80 hover:bg-primary-30 active:text-primary-10 active:bg-primary-50"
+  >
+    <svg
+      aria-hidden="true"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth={2}
+      viewBox="0 0 24 24"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M6 18L18 6M6 6l12 12"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+    </svg>
+  </div>
+</div>
+`;
+
+exports[`should render a small size tag with children as text only (no icon or dot) 1`] = `
+<div
+  className="font-ibm inline-flex items-center font-medium rounded-full pl-2 h-5 py-0.5 pr-0.5 text-xs bg-primary-20 text-primary-90 pr-1.5"
+  tabIndex={0}
+>
+  <span
+    className="w-1.5 h-1.5 mr-1.5 rounded-lg bg-primary-60 hidden"
+  />
+  <span
+    className="mr-0.5"
+  >
+    Tag
+  </span>
+</div>
+`;
+
+exports[`should render a small size tag with dot and text 1`] = `
+<div
+  className="font-ibm inline-flex items-center font-medium rounded-full pl-2 h-5 py-0.5 pr-0.5 text-xs bg-primary-20 text-primary-90 pr-1.5"
+  tabIndex={0}
+>
+  <span
+    className="w-1.5 h-1.5 mr-1.5 rounded-lg bg-primary-60 block"
+  />
+  <span
+    className="mr-0.5"
+  >
+    Add me
+  </span>
+</div>
+`;
+
+exports[`should render a small size tag with dot, icon(remove) and children as text 1`] = `
+<div
+  className="font-ibm inline-flex items-center font-medium rounded-full pl-2 h-5 py-0.5 pr-0.5 text-xs bg-primary-20 text-primary-90"
+  tabIndex={0}
+>
+  <span
+    className="w-1.5 h-1.5 mr-1.5 rounded-lg bg-primary-60 block"
+  />
+  <span
+    className="mr-0.5"
+  >
+    Tag
+  </span>
+  <div
+    className="font-ibm flex items-center justify-center rounded-xl hover:cursor-pointer w-4 h-4 p-0.5 text-primary-60 hover:text-primary-80 hover:bg-primary-30 active:text-primary-10 active:bg-primary-50"
+  >
+    <svg
+      aria-hidden="true"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth={2}
+      viewBox="0 0 24 24"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M6 18L18 6M6 6l12 12"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+    </svg>
+  </div>
+</div>
+`;
+
+exports[`should render a small size tag with text that states - Add me 1`] = `
+<div
+  className="font-ibm inline-flex items-center font-medium rounded-full pl-2 h-5 py-0.5 pr-0.5 text-xs bg-primary-20 text-primary-90 pr-1.5"
+  tabIndex={0}
+>
+  <span
+    className="w-1.5 h-1.5 mr-1.5 rounded-lg bg-primary-60 hidden"
+  />
+  <span
+    className="mr-0.5"
+  >
+    Add me
+  </span>
+</div>
+`;

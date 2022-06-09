@@ -1,0 +1,204 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render a large tag with icon remove 1`] = `
+<div
+  className="font-ibm inline-flex items-center w-max pr-2 font-medium rounded-full text-gray-90 border-4 border-transparent group hover:cursor-pointer hover:text-primary-light active:bg-primary-10 active:cursor-default focus:outline focus:outline-4 focus:outline-primary-30 h-6 text-sm"
+  tabIndex={0}
+>
+  <div
+    className="font-ibm flex items-center justify-center rounded-xl hover:cursor-pointer w-5 h-5 p-1 text-gray-60 group-hover:text-primary-light"
+  >
+    <svg
+      aria-hidden="true"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth={2}
+      viewBox="0 0 24 24"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M6 18L18 6M6 6l12 12"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+    </svg>
+  </div>
+  <span>
+    Add Tag
+  </span>
+</div>
+`;
+
+exports[`should render a large tag with remove icon 1`] = `
+<div
+  className="font-ibm inline-flex items-center w-max pr-2 font-medium rounded-full text-gray-90 border-4 border-transparent group hover:cursor-pointer hover:text-primary-light active:bg-primary-10 active:cursor-default focus:outline focus:outline-4 focus:outline-primary-30 h-6 text-sm"
+  tabIndex={0}
+>
+  <div
+    className="font-ibm flex items-center justify-center rounded-xl hover:cursor-pointer w-5 h-5 p-1 text-gray-60 group-hover:text-primary-light"
+  >
+    <svg
+      aria-hidden="true"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth={2}
+      viewBox="0 0 24 24"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M6 18L18 6M6 6l12 12"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+    </svg>
+  </div>
+  <span>
+    Add Tag
+  </span>
+</div>
+`;
+
+exports[`should render a large tag with remove icon 2`] = `
+<div
+  className="font-ibm inline-flex items-center w-max pr-2 font-medium rounded-full text-gray-90 border-4 border-transparent group hover:cursor-pointer hover:text-primary-light active:bg-primary-10 active:cursor-default focus:outline focus:outline-4 focus:outline-primary-30 h-6 text-sm"
+  tabIndex={0}
+>
+  <div
+    className="font-ibm flex items-center justify-center rounded-xl hover:cursor-pointer w-5 h-5 p-1 text-gray-60 group-hover:text-primary-light"
+  >
+    <svg
+      aria-hidden="true"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth={2}
+      viewBox="0 0 24 24"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M6 18L18 6M6 6l12 12"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+    </svg>
+  </div>
+  <span>
+    Add Tag
+  </span>
+</div>
+`;
+
+exports[`should render a small tag with text - New tag 1`] = `
+<div
+  className="font-ibm inline-flex items-center w-max pr-2 font-medium rounded-full text-gray-90 border-4 border-transparent group hover:cursor-pointer hover:text-primary-light active:bg-primary-10 active:cursor-default focus:outline focus:outline-4 focus:outline-primary-30 h-5 text-xs"
+  tabIndex={0}
+>
+  <div
+    className="font-ibm flex items-center justify-center rounded-xl hover:cursor-pointer w-4 h-4 p-0.5 text-gray-60 group-hover:text-primary-light"
+  >
+    <svg
+      aria-hidden="true"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth={2}
+      viewBox="0 0 24 24"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M12 4v16m8-8H4"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+    </svg>
+  </div>
+  <span>
+    New Tag
+  </span>
+</div>
+`;
+
+exports[`should render a small tag with text Remove Tag 1`] = `
+<div
+  className="font-ibm inline-flex items-center w-max pr-2 font-medium rounded-full text-gray-90 border-4 border-transparent group hover:cursor-pointer hover:text-primary-light active:bg-primary-10 active:cursor-default focus:outline focus:outline-4 focus:outline-primary-30 h-5 text-xs"
+  tabIndex={0}
+>
+  <div
+    className="font-ibm flex items-center justify-center rounded-xl hover:cursor-pointer w-4 h-4 p-0.5 text-gray-60 group-hover:text-primary-light"
+  >
+    <svg
+      aria-hidden="true"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth={2}
+      viewBox="0 0 24 24"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M6 18L18 6M6 6l12 12"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+    </svg>
+  </div>
+  <span>
+    Remove Tag
+  </span>
+</div>
+`;
+
+exports[`should render the tag with its default settings - children: "Add Tag", size: "lg", iconType: "add" 1`] = `
+<div
+  className="font-ibm inline-flex items-center w-max pr-2 font-medium rounded-full text-gray-90 border-4 border-transparent group hover:cursor-pointer hover:text-primary-light active:bg-primary-10 active:cursor-default focus:outline focus:outline-4 focus:outline-primary-30 h-6 text-sm"
+  tabIndex={0}
+>
+  <div
+    className="font-ibm flex items-center justify-center rounded-xl hover:cursor-pointer w-5 h-5 p-1 text-gray-60 group-hover:text-primary-light"
+  >
+    <svg
+      aria-hidden="true"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth={2}
+      viewBox="0 0 24 24"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M12 4v16m8-8H4"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+    </svg>
+  </div>
+  <span>
+    Add Tag
+  </span>
+</div>
+`;
+
+exports[`should render the tag with text - This is a tag 1`] = `
+<div
+  className="font-ibm inline-flex items-center w-max pr-2 font-medium rounded-full text-gray-90 border-4 border-transparent group hover:cursor-pointer hover:text-primary-light active:bg-primary-10 active:cursor-default focus:outline focus:outline-4 focus:outline-primary-30 h-6 text-sm"
+  tabIndex={0}
+>
+  <div
+    className="font-ibm flex items-center justify-center rounded-xl hover:cursor-pointer w-5 h-5 p-1 text-gray-60 group-hover:text-primary-light"
+  >
+    <svg
+      aria-hidden="true"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth={2}
+      viewBox="0 0 24 24"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M12 4v16m8-8H4"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+    </svg>
+  </div>
+  <span>
+    This is a tag
+  </span>
+</div>
+`;

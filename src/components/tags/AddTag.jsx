@@ -15,7 +15,7 @@ const AddTag = (props) => {
     "font-ibm inline-flex items-center w-max pr-2 font-medium rounded-full text-gray-90 border-4 border-transparent group", 
     "hover:cursor-pointer hover:text-primary-light", 
     "active:bg-primary-10 active:cursor-default", 
-    "focus:outline focus:outline-4 focus:outline-primary-10",
+    "focus:outline focus:outline-4 focus:outline-primary-30",
     size === "sm" && "h-5 text-xs",
     size === "lg" && "h-6 text-sm",
     className

@@ -55,10 +55,9 @@ IdentifierIcon.defaultProps = {
   color: "primary",
   size: "lg",
   type: "initials",
-  Icon: "DocumentIcon",
   statusIndicator: true,
   status: true,
-  initials: ""
+  initials: "kl"
 }
 
 IdentifierIcon.propTypes = {
