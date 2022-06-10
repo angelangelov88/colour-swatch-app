@@ -57,7 +57,7 @@ function App() {
         title="New Document"
         infoTextColor="yellow"
         // infoTextChildren={
-        //   <p><span className="font-medium">Warning:</span> My name is Angel and I am a web</p> 
+        //   <p><span className="font-medium">Warning:</span> Warning text here</p> 
         // }
       />
     </div>

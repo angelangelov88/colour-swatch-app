@@ -1,7 +1,8 @@
 import React from 'react'
 import classNames from 'classnames'
 import PropTypes from 'prop-types'
-import { useState } from 'react'
+import { Dialog, Transition } from '@headlessui/react'
+import { Fragment, useState } from 'react'
 import { XIcon } from '@heroicons/react/outline'
 import { Button } from '../button/Button'
 import { InfoText } from './InfoText'
@@ -15,7 +16,7 @@ const Modal = (props) => {
     infoTextChildren,
   } = props
 
-  const [open, setOpen] = useState(true)
+  const [open, setOpen] = useState(false)
 
   function closeModal() {
     setOpen(false)
@@ -32,43 +33,56 @@ const Modal = (props) => {
   )
 
   return (
-    <div className="flex justify-center">
-      <Button onClick={openModal} children="open" />
-      <Button onClick={closeModal} children="close" />
-      <div className={classes}>
-        <div>
-          <h1 className="text-3xl font-medium px-6">{title}</h1>
-          <span onClick={closeModal}>
-            <XIcon 
-              className="absolute top-6 right-6 w-7 h-7 text-gray-50 hover:cursor-pointer" 
+    <>
+      <div onClick={openModal}>Open Modal</div>
+      <Transition appear show={open} as={Fragment}>
+        <Dialog className="flex justify-center" open={open} onClose={closeModal}>
+          <Transition.Child
+            as={Fragment}
+            enter="ease-out duration-300"
+            enterFrom="opacity-0"
+            enterTo="opacity-100"
+            leave="ease-in duration-200"
+            leaveFrom="opacity-100"
+            leaveTo="opacity-0"
+          >
+            <div className="fixed inset-0 bg-black bg-opacity-25" />
+          </Transition.Child>
+          <Dialog.Panel className={classes}>
+            <Dialog.Title>
+              <p className="text-3xl font-medium px-6">{title}</p>
+              <span onClick={closeModal}>
+                <XIcon 
+                  className="absolute top-6 right-6 w-7 h-7 text-gray-50 hover:cursor-pointer" 
+                />
+              </span>
+            </Dialog.Title>
+            <InfoText 
+              color={infoTextColor} 
+              children={infoTextChildren}
             />
-          </span>
-        </div>
-        <InfoText 
-          color={infoTextColor} 
-          children={infoTextChildren}
-        />
-        <div className="h-[20rem] mb-6">
-          {children}
-        </div>
-        <div className="flex justify-end pr-6">
-          <Button 
-            children="Cancel"
-            className="mr-6"
-            variant="secondary"
-            rounded="lg"
-            tabIndex="0"
-            onClick={closeModal}
-          />
-          <Button 
-            children="Continue"
-            rounded="lg"
-            tabIndex="0"
-          />
-        </div>
-      </div>
-    </div>
-
+            <div className="h-[20rem] mb-6">
+              {children}
+            </div>
+            <div className="flex justify-end pr-6">
+              <Button 
+                children="Cancel"
+                className="mr-6"
+                variant="secondary"
+                rounded="lg"
+                tabIndex="0"
+                onClick={closeModal}
+              />
+              <Button 
+                children="Continue"
+                rounded="lg"
+                tabIndex="0"
+              />
+            </div>
+          </Dialog.Panel>
+        </Dialog>
+      </Transition>
+    </>
   )
 }
 
