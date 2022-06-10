@@ -8,6 +8,7 @@ import { Tag } from "./components/tags/Tag";
 import { AddRemoveIconComponent } from "./components/tags/AddRemoveIconComponent";
 import { AddTag } from "./components/tags/AddTag";
 import { Modal } from "./components/modal/Modal";
+import { Badge } from "./components/badge/Badge";
 
 
 function App() {
@@ -52,13 +53,27 @@ function App() {
         // size="lg"
         // iconType="remove"
       /> */}
-      <Modal 
+      {/* <Modal 
         children="Hello there"
         title="New Document"
         infoTextColor="yellow"
         infoTextChildren={
           <p><span className="font-medium">Warning:</span> Warning text here</p> 
         }
+      /> */}
+      <Badge 
+        children="1"
+        className=""
+        size="lg"
+        color="yellow"
+        LeadingIcon={DocumentIcon}
+        TrailingIcon={InformationCircleIcon}
+        saturation={true}
+        rounded="full"
+        leadingIcon={true}
+        trailingIcon={true}
+        iconOnly={false}
+
       />
     </div>
   );
