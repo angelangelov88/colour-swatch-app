@@ -54,9 +54,11 @@ function App() {
       /> */}
       <Modal 
         // children="hello"
-        // title="New Document"
-        // infoTextColor="green"
-        // infoTextChildren="My name is Angel and I am a web"
+        title="New Document"
+        infoTextColor="yellow"
+        // infoTextChildren={
+        //   <p><span className="font-medium">Warning:</span> My name is Angel and I am a web</p> 
+        // }
       />
     </div>
   );

@@ -10,7 +10,7 @@ const InfoText = (props) => {
   } = props
 
   const classes = classNames(
-    "my-6 py-5 px-6 text-sm font-medium",
+    "my-6 py-5 px-6 text-sm",
     color === "primary" && "text-primary-100 bg-primary-10 shadow-[inset_6px_0px_0px_#4456F6]",
     color === "green" && "text-green-100 bg-green-10 shadow-[inset_6px_0px_0px_#46DBAA]",
     color === "yellow" && "text-yellow-100 bg-yellow-10 shadow-[inset_6px_0px_0px_#F0B618]",
@@ -19,9 +19,7 @@ const InfoText = (props) => {
   )
 
   return (
-    <div className={classes}>
-      <p>{ children }</p>
-    </div>
+    <div className={classes}>{ children }</div>
   )
 }
 
@@ -39,7 +37,6 @@ InfoText.propTypes = {
     "yellow",
     "red",
   ]),
-
 }
 
 export { InfoText }

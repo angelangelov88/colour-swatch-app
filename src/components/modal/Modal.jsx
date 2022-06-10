@@ -76,7 +76,7 @@ Modal.defaultProps = {
   children: undefined,
   title: "Title",
   infoTextColor: "primary",
-  infoTextChildren: "text",
+  infoTextChildren: "There are a few ways to get started with a new document in Legalesign. Start by telling us what you’d like to do:",
 }
 
 Modal.propTypes = {
