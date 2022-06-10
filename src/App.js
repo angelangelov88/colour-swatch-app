@@ -1,17 +1,18 @@
 import { ColourThemeSwatch } from "./components/colourThemeSwatch/ColourThemeSwatch";
 import { IdentifierIcon } from "./components/identifierIcon/IdentifierIcon";
 import { Tooltip } from "./components/tooltip/Tooltip";
-import { BanIconComponent } from "./components/BanIconComponent/BanIconComponent";
+import { BanIconComponent } from "./components/banIconComponent/BanIconComponent";
 import { InformationCircleIcon } from '@heroicons/react/outline'
 import { DocumentIcon } from '@heroicons/react/outline'
 import { Tag } from "./components/tags/Tag";
 import { AddRemoveIconComponent } from "./components/tags/AddRemoveIconComponent";
 import { AddTag } from "./components/tags/AddTag";
+import { Modal } from "./components/modal/Modal";
 
 
 function App() {
   return (
-    <div className="App m-32">
+    <div className="App m-4">
       {/* <ColourThemeSwatch color="yellow" /> */}
       {/* <IdentifierIcon 
         color="purple"
@@ -51,8 +52,12 @@ function App() {
         // size="lg"
         // iconType="remove"
       /> */}
-
-
+      <Modal 
+        // children="hello"
+        // title="New Document"
+        // infoTextColor="green"
+        // infoTextChildren="My name is Angel and I am a web"
+      />
     </div>
   );
 }
