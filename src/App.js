@@ -53,7 +53,7 @@ function App() {
         // iconType="remove"
       /> */}
       <Modal 
-        // children="Hello there"
+        children="Hello there"
         title="New Document"
         infoTextColor="yellow"
         infoTextChildren={

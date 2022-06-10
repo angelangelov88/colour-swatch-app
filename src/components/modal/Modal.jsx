@@ -1,5 +1,4 @@
 import React from 'react'
-import classNames from 'classnames'
 import PropTypes from 'prop-types'
 import { Dialog, Transition } from '@headlessui/react'
 import { Fragment, useState } from 'react'
@@ -10,7 +9,6 @@ import { InfoText } from './InfoText'
 const Modal = (props) => {
   let {
     children,
-    className,
     title,
     infoTextColor,
     infoTextChildren,
@@ -25,12 +23,6 @@ const Modal = (props) => {
   function openModal() {
     setOpen(true)
   }
-
-  const classes = classNames(
-    "absolute top-[calc(100vh-90%)] w-[703px] h-[527px] font-ibm flex flex-col py-6 bg-white border border-gray-20 rounded-lg shadow-2xl",
-    open ? "block" : "hidden",
-    className
-  )
 
   return (
     <>
@@ -48,7 +40,7 @@ const Modal = (props) => {
           >
             <div className="fixed inset-0 bg-black bg-opacity-25" />
           </Transition.Child>
-          <Dialog.Panel className={classes}>
+          <Dialog.Panel className="absolute top-[calc(100vh-90%)] w-[703px] h-[527px] font-ibm flex flex-col py-6 bg-white border border-gray-20 rounded-lg shadow-2xl">
             <Dialog.Title>
               <p className="text-3xl font-medium px-6">{title}</p>
               <span onClick={closeModal}>
@@ -94,7 +86,6 @@ Modal.defaultProps = {
 }
 
 Modal.propTypes = {
-  className: PropTypes.string,
   children: PropTypes.node,
   title: PropTypes.string,
   infoTextColor: PropTypes.oneOf([
