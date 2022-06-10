@@ -53,12 +53,12 @@ function App() {
         // iconType="remove"
       /> */}
       <Modal 
-        // children="hello"
+        // children="Hello there"
         title="New Document"
         infoTextColor="yellow"
-        // infoTextChildren={
-        //   <p><span className="font-medium">Warning:</span> Warning text here</p> 
-        // }
+        infoTextChildren={
+          <p><span className="font-medium">Warning:</span> Warning text here</p> 
+        }
       />
     </div>
   );

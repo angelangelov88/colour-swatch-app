@@ -103,7 +103,7 @@ Modal.propTypes = {
     "yellow",
     "red",
   ]),
-  infoTextChildren: PropTypes.string,
+  infoTextChildren: PropTypes.node,
 }
 
 export { Modal }

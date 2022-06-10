@@ -1,0 +1,53 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render the element in green with heading with bold text and text 1`] = `
+<div
+  className="my-6 py-5 px-6 text-sm text-green-100 bg-green-10 shadow-[inset_6px_0px_0px_#46DBAA]"
+>
+  <p>
+    <span
+      className="font-medium"
+    >
+      Warning:
+    </span>
+     Warning text here
+  </p>
+</div>
+`;
+
+exports[`should render the element in yellow with no text 1`] = `
+<div
+  className="my-6 py-5 px-6 text-sm text-yellow-100 bg-yellow-10 shadow-[inset_6px_0px_0px_#F0B618]"
+/>
+`;
+
+exports[`should render the element with default (primary) colour and text 1`] = `
+<div
+  className="my-6 py-5 px-6 text-sm text-primary-100 bg-primary-10 shadow-[inset_6px_0px_0px_#4456F6]"
+>
+  This is a test
+</div>
+`;
+
+exports[`should render the element with red plus the html stated in children 1`] = `
+<div
+  className="my-6 py-5 px-6 text-sm text-red-100 bg-red-10 shadow-[inset_6px_0px_0px_#F64A44]"
+>
+  <p>
+    <span
+      className="font-medium"
+    >
+      Warning:
+    </span>
+     Warning text here
+  </p>
+</div>
+`;
+
+exports[`should render the element with red text and red background plus the text stated in children 1`] = `
+<div
+  className="my-6 py-5 px-6 text-sm text-red-100 bg-red-10 shadow-[inset_6px_0px_0px_#F64A44]"
+>
+  This is a test
+</div>
+`;
