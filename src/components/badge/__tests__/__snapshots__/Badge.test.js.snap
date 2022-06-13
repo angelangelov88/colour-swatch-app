@@ -1,0 +1,503 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render with blue colour and one icon only and it should be the trailing one and fully rounded 1`] = `
+<div
+  className="flex justify-center items-center font-ibm w-fit h-6 px-2 py-0.5 text-sm  bg-blue-60 rounded-full w-6 h-6 px-0"
+>
+  <svg
+    aria-hidden="true"
+    className="text-white w-5 h-5 hidden"
+    fill="none"
+    stroke="currentColor"
+    strokeWidth={2}
+    viewBox="0 0 24 24"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <path
+      d="M20 13V6a2 2 0 00-2-2H6a2 2 0 00-2 2v7m16 0v5a2 2 0 01-2 2H6a2 2 0 01-2-2v-5m16 0h-2.586a1 1 0 00-.707.293l-2.414 2.414a1 1 0 01-.707.293h-3.172a1 1 0 01-.707-.293l-2.414-2.414A1 1 0 006.586 13H4"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    />
+  </svg>
+  <div
+    className="text-white font-medium px-1 hidden"
+  >
+    1
+  </div>
+  <svg
+    aria-hidden="true"
+    className="text-white w-5 h-5 block"
+    fill="none"
+    stroke="currentColor"
+    strokeWidth={2}
+    viewBox="0 0 24 24"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <path
+      d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    />
+  </svg>
+</div>
+`;
+
+exports[`should render with large size, blue colour, 2 icons(InboxIcon and BellIcon), sm rounded 1`] = `
+<div
+  className="flex justify-center items-center font-ibm w-fit h-6 px-2 py-0.5 text-sm  bg-blue-60 rounded"
+>
+  <svg
+    aria-hidden="true"
+    className="text-white w-5 h-5"
+    fill="none"
+    stroke="currentColor"
+    strokeWidth={2}
+    viewBox="0 0 24 24"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <path
+      d="M20 13V6a2 2 0 00-2-2H6a2 2 0 00-2 2v7m16 0v5a2 2 0 01-2 2H6a2 2 0 01-2-2v-5m16 0h-2.586a1 1 0 00-.707.293l-2.414 2.414a1 1 0 01-.707.293h-3.172a1 1 0 01-.707-.293l-2.414-2.414A1 1 0 006.586 13H4"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    />
+  </svg>
+  <div
+    className="text-white font-medium px-1"
+  >
+    1
+  </div>
+  <svg
+    aria-hidden="true"
+    className="text-white w-5 h-5"
+    fill="none"
+    stroke="currentColor"
+    strokeWidth={2}
+    viewBox="0 0 24 24"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <path
+      d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    />
+  </svg>
+</div>
+`;
+
+exports[`should render with large size, blue colour, icon only and fully rounded 1`] = `
+<div
+  className="flex justify-center items-center font-ibm w-fit h-6 px-2 py-0.5 text-sm  bg-blue-60 rounded-full w-6 h-6 px-0"
+>
+  <svg
+    aria-hidden="true"
+    className="text-white w-5 h-5 hidden"
+    fill="none"
+    stroke="currentColor"
+    strokeWidth={2}
+    viewBox="0 0 24 24"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <path
+      d="M20 13V6a2 2 0 00-2-2H6a2 2 0 00-2 2v7m16 0v5a2 2 0 01-2 2H6a2 2 0 01-2-2v-5m16 0h-2.586a1 1 0 00-.707.293l-2.414 2.414a1 1 0 01-.707.293h-3.172a1 1 0 01-.707-.293l-2.414-2.414A1 1 0 006.586 13H4"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    />
+  </svg>
+  <div
+    className="text-white font-medium px-1 hidden"
+  >
+    1
+  </div>
+  <svg
+    aria-hidden="true"
+    className="text-white w-5 h-5 block"
+    fill="none"
+    stroke="currentColor"
+    strokeWidth={2}
+    viewBox="0 0 24 24"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <path
+      d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    />
+  </svg>
+</div>
+`;
+
+exports[`should render with large size, purple colour, 2 icons(InboxIcon and BellIcon) and not rounded 1`] = `
+<div
+  className="flex justify-center items-center font-ibm w-fit h-6 px-2 py-0.5 text-sm  bg-purple-60"
+>
+  <svg
+    aria-hidden="true"
+    className="text-white w-5 h-5"
+    fill="none"
+    stroke="currentColor"
+    strokeWidth={2}
+    viewBox="0 0 24 24"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <path
+      d="M20 13V6a2 2 0 00-2-2H6a2 2 0 00-2 2v7m16 0v5a2 2 0 01-2 2H6a2 2 0 01-2-2v-5m16 0h-2.586a1 1 0 00-.707.293l-2.414 2.414a1 1 0 01-.707.293h-3.172a1 1 0 01-.707-.293l-2.414-2.414A1 1 0 006.586 13H4"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    />
+  </svg>
+  <div
+    className="text-white font-medium px-1"
+  >
+    1
+  </div>
+  <svg
+    aria-hidden="true"
+    className="text-white w-5 h-5"
+    fill="none"
+    stroke="currentColor"
+    strokeWidth={2}
+    viewBox="0 0 24 24"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <path
+      d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    />
+  </svg>
+</div>
+`;
+
+exports[`should render with large size, yellow colour, 1 trailing icon(BellIcon), sm rounded 1`] = `
+<div
+  className="flex justify-center items-center font-ibm w-fit h-6 px-2 py-0.5 text-sm  bg-yellow-60 rounded"
+>
+  <svg
+    aria-hidden="true"
+    className="text-white w-5 h-5 hidden"
+    fill="none"
+    stroke="currentColor"
+    strokeWidth={2}
+    viewBox="0 0 24 24"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <path
+      d="M20 13V6a2 2 0 00-2-2H6a2 2 0 00-2 2v7m16 0v5a2 2 0 01-2 2H6a2 2 0 01-2-2v-5m16 0h-2.586a1 1 0 00-.707.293l-2.414 2.414a1 1 0 01-.707.293h-3.172a1 1 0 01-.707-.293l-2.414-2.414A1 1 0 006.586 13H4"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    />
+  </svg>
+  <div
+    className="text-white font-medium px-1"
+  >
+    1
+  </div>
+  <svg
+    aria-hidden="true"
+    className="text-white w-5 h-5"
+    fill="none"
+    stroke="currentColor"
+    strokeWidth={2}
+    viewBox="0 0 24 24"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <path
+      d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    />
+  </svg>
+</div>
+`;
+
+exports[`should render with no text, small size, green colour, 1 icon(DocumentIcon), fully rounded 1`] = `
+<div
+  className="flex justify-center items-center font-ibm w-fit h-5 px-1.5 py-0.5 text-xs bg-green-70 rounded-full w-5 h-5 px-0"
+>
+  <svg
+    aria-hidden="true"
+    className="text-white w-4 h-4 hidden hidden"
+    fill="none"
+    stroke="currentColor"
+    strokeWidth={2}
+    viewBox="0 0 24 24"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <path
+      d="M20 13V6a2 2 0 00-2-2H6a2 2 0 00-2 2v7m16 0v5a2 2 0 01-2 2H6a2 2 0 01-2-2v-5m16 0h-2.586a1 1 0 00-.707.293l-2.414 2.414a1 1 0 01-.707.293h-3.172a1 1 0 01-.707-.293l-2.414-2.414A1 1 0 006.586 13H4"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    />
+  </svg>
+  <div
+    className="text-white font-medium px-0.5 hidden"
+  />
+  <svg
+    aria-hidden="true"
+    className="text-white w-4 h-4 block"
+    fill="none"
+    stroke="currentColor"
+    strokeWidth={2}
+    viewBox="0 0 24 24"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <path
+      d="M7 21h10a2 2 0 002-2V9.414a1 1 0 00-.293-.707l-5.414-5.414A1 1 0 0012.586 3H7a2 2 0 00-2 2v14a2 2 0 002 2z"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    />
+  </svg>
+</div>
+`;
+
+exports[`should render with small size, cyan colour, 2 icons(DocumentIcon and InboxIcon) and not rounded 1`] = `
+<div
+  className="flex justify-center items-center font-ibm w-fit h-5 px-1.5 py-0.5 text-xs bg-cyan-70"
+>
+  <svg
+    aria-hidden="true"
+    className="text-white w-4 h-4"
+    fill="none"
+    stroke="currentColor"
+    strokeWidth={2}
+    viewBox="0 0 24 24"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <path
+      d="M7 21h10a2 2 0 002-2V9.414a1 1 0 00-.293-.707l-5.414-5.414A1 1 0 0012.586 3H7a2 2 0 00-2 2v14a2 2 0 002 2z"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    />
+  </svg>
+  <div
+    className="text-white font-medium px-0.5"
+  >
+    1
+  </div>
+  <svg
+    aria-hidden="true"
+    className="text-white w-4 h-4"
+    fill="none"
+    stroke="currentColor"
+    strokeWidth={2}
+    viewBox="0 0 24 24"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <path
+      d="M20 13V6a2 2 0 00-2-2H6a2 2 0 00-2 2v7m16 0v5a2 2 0 01-2 2H6a2 2 0 01-2-2v-5m16 0h-2.586a1 1 0 00-.707.293l-2.414 2.414a1 1 0 01-.707.293h-3.172a1 1 0 01-.707-.293l-2.414-2.414A1 1 0 006.586 13H4"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    />
+  </svg>
+</div>
+`;
+
+exports[`should render with small size, primary colour, 1 icon(DocumentIcon as trailing) and not rounded 1`] = `
+<div
+  className="flex justify-center items-center font-ibm w-fit h-5 px-1.5 py-0.5 text-xs bg-primary-60"
+>
+  <svg
+    aria-hidden="true"
+    className="text-white w-4 h-4 hidden"
+    fill="none"
+    stroke="currentColor"
+    strokeWidth={2}
+    viewBox="0 0 24 24"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <path
+      d="M20 13V6a2 2 0 00-2-2H6a2 2 0 00-2 2v7m16 0v5a2 2 0 01-2 2H6a2 2 0 01-2-2v-5m16 0h-2.586a1 1 0 00-.707.293l-2.414 2.414a1 1 0 01-.707.293h-3.172a1 1 0 01-.707-.293l-2.414-2.414A1 1 0 006.586 13H4"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    />
+  </svg>
+  <div
+    className="text-white font-medium px-0.5"
+  >
+    1
+  </div>
+  <svg
+    aria-hidden="true"
+    className="text-white w-4 h-4"
+    fill="none"
+    stroke="currentColor"
+    strokeWidth={2}
+    viewBox="0 0 24 24"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <path
+      d="M7 21h10a2 2 0 002-2V9.414a1 1 0 00-.293-.707l-5.414-5.414A1 1 0 0012.586 3H7a2 2 0 00-2 2v14a2 2 0 002 2z"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    />
+  </svg>
+</div>
+`;
+
+exports[`should render with small size, red colour, 1 icon(InboxIcon as leading) and sm rounded 1`] = `
+<div
+  className="flex justify-center items-center font-ibm w-fit h-5 px-1.5 py-0.5 text-xs bg-red-60 rounded"
+>
+  <svg
+    aria-hidden="true"
+    className="text-white w-4 h-4"
+    fill="none"
+    stroke="currentColor"
+    strokeWidth={2}
+    viewBox="0 0 24 24"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <path
+      d="M20 13V6a2 2 0 00-2-2H6a2 2 0 00-2 2v7m16 0v5a2 2 0 01-2 2H6a2 2 0 01-2-2v-5m16 0h-2.586a1 1 0 00-.707.293l-2.414 2.414a1 1 0 01-.707.293h-3.172a1 1 0 01-.707-.293l-2.414-2.414A1 1 0 006.586 13H4"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    />
+  </svg>
+  <div
+    className="text-white font-medium px-0.5"
+  >
+    1
+  </div>
+  <svg
+    aria-hidden="true"
+    className="text-white w-4 h-4 hidden"
+    fill="none"
+    stroke="currentColor"
+    strokeWidth={2}
+    viewBox="0 0 24 24"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <path
+      d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    />
+  </svg>
+</div>
+`;
+
+exports[`should render with text - Legal, small size, gray colour, 2 icons(InboxIcon and BellIcon) and not rounded 1`] = `
+<div
+  className="flex justify-center items-center font-ibm w-fit h-5 px-1.5 py-0.5 text-xs bg-gray-60"
+>
+  <svg
+    aria-hidden="true"
+    className="text-white w-4 h-4"
+    fill="none"
+    stroke="currentColor"
+    strokeWidth={2}
+    viewBox="0 0 24 24"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <path
+      d="M20 13V6a2 2 0 00-2-2H6a2 2 0 00-2 2v7m16 0v5a2 2 0 01-2 2H6a2 2 0 01-2-2v-5m16 0h-2.586a1 1 0 00-.707.293l-2.414 2.414a1 1 0 01-.707.293h-3.172a1 1 0 01-.707-.293l-2.414-2.414A1 1 0 006.586 13H4"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    />
+  </svg>
+  <div
+    className="text-white font-medium px-0.5"
+  >
+    Legal
+  </div>
+  <svg
+    aria-hidden="true"
+    className="text-white w-4 h-4"
+    fill="none"
+    stroke="currentColor"
+    strokeWidth={2}
+    viewBox="0 0 24 24"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <path
+      d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    />
+  </svg>
+</div>
+`;
+
+exports[`should render with text 1, large size, blue colour, 2 icons(InboxIcon and BellIcon), fully rounded 1`] = `
+<div
+  className="flex justify-center items-center font-ibm w-fit h-6 px-2 py-0.5 text-sm  bg-blue-60 rounded-full"
+>
+  <svg
+    aria-hidden="true"
+    className="text-white w-5 h-5"
+    fill="none"
+    stroke="currentColor"
+    strokeWidth={2}
+    viewBox="0 0 24 24"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <path
+      d="M20 13V6a2 2 0 00-2-2H6a2 2 0 00-2 2v7m16 0v5a2 2 0 01-2 2H6a2 2 0 01-2-2v-5m16 0h-2.586a1 1 0 00-.707.293l-2.414 2.414a1 1 0 01-.707.293h-3.172a1 1 0 01-.707-.293l-2.414-2.414A1 1 0 006.586 13H4"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    />
+  </svg>
+  <div
+    className="text-white font-medium px-1"
+  >
+    1
+  </div>
+  <svg
+    aria-hidden="true"
+    className="text-white w-5 h-5"
+    fill="none"
+    stroke="currentColor"
+    strokeWidth={2}
+    viewBox="0 0 24 24"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <path
+      d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    />
+  </svg>
+</div>
+`;
+
+exports[`should render with text 12, large size, red colour, 1 icon(InformationCircleIcon) as leading icon and be fully rounded 1`] = `
+<div
+  className="flex justify-center items-center font-ibm w-fit h-6 px-2 py-0.5 text-sm  bg-red-60 rounded-full"
+>
+  <svg
+    aria-hidden="true"
+    className="text-white w-5 h-5"
+    fill="none"
+    stroke="currentColor"
+    strokeWidth={2}
+    viewBox="0 0 24 24"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <path
+      d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    />
+  </svg>
+  <div
+    className="text-white font-medium px-1"
+  >
+    12
+  </div>
+  <svg
+    aria-hidden="true"
+    className="text-white w-5 h-5 hidden"
+    fill="none"
+    stroke="currentColor"
+    strokeWidth={2}
+    viewBox="0 0 24 24"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <path
+      d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    />
+  </svg>
+</div>
+`;

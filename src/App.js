@@ -62,16 +62,15 @@ function App() {
       /> */}
       <Badge 
         children="1"
-        // className=""
-        // size="lg"
-        // color="blue"
+        className=""
+        size="lg"
+        color="red"
         LeadingIcon={InboxIcon}
         TrailingIcon={BellIcon}
-        // rounded="full"
-        // leadingIcon={true}
-        // trailingIcon={true}
-        // iconOnly={false}
-
+        rounded="full"
+        leadingIcon={true}
+        trailingIcon={true}
+        iconOnly={false}
       />
     </div>
   );

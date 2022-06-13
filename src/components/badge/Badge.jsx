@@ -18,6 +18,8 @@ const Badge = (props) => {
 
   const classes = classNames(
     "flex justify-center items-center font-ibm",
+    size === "sm" && "w-fit h-5 px-1.5 py-0.5 text-xs",
+    size === "lg" && "w-fit h-6 px-2 py-0.5 text-sm ",
     color === "gray" && "bg-gray-60",
     color === "primary" && "bg-primary-60",
     color === "purple" && "bg-purple-60",
@@ -28,15 +30,10 @@ const Badge = (props) => {
     color === "green" && "bg-green-70",
     color === "yellow" && "bg-yellow-60",
     color === "red" && "bg-red-60",
-
-    (((!leadingIcon && !trailingIcon) || (iconOnly)) && size === "lg") && "w-6 h-6 px-0",
-    (((!leadingIcon && !trailingIcon) || (iconOnly)) && size === "sm") && "w-5 h-5 px-0",
-
-    size === "sm" && "w-fit h-5 px-1.5 py-0.5 text-xs",
-    size === "lg" && "w-fit h-6 px-2 py-0.5 text-sm ",
-
     rounded === "sm" && "rounded",
     rounded === "full" && "rounded-full",
+    (((!leadingIcon && !trailingIcon) || (iconOnly)) && size === "lg") && "w-6 h-6 px-0",
+    (((!leadingIcon && !trailingIcon) || (iconOnly)) && size === "sm") && "w-5 h-5 px-0",
     className
   )
 
@@ -44,7 +41,6 @@ const Badge = (props) => {
     "text-white",
     size === "sm" && "w-4 h-4",
     size === "lg" && "w-5 h-5",
-
     className
   )
 
@@ -53,7 +49,6 @@ const Badge = (props) => {
     !leadingIcon && "hidden",
     (iconOnly && !trailingIcon) && "block",
     (iconOnly && trailingIcon) && "hidden",
-
     className
   )
 
@@ -68,9 +63,7 @@ const Badge = (props) => {
     "text-white font-medium",
     size === "sm" && "px-0.5",
     size === "lg" && "px-1",
-    
     iconOnly && "hidden",
-
     className
   )
 
@@ -96,7 +89,7 @@ Badge.defaultProps = {
 Badge.propTypes = {
   className: PropTypes.string,
   children: PropTypes.node,
-  size: PropTypes.oneOf(["sm","lg",]),
+  size: PropTypes.oneOf(["sm","lg"]),
   color: PropTypes.oneOf([
     "gray",
     "primary",
@@ -111,7 +104,7 @@ Badge.propTypes = {
   ]),  
   LeadingIcon: PropTypes.object,
   TrailingIcon: PropTypes.object,
-  rounded: PropTypes.oneOf(["none","sm","full",]),
+  rounded: PropTypes.oneOf(["none","sm","full"]),
   leadingIcon: PropTypes.bool,
   trailingIcon: PropTypes.bool,
   iconOnly: PropTypes.bool
