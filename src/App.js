@@ -4,7 +4,6 @@ import { Tooltip } from "./components/tooltip/Tooltip";
 import { BanIconComponent } from "./components/banIconComponent/BanIconComponent";
 import { InformationCircleIcon, DocumentIcon, BellIcon, InboxIcon } from '@heroicons/react/outline'
 import { Tag } from "./components/tags/Tag";
-import { AddRemoveIconComponent } from "./components/tags/AddRemoveIconComponent";
 import { AddTag } from "./components/tags/AddTag";
 import { Modal } from "./components/modal/Modal";
 import { Badge } from "./components/badge/Badge";
@@ -34,33 +33,20 @@ function App() {
         <p className="m-1 font-redhat">Please use this field to add additional information</p>
         <a href="https://test.com" className="m-1 text-blue-60 dark:text-blue-50">Link</a>
       </Tooltip> */}
-      {/* <Tag 
-        children="Tag"
-        size="lg"
-        dot={true}
-        icon={true}
-        iconType="remove"
-        iconOnly={false}
-      /> */}
-      {/* <AddRemoveIconComponent 
-        icon="add"
-        color="teal"
-        iconSize="sm"
-      /> */}
       {/* <AddTag 
         // children="Remove Tag"
         // size="lg"
-        // iconType="remove"
+        // icon="remove"
       /> */}
-      {/* <Modal 
+      <Modal 
         children="Hello there"
         title="New Document"
-        infoTextColor="yellow"
+        infoTextColor="green"
         infoTextChildren={
           <p><span className="font-medium">Warning:</span> Warning text here</p> 
         }
-      /> */}
-      <Badge 
+      />
+      {/* <Badge 
         children="1"
         className=""
         size="lg"
@@ -71,7 +57,7 @@ function App() {
         leadingIcon={true}
         trailingIcon={true}
         iconOnly={false}
-      />
+      />  */}
     </div>
   );
 }

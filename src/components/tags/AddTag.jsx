@@ -1,14 +1,13 @@
 import React from 'react'
 import classNames from 'classnames'
 import PropTypes from 'prop-types'
-import { AddRemoveIconComponent } from './AddRemoveIconComponent'
+import { PlusIcon } from '@heroicons/react/outline'
 
 const AddTag = (props) => {
   let {
     children,
     className,
     size,
-    iconType,
   } = props
 
   const classes = classNames(
@@ -21,13 +20,18 @@ const AddTag = (props) => {
     className
   )
 
+  const iconClasses = classNames(
+    "font-ibm flex items-center justify-center rounded-xl text-gray-60",
+    "group-hover:text-primary-light hover:cursor-pointer",
+    size === "sm" ? "w-4 h-4 p-0.5" : "w-5 h-5 p-1",
+    className
+  )
+
   return (
     <div className={classes} tabIndex={0}>
-      <AddRemoveIconComponent 
-        icon={iconType}
-        iconSize={size}
-        className="text-gray-60 group-hover:text-primary-light"
-      />
+      <div className={iconClasses}>
+        <PlusIcon />
+      </div>
       <span>{children}</span>
     </div>
   )
@@ -36,14 +40,12 @@ const AddTag = (props) => {
 AddTag.defaultProps = {
   children: "Add Tag",
   size: "lg",
-  iconType: "add",
 }
 
 AddTag.propTypes = {
   children: PropTypes.node,
   className: PropTypes.string,
   size: PropTypes.oneOf(["sm", "lg"]),
-  iconType: PropTypes.oneOf(["add","remove"]),
 }
 
 export { AddTag }

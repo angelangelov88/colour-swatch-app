@@ -34,7 +34,8 @@ const IdentifierIcon = (props) => {
   )
 
   const dotClasses = classNames(
-    "absolute bottom-0 right-0 rounded-full shadow-[0_0_0_2px_rgb(255,255,255)]",
+    "absolute bottom-0 right-0 rounded-full ",
+    "outline-2 outline outline-white",
     (size === "xs" || size === "sm") ? "w-2 h-2" : "w-2.5 h-2.5",
     !statusIndicator && "hidden",
     status ? "bg-green-50" : "bg-gray-30"

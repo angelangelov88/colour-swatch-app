@@ -11,10 +11,10 @@ const InfoText = (props) => {
 
   const classes = classNames(
     "my-6 py-5 px-6 text-sm",
-    color === "primary" && "text-primary-100 bg-primary-10 shadow-[inset_6px_0px_0px_#4456F6]",
-    color === "green" && "text-green-100 bg-green-10 shadow-[inset_6px_0px_0px_#46DBAA]",
-    color === "yellow" && "text-yellow-100 bg-yellow-10 shadow-[inset_6px_0px_0px_#F0B618]",
-    color === "red" && "text-red-100 bg-red-10 shadow-[inset_6px_0px_0px_#F64A44]",
+    color === "primary" && "text-primary-100 bg-primary-10 border-l-8 border-l-primary-60",
+    color === "green" && "text-green-100 bg-green-10 border-l-8 border-l-green-60",
+    color === "yellow" && "text-yellow-100 bg-yellow-10 border-l-8 border-l-yellow-60",
+    color === "red" && "text-red-100 bg-red-10 border-l-8 border-l-red-60",
     className
   )
 

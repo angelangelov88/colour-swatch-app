@@ -32,7 +32,7 @@ const Tooltip = (props) => {
     clicked ? "flex" : "hidden",
     selected === "hover" && "group-hover:flex",
     "bg-white dark:bg-gray-130 text-gray-80 dark:text-gray-10 text-sm text-center p-2",
-    "absolute min-w-[112px] min-h-[112px] flex-col justify-evenly items-center rounded-lg shadow-[0_10px_15px_-3px_rgba(0,0,0,0.1)]",
+    "absolute min-w-[112px] min-h-[112px] flex-col justify-evenly items-center rounded-lg shadow-lg",
     "after:absolute after:content:none after:border-[10px] after:border-transparent",
     (tooltipPosition === "bottom" && arrowPosition === "centre") && "bottom-8 -left-11 -ml-0.5 after:left-[40.5%] after:-bottom-[8px] after:border-b-0 after:border-t-white dark:after:border-t-gray-130",
     (tooltipPosition === "bottom" && arrowPosition === "left") && "bottom-8 -left-2 after:left-[7%] after:-bottom-[8px] after:border-b-0 after:border-t-white dark:after:border-t-gray-130",

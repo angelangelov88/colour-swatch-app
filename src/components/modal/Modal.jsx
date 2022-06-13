@@ -2,7 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import { Dialog, Transition } from '@headlessui/react'
 import { Fragment, useState } from 'react'
-import { XIcon } from '@heroicons/react/outline'
+import { XIcon, ChevronRightIcon } from '@heroicons/react/outline'
 import { Button } from '../button/Button'
 import { InfoText } from './InfoText'
 
@@ -65,11 +65,10 @@ const Modal = (props) => {
                 tabIndex="0"
                 onClick={closeModal}
               />
-              <Button 
-                children="Continue"
-                rounded="lg"
-                tabIndex="0"
-              />
+              <Button rounded="lg" tabIndex="0">
+                <p>Continue</p>
+                <ChevronRightIcon className="w-5 h-5 ml-1 -mr-2" />
+              </Button>
             </div>
           </Dialog.Panel>
         </Dialog>
