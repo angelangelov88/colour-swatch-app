@@ -2,8 +2,7 @@ import { ColourThemeSwatch } from "./components/colourThemeSwatch/ColourThemeSwa
 import { IdentifierIcon } from "./components/identifierIcon/IdentifierIcon";
 import { Tooltip } from "./components/tooltip/Tooltip";
 import { BanIconComponent } from "./components/banIconComponent/BanIconComponent";
-import { InformationCircleIcon } from '@heroicons/react/outline'
-import { DocumentIcon } from '@heroicons/react/outline'
+import { InformationCircleIcon, DocumentIcon, BellIcon, InboxIcon } from '@heroicons/react/outline'
 import { Tag } from "./components/tags/Tag";
 import { AddRemoveIconComponent } from "./components/tags/AddRemoveIconComponent";
 import { AddTag } from "./components/tags/AddTag";
@@ -63,16 +62,15 @@ function App() {
       /> */}
       <Badge 
         children="1"
-        className=""
-        size="lg"
-        color="yellow"
-        LeadingIcon={DocumentIcon}
-        TrailingIcon={InformationCircleIcon}
-        saturation={true}
-        rounded="full"
-        leadingIcon={true}
-        trailingIcon={true}
-        iconOnly={false}
+        // className=""
+        // size="lg"
+        // color="blue"
+        LeadingIcon={InboxIcon}
+        TrailingIcon={BellIcon}
+        // rounded="full"
+        // leadingIcon={true}
+        // trailingIcon={true}
+        // iconOnly={false}
 
       />
     </div>

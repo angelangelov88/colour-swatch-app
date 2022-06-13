@@ -10,7 +10,6 @@ const Badge = (props) => {
     color,
     LeadingIcon,
     TrailingIcon,
-    saturation,
     rounded,
     leadingIcon,
     trailingIcon,
@@ -18,25 +17,68 @@ const Badge = (props) => {
   } = props
 
   const classes = classNames(
-    "w-20 h-10 flex justify-center items-center rounded-lg",
+    "flex justify-center items-center font-ibm",
     color === "gray" && "bg-gray-60",
     color === "primary" && "bg-primary-60",
     color === "purple" && "bg-purple-60",
     color === "blue" && "bg-blue-60",
-    color === "lightblue" && "bg-lightblue-60",
-    color === "cyan" && "bg-cyan-60",
-    color === "teal" && "bg-teal-60",
-    color === "green" && "bg-green-60",
+    color === "lightblue" && "bg-lightblue-70",
+    color === "cyan" && "bg-cyan-70",
+    color === "teal" && "bg-teal-70",
+    color === "green" && "bg-green-70",
     color === "yellow" && "bg-yellow-60",
     color === "red" && "bg-red-60",
+
+    (((!leadingIcon && !trailingIcon) || (iconOnly)) && size === "lg") && "w-6 h-6 px-0",
+    (((!leadingIcon && !trailingIcon) || (iconOnly)) && size === "sm") && "w-5 h-5 px-0",
+
+    size === "sm" && "w-fit h-5 px-1.5 py-0.5 text-xs",
+    size === "lg" && "w-fit h-6 px-2 py-0.5 text-sm ",
+
+    rounded === "sm" && "rounded",
+    rounded === "full" && "rounded-full",
+    className
+  )
+
+  const iconClasses = classNames(
+    "text-white",
+    size === "sm" && "w-4 h-4",
+    size === "lg" && "w-5 h-5",
+
+    className
+  )
+
+  const leadingIconClass = classNames(
+    iconClasses,
+    !leadingIcon && "hidden",
+    (iconOnly && !trailingIcon) && "block",
+    (iconOnly && trailingIcon) && "hidden",
+
+    className
+  )
+
+  const trailingIconClass = classNames(
+    iconClasses,
+    !trailingIcon && "hidden",
+    iconOnly && "block",
+    className
+  )
+
+  const textClasses = classNames(
+    "text-white font-medium",
+    size === "sm" && "px-0.5",
+    size === "lg" && "px-1",
+    
+    iconOnly && "hidden",
+
     className
   )
 
   return (
     <div className={classes}>
-      <LeadingIcon className="w-8 h-8 text-white" />
-      <div className=" text-white">{children}</div>
-      <TrailingIcon className="w-8 h-8 text-white" />
+      <LeadingIcon className={leadingIconClass} />
+      <div className={textClasses}>{children}</div>
+      <TrailingIcon className={trailingIconClass} />
     </div>
   )
 }
@@ -45,7 +87,6 @@ Badge.defaultProps = {
   children: undefined,
   size: "lg",
   color: "primary",
-  saturation: true,
   rounded: "full",
   leadingIcon: true,
   trailingIcon: true,
@@ -70,7 +111,6 @@ Badge.propTypes = {
   ]),  
   LeadingIcon: PropTypes.object,
   TrailingIcon: PropTypes.object,
-  saturation: PropTypes.bool,
   rounded: PropTypes.oneOf(["none","sm","full",]),
   leadingIcon: PropTypes.bool,
   trailingIcon: PropTypes.bool,
