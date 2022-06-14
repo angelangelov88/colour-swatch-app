@@ -1,15 +1,15 @@
 import renderer from 'react-test-renderer'
 import {Tag} from "../Tag"
 
-it('should render a large size tag with dot, icon(remove) and children as text', () => {
+it('should render a large size tag with dot, red colour, icon(remove) and children as text', () => {
   const component = renderer.create(
   <Tag 
     children="Tag"
     size="lg"
+    color="red"
     dot={true}
     icon={true}
     iconType="remove"
-    iconOnly={false}
   />,
   );
   let tree = component.toJSON()
@@ -17,15 +17,15 @@ it('should render a large size tag with dot, icon(remove) and children as text',
 });
 
 
-it('should render a large size tag with icon(add) only', () => {
+it('should render a large size green tag with icon(add) and dot', () => {
   const component = renderer.create(
   <Tag 
     children="Tag"
     size="lg"
+    color="green"
     dot={true}
     icon={true}
     iconType="add"
-    iconOnly={true}
   />,
   );
   let tree = component.toJSON()
@@ -33,15 +33,15 @@ it('should render a large size tag with icon(add) only', () => {
 });
 
 
-it('should render a small size tag with dot, icon(remove) and children as text', () => {
+it('should render a small size teal tag with dot, icon(remove) and children as text', () => {
   const component = renderer.create(
   <Tag 
     children="Tag"
     size="sm"
+    color="teal"
     dot={true}
     icon={true}
     iconType="remove"
-    iconOnly={false}
   />,
   );
   let tree = component.toJSON()
@@ -49,15 +49,15 @@ it('should render a small size tag with dot, icon(remove) and children as text',
 });
 
 
-it('should render a large size tag with dot and children as text', () => {
+it('should render a large size yellow tag with dot and children as text', () => {
   const component = renderer.create(
   <Tag 
     children="Tag"
     size="lg"
+    color="yellow"
     dot={true}
     icon={false}
     iconType="remove"
-    iconOnly={false}
   />,
   );
   let tree = component.toJSON()
@@ -65,15 +65,15 @@ it('should render a large size tag with dot and children as text', () => {
 });
 
 
-it('should render a large size tag with icon(remove) and children as text', () => {
+it('should render a large size cyan tag with icon(remove) and children as text', () => {
   const component = renderer.create(
   <Tag 
     children="Tag"
     size="lg"
+    color="cyan"
     dot={false}
     icon={true}
     iconType="remove"
-    iconOnly={false}
   />,
   );
   let tree = component.toJSON()
@@ -86,10 +86,10 @@ it('should render a small size tag with children as text only (no icon or dot)',
   <Tag 
     children="Tag"
     size="sm"
+    color="cyan"
     dot={false}
     icon={false}
     iconType="remove"
-    iconOnly={false}
   />,
   );
   let tree = component.toJSON()
@@ -97,15 +97,15 @@ it('should render a small size tag with children as text only (no icon or dot)',
 });
 
 
-it('should render a large size tag with icon(add) and children as text', () => {
+it('should render a large size blue tag with icon(add) and children as text', () => {
   const component = renderer.create(
   <Tag 
     children="Tag"
     size="lg"
+    color="blue"
     dot={false}
     icon={true}
     iconType="add"
-    iconOnly={false}
   />,
   );
   let tree = component.toJSON()
@@ -113,15 +113,15 @@ it('should render a large size tag with icon(add) and children as text', () => {
 });
 
 
-it('should render a large size tag with dot, icon(remove) and text that states - Add me', () => {
+it('should render a large size tag with dot, lightblue colour, icon(remove) and text that states - Add me', () => {
   const component = renderer.create(
   <Tag 
     children="Add me"
     size="lg"
+    color="lightblue"
     dot={true}
     icon={true}
     iconType="remove"
-    iconOnly={false}
   />,
   );
   let tree = component.toJSON()
@@ -129,15 +129,15 @@ it('should render a large size tag with dot, icon(remove) and text that states -
 });
 
 
-it('should render a small size tag with dot and text', () => {
+it('should render a small size tag with primary colour, dot and text', () => {
   const component = renderer.create(
   <Tag 
     children="Add me"
     size="sm"
+    color="primary"
     dot={true}
     icon={false}
     iconType="remove"
-    iconOnly={false}
   />,
   );
   let tree = component.toJSON()
@@ -145,15 +145,15 @@ it('should render a small size tag with dot and text', () => {
 });
 
 
-it('should render a small size tag with text that states - Add me', () => {
+it('should render a small size purple tag with text that states - Add me', () => {
   const component = renderer.create(
   <Tag 
     children="Add me"
     size="sm"
+    color="purple"
     dot={false}
     icon={false}
     iconType="remove"
-    iconOnly={false}
   />,
   );
   let tree = component.toJSON()
@@ -161,15 +161,15 @@ it('should render a small size tag with text that states - Add me', () => {
 });
 
 
-it('should render a large size tag with dot and text added as div', () => {
+it('should render a large size purple tag with dot and text added as div', () => {
   const component = renderer.create(
   <Tag 
     children=""
     size="lg"
+    color="purple"
     dot={true}
     icon={false}
     iconType="remove"
-    iconOnly={false}
   >Add Tag</Tag>,
   );
   let tree = component.toJSON()

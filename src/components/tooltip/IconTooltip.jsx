@@ -2,7 +2,7 @@ import React from 'react'
 import classNames from 'classnames'
 import PropTypes from 'prop-types'
 
-const Tooltip = (props) => {
+const IconTooltip = (props) => {
   let {
     className,
     children,
@@ -64,14 +64,14 @@ const Tooltip = (props) => {
   )
 }
 
-Tooltip.defaultProps = {
+IconTooltip.defaultProps = {
   children: undefined,
   selected: "hover",
   pointerPosition: "bottom",
   arrowPosition: "centre"
 }
 
-Tooltip.propTypes = {
+IconTooltip.propTypes = {
   className: PropTypes.string,
   children: PropTypes.node,
   selected: PropTypes.oneOf(["hover", "click"]),
@@ -90,4 +90,4 @@ Tooltip.propTypes = {
   ]),
 }
 
-export { Tooltip }
+export { IconTooltip }

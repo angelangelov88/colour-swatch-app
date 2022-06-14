@@ -11,8 +11,6 @@ const Badge = (props) => {
     LeadingIcon,
     TrailingIcon,
     rounded,
-    leadingIcon,
-    trailingIcon,
     iconOnly
   } = props
 
@@ -32,63 +30,42 @@ const Badge = (props) => {
     color === "red" && "bg-red-60",
     rounded === "sm" && "rounded",
     rounded === "full" && "rounded-full",
-    (((!leadingIcon && !trailingIcon) || (iconOnly)) && size === "lg") && "w-6 h-6 px-0",
-    (((!leadingIcon && !trailingIcon) || (iconOnly)) && size === "sm") && "w-5 h-5 px-0",
+    (((!LeadingIcon && !TrailingIcon) || (iconOnly)) && size === "lg") && "w-6 h-6 px-0",
+    (((!LeadingIcon && !TrailingIcon) || (iconOnly)) && size === "sm") && "w-5 h-5 px-0",
     className
   )
 
   const iconClasses = classNames(
-    "text-white",
+    "text-white block",
     size === "sm" && "w-4 h-4",
-    size === "lg" && "w-5 h-5",
-    className
-  )
-
-  const leadingIconClass = classNames(
-    iconClasses,
-    !leadingIcon && "hidden",
-    (iconOnly && !trailingIcon) && "block",
-    (iconOnly && trailingIcon) && "hidden",
-    className
-  )
-
-  const trailingIconClass = classNames(
-    iconClasses,
-    !trailingIcon && "hidden",
-    iconOnly && "block",
-    className
+    size === "lg" && "w-5 h-5"
   )
 
   const textClasses = classNames(
     "text-white font-medium",
     size === "sm" && "px-0.5",
-    size === "lg" && "px-1",
-    iconOnly && "hidden",
-    className
+    size === "lg" && "px-1"
   )
 
   return (
     <div className={classes}>
-      <LeadingIcon className={leadingIconClass} />
-      <div className={textClasses}>{children}</div>
-      <TrailingIcon className={trailingIconClass} />
+      {LeadingIcon && <LeadingIcon className={iconClasses} />}
+      {!iconOnly && <div className={textClasses}>{children}</div>}
+      {TrailingIcon && <TrailingIcon className={iconClasses} />}
     </div>
   )
 }
 
 Badge.defaultProps = {
-  children: undefined,
   size: "lg",
   color: "primary",
   rounded: "full",
-  leadingIcon: true,
-  trailingIcon: true,
   iconOnly: false
 }
 
 Badge.propTypes = {
   className: PropTypes.string,
-  children: PropTypes.node,
+  children: PropTypes.string,
   size: PropTypes.oneOf(["sm","lg"]),
   color: PropTypes.oneOf([
     "gray",
@@ -101,12 +78,10 @@ Badge.propTypes = {
     "green",
     "yellow",
     "red",
-  ]),  
+  ]),
   LeadingIcon: PropTypes.object,
   TrailingIcon: PropTypes.object,
   rounded: PropTypes.oneOf(["none","sm","full"]),
-  leadingIcon: PropTypes.bool,
-  trailingIcon: PropTypes.bool,
   iconOnly: PropTypes.bool
 }
 

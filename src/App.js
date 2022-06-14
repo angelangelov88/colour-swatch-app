@@ -1,6 +1,6 @@
 import { ColourThemeSwatch } from "./components/colourThemeSwatch/ColourThemeSwatch";
 import { IdentifierIcon } from "./components/identifierIcon/IdentifierIcon";
-import { Tooltip } from "./components/tooltip/Tooltip";
+import { IconTooltip } from "./components/tooltip/IconTooltip";
 import { BanIconComponent } from "./components/banIconComponent/BanIconComponent";
 import { InformationCircleIcon, DocumentIcon, BellIcon, InboxIcon } from '@heroicons/react/outline'
 import { Tag } from "./components/tags/Tag";
@@ -22,7 +22,7 @@ function App() {
         status={true}
         initials="gJ"  
     /> */}
-      {/* <Tooltip
+      <IconTooltip
         selected="click"
         Icon={InformationCircleIcon}
         // clickOnText="Click here"
@@ -32,30 +32,35 @@ function App() {
         <h3 className="m-1 font-semibold">Info Header</h3>
         <p className="m-1 font-redhat">Please use this field to add additional information Please use this field to add additional information</p>
         <a href="https://test.com" className="m-1 text-blue-60 dark:text-blue-50">Link</a>
-      </Tooltip> */}
+      </IconTooltip>
       {/* <AddTag 
         // children="Remove Tag"
         // size="lg"
-        // icon="remove"
       /> */}
-      <Modal 
+      {/* <Tag 
+        children="Tag"
+        size="lg"
+        color="teal"
+        dot={true}
+        icon={true}
+        iconType="add"
+      /> */}
+      {/* <Modal 
         children="Hello there"
         title="New Document"
         infoTextColor="green"
         infoTextChildren={
           <p><span className="font-medium">Warning:</span> Warning text here</p> 
         }
-      />
+      /> */}
       {/* <Badge 
         children="1"
         className=""
         size="lg"
-        color="red"
+        color="teal"
         LeadingIcon={InboxIcon}
         TrailingIcon={BellIcon}
         rounded="full"
-        leadingIcon={true}
-        trailingIcon={true}
         iconOnly={false}
       />  */}
     </div>

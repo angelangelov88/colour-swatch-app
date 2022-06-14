@@ -11,8 +11,6 @@ it('should render with text 1, large size, blue colour, 2 icons(InboxIcon and Be
       LeadingIcon={InboxIcon}
       TrailingIcon={BellIcon}
       rounded="full"
-      leadingIcon={true}
-      trailingIcon={true}
       iconOnly={false}
   />
 );
@@ -28,10 +26,7 @@ it('should render with text 12, large size, red colour, 1 icon(InformationCircle
       size="lg"
       color="red"
       LeadingIcon={InformationCircleIcon}
-      TrailingIcon={BellIcon}
       rounded="full"
-      leadingIcon={true}
-      trailingIcon={false}
       iconOnly={false}
   />
 );
@@ -46,11 +41,8 @@ it('should render with no text, small size, green colour, 1 icon(DocumentIcon), 
       children=""
       size="sm"
       color="green"
-      LeadingIcon={InboxIcon}
       TrailingIcon={DocumentIcon}
       rounded="full"
-      leadingIcon={false}
-      trailingIcon={true}
       iconOnly={true}
   />
 );
@@ -66,10 +58,7 @@ it('should render with large size, blue colour, icon only and fully rounded', ()
       size="lg"
       color="blue"
       LeadingIcon={InboxIcon}
-      TrailingIcon={BellIcon}
       rounded="full"
-      leadingIcon={true}
-      trailingIcon={true}
       iconOnly={true}
   />
 );
@@ -87,8 +76,6 @@ it('should render with small size, cyan colour, 2 icons(DocumentIcon and InboxIc
       LeadingIcon={DocumentIcon}
       TrailingIcon={InboxIcon}
       rounded="none"
-      leadingIcon={true}
-      trailingIcon={true}
       iconOnly={false}
   />
 );
@@ -106,8 +93,6 @@ it('should render with text - Legal, small size, gray colour, 2 icons(InboxIcon 
       LeadingIcon={InboxIcon}
       TrailingIcon={BellIcon}
       rounded="none"
-      leadingIcon={true}
-      trailingIcon={true}
       iconOnly={false}
   />
 );
@@ -125,8 +110,6 @@ it('should render with large size, blue colour, 2 icons(InboxIcon and BellIcon),
       LeadingIcon={InboxIcon}
       TrailingIcon={BellIcon}
       rounded="sm"
-      leadingIcon={true}
-      trailingIcon={true}
       iconOnly={false}
   />
 );
@@ -141,11 +124,8 @@ it('should render with large size, yellow colour, 1 trailing icon(BellIcon), sm 
       children="1"
       size="lg"
       color="yellow"
-      LeadingIcon={InboxIcon}
       TrailingIcon={BellIcon}
       rounded="sm"
-      leadingIcon={false}
-      trailingIcon={true}
       iconOnly={false}
   />
 );
@@ -163,8 +143,6 @@ it('should render with large size, purple colour, 2 icons(InboxIcon and BellIcon
       LeadingIcon={InboxIcon}
       TrailingIcon={BellIcon}
       rounded="none"
-      leadingIcon={true}
-      trailingIcon={true}
       iconOnly={false}
   />
 );
@@ -173,17 +151,14 @@ it('should render with large size, purple colour, 2 icons(InboxIcon and BellIcon
 });
 
 
-it('should render with blue colour and one icon only and it should be the trailing one and fully rounded', () => {
+it('should render with blue colour and one icon only (trailing one) and fully rounded', () => {
   const component = renderer.create(
     <Badge 
       children="1"
       size="lg"
       color="blue"
-      LeadingIcon={InboxIcon}
       TrailingIcon={BellIcon}
       rounded="full"
-      leadingIcon={true}
-      trailingIcon={true}
       iconOnly={true}
   />
 );
@@ -199,10 +174,7 @@ it('should render with small size, red colour, 1 icon(InboxIcon as leading) and 
       size="sm"
       color="red"
       LeadingIcon={InboxIcon}
-      TrailingIcon={BellIcon}
       rounded="sm"
-      leadingIcon={true}
-      trailingIcon={false}
       iconOnly={false}
   />
 );
@@ -220,8 +192,6 @@ it('should render with small size, primary colour, 1 icon(DocumentIcon as traili
       LeadingIcon={InboxIcon}
       TrailingIcon={DocumentIcon}
       rounded="none"
-      leadingIcon={false}
-      trailingIcon={true}
       iconOnly={false}
   />
 );

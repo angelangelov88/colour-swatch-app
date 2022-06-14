@@ -16,7 +16,7 @@ const Tag = (props) => {
 
   
   const classes = classNames(
-    "font-ibm inline-flex items-center font-medium rounded-full pl-2",
+    "font-ibm inline-flex items-center min-w-max font-medium rounded-full pl-2",
     size === "sm" && "h-5 py-0.5 pr-0.5 text-xs",
     size === "lg" && "h-6 py-1 pr-1 text-sm",
     color === "primary" && "bg-primary-20 text-primary-90",
@@ -69,9 +69,9 @@ const Tag = (props) => {
     <div className={classes} tabIndex={0}>
       <span className={dotClasses}></span>
       <span className="mr-0.5">{children}</span>
-      {icon && 
+      {icon &&
         <div className={iconClasses}>
-          {iconType === "add" ? 
+          {iconType === "add" ?
             <PlusIcon />
           :
             <XIcon />
@@ -92,7 +92,7 @@ Tag.defaultProps = {
 }
 
 Tag.propTypes = {
-  children: PropTypes.node,
+  children: PropTypes.string,
   className: PropTypes.string,
   size: PropTypes.oneOf(["sm", "lg"]),
   color: PropTypes.oneOf([
