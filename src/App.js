@@ -11,11 +11,11 @@ import { Badge } from "./components/badge/Badge";
 
 function App() {
   return (
-    <div className="App m-4">
+    <div className="App m-40">
       {/* <ColourThemeSwatch color="yellow" /> */}
       {/* <IdentifierIcon 
-        color="purple"
-        size="lg"
+        color="green"
+        size="sm"
         type="icon"
         Icon={DocumentIcon}
         statusIndicator={true}
@@ -23,14 +23,14 @@ function App() {
         initials="gJ"  
     /> */}
       {/* <Tooltip
-        // selected="click"
+        selected="click"
         Icon={InformationCircleIcon}
         // clickOnText="Click here"
-        tooltipPosition="top"
+        pointerPosition="top"
         arrowPosition="centre"
       >
         <h3 className="m-1 font-semibold">Info Header</h3>
-        <p className="m-1 font-redhat">Please use this field to add additional information</p>
+        <p className="m-1 font-redhat">Please use this field to add additional information Please use this field to add additional information</p>
         <a href="https://test.com" className="m-1 text-blue-60 dark:text-blue-50">Link</a>
       </Tooltip> */}
       {/* <AddTag 

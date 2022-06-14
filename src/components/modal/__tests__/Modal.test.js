@@ -24,7 +24,7 @@ it('should render with red info text and title "My new title"', () => {
 });
 
 
-it('should render with green info text and heading in it saying: Test', () => {
+it('should render with yellow info text and heading in it saying: Test which is bold and warning text here', () => {
   const component = renderer.create(
   <Modal 
     infoTextColor="yellow"
