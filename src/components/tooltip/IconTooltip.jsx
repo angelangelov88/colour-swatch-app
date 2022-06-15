@@ -46,8 +46,9 @@ const IconTooltip = (props) => {
     (pointerPosition === "bottom" && arrowPosition === "right") && "bottom-10 -right-2 -ml-0.5 after:right-[7%] after:-bottom-[8px] after:border-b-0 after:border-t-white dark:after:border-t-gray-130",
     pointerPosition === "top" && "top-10 -left-[105px] -ml-0.5 after:left-[45%] after:-top-4 after:border-b-white after:border-t-8 dark:after:border-b-gray-130",
     pointerPosition === "left" && "max-w-2xl h-40 -top-[64px] left-10 after:-left-4 after:bottom-[43%] after:border-r-white after:border-t-10 after:border-l-8 dark:after:border-r-gray-130",
-    ((pointerPosition === "left" || "right") && charCount > 190) && "w-auto",
-    pointerPosition === "right" && "-top-[72px] -left-[260px] -mt-0.5 after:-right-5 after:bottom-[44%] after:border-b-8 after:border-l-white dark:after:border-l-gray-130",
+    ((pointerPosition === "left") && charCount > 190) && "w-auto",
+    ((pointerPosition === "right") && charCount > 190) && "w-auto -left-[682px]",
+    pointerPosition === "right" && "max-w-2xl h-40 -top-[62px] -left-[265px] -mt-0.5 after:-right-5 after:bottom-[44%] after:border-b-8 after:border-l-white dark:after:border-l-gray-130",
     className
   )
 
