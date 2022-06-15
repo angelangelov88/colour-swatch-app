@@ -1,61 +1,68 @@
 import renderer from 'react-test-renderer'
 import {Tooltip} from "../Tooltip"
-import { InformationCircleIcon } from '@heroicons/react/outline'
 
-it('should render with info icon', () => {
+it('should render with text to hover over and long html, ', () => {
   const component = renderer.create(
-  <Tooltip 
-    Icon={InformationCircleIcon}
-  />,
-  );
+    <Tooltip 
+      hoverText="Click here"
+    >
+      <h3 className="m-1 font-semibold">Info Header</h3>
+      <p className="m-1 font-redhat">Please use this field to add additional information Please use this field to add additional information Please use this field to add additional information Please use this field to add additional information Please use this field to add additional information Please use this field to add additional information Please use this field to add additional information Please use this field to add additional information </p>
+      <a href="https://test.com" className="m-1 text-blue-60 dark:text-blue-50">Link</a>
+    </Tooltip>  
+    );
   let tree = component.toJSON()
   expect(tree).toMatchSnapshot()
 });
 
-it('should render with info icon and under the icon', () => {
+
+it('should render with text to hover over and little text as children, ', () => {
   const component = renderer.create(
-  <Tooltip 
-    Icon={InformationCircleIcon}
-    tooltipPosition="top"
-  />,
-  );
+    <Tooltip 
+      hoverText="Click for tooltip"
+    >
+      <h3 className="m-1 font-semibold">Info Header</h3>
+      <p className="m-1 font-redhat">Please use this field to add additional information Please use this field to add additional information </p>
+      <a href="https://test.com" className="m-1 text-blue-60 dark:text-blue-50">Link</a>       
+    </Tooltip>  
+    );
   let tree = component.toJSON()
   expect(tree).toMatchSnapshot()
-})
+});
 
-it('should render with text instead of icon', () => {
+
+it('should render with text to hover over and text as children in html, ', () => {
   const component = renderer.create(
-  <Tooltip 
-    clickOnText="Click here"
-  />,
-  );
+    <Tooltip 
+      hoverText="Click for tooltip"
+    >
+      <p className="m-1 font-redhat">Please use this field to add additional information </p>
+    </Tooltip>    
+    );
   let tree = component.toJSON()
   expect(tree).toMatchSnapshot()
-})
+});
 
 
-it('should render on click and with icon', () => {
+it('should render with text to hover over and text as children prop, ', () => {
   const component = renderer.create(
-  <Tooltip 
-    selected="click"
-    Icon={InformationCircleIcon}
-  />,
-  );
+    <Tooltip 
+      hoverText="Click for tooltip"
+      children="Please use this field to add additional information"
+    />    
+    );
   let tree = component.toJSON()
   expect(tree).toMatchSnapshot()
-})
+});
 
-
-it('should render with hover and text', () => {
+it('should render with long text as text on hover and long text as children, ', () => {
   const component = renderer.create(
-  <Tooltip 
-    selected="hover"
-    clickOnText="Click here"
-  />,
-  );
+    <Tooltip 
+      hoverText="Please use this field to add additional information"
+      children="Please use this field to add additional information Please use this field to add additional information Please use this field to add additional informationPlease use this field to add additional informationPlease use this field to add additional informationPlease use this field to add additional informationPlease use this field to add additional information Please use this field to add additional informationPlease use this field to add additional informationPlease use this field to add additional informationPlease use this field to add additional information"
+    />    
+    );
   let tree = component.toJSON()
   expect(tree).toMatchSnapshot()
-})
-
-
+});
 

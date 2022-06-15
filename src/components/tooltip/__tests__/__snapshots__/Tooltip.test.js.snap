@@ -1,0 +1,155 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render with long text as text on hover and long text as children,  1`] = `
+<div
+  className="relative pt-2 font-ibm text-gray-50 group hover:text-gray-70"
+  onMouseMove={[Function]}
+>
+  <div
+    className="cursor-pointer w-max"
+  >
+    Please use this field to add additional information
+  </div>
+  <div
+    className="hidden absolute w-fit max-w-xs flex-col justify-evenly items-center rounded-lg shadow-lg p-2 bg-white dark:bg-gray-130 text-gray-80 dark:text-gray-10 text-sm text-center group-hover:flex"
+    style={
+      Object {
+        "left": "undefinedpx",
+        "top": "undefinedpx",
+      }
+    }
+  >
+    Please use this field to add additional information Please use this field to add additional information Please use this field to add additional informationPlease use this field to add additional informationPlease use this field to add additional informationPlease use this field to add additional informationPlease use this field to add additional information Please use this field to add additional informationPlease use this field to add additional informationPlease use this field to add additional informationPlease use this field to add additional information
+  </div>
+</div>
+`;
+
+exports[`should render with text to hover over and little text as children,  1`] = `
+<div
+  className="relative pt-2 font-ibm text-gray-50 group hover:text-gray-70"
+  onMouseMove={[Function]}
+>
+  <div
+    className="cursor-pointer w-max"
+  >
+    Click for tooltip
+  </div>
+  <div
+    className="hidden absolute w-fit max-w-xs flex-col justify-evenly items-center rounded-lg shadow-lg p-2 bg-white dark:bg-gray-130 text-gray-80 dark:text-gray-10 text-sm text-center group-hover:flex"
+    style={
+      Object {
+        "left": "undefinedpx",
+        "top": "undefinedpx",
+      }
+    }
+  >
+    <h3
+      className="m-1 font-semibold"
+    >
+      Info Header
+    </h3>
+    <p
+      className="m-1 font-redhat"
+    >
+      Please use this field to add additional information Please use this field to add additional information 
+    </p>
+    <a
+      className="m-1 text-blue-60 dark:text-blue-50"
+      href="https://test.com"
+    >
+      Link
+    </a>
+  </div>
+</div>
+`;
+
+exports[`should render with text to hover over and long html,  1`] = `
+<div
+  className="relative pt-2 font-ibm text-gray-50 group hover:text-gray-70"
+  onMouseMove={[Function]}
+>
+  <div
+    className="cursor-pointer w-max"
+  >
+    Click here
+  </div>
+  <div
+    className="hidden absolute w-fit max-w-xs flex-col justify-evenly items-center rounded-lg shadow-lg p-2 bg-white dark:bg-gray-130 text-gray-80 dark:text-gray-10 text-sm text-center group-hover:flex"
+    style={
+      Object {
+        "left": "undefinedpx",
+        "top": "undefinedpx",
+      }
+    }
+  >
+    <h3
+      className="m-1 font-semibold"
+    >
+      Info Header
+    </h3>
+    <p
+      className="m-1 font-redhat"
+    >
+      Please use this field to add additional information Please use this field to add additional information Please use this field to add additional information Please use this field to add additional information Please use this field to add additional information Please use this field to add additional information Please use this field to add additional information Please use this field to add additional information 
+    </p>
+    <a
+      className="m-1 text-blue-60 dark:text-blue-50"
+      href="https://test.com"
+    >
+      Link
+    </a>
+  </div>
+</div>
+`;
+
+exports[`should render with text to hover over and text as children in html,  1`] = `
+<div
+  className="relative pt-2 font-ibm text-gray-50 group hover:text-gray-70"
+  onMouseMove={[Function]}
+>
+  <div
+    className="cursor-pointer w-max"
+  >
+    Click for tooltip
+  </div>
+  <div
+    className="hidden absolute w-fit max-w-xs flex-col justify-evenly items-center rounded-lg shadow-lg p-2 bg-white dark:bg-gray-130 text-gray-80 dark:text-gray-10 text-sm text-center group-hover:flex"
+    style={
+      Object {
+        "left": "undefinedpx",
+        "top": "undefinedpx",
+      }
+    }
+  >
+    <p
+      className="m-1 font-redhat"
+    >
+      Please use this field to add additional information 
+    </p>
+  </div>
+</div>
+`;
+
+exports[`should render with text to hover over and text as children prop,  1`] = `
+<div
+  className="relative pt-2 font-ibm text-gray-50 group hover:text-gray-70"
+  onMouseMove={[Function]}
+>
+  <div
+    className="cursor-pointer w-max"
+  >
+    Click for tooltip
+  </div>
+  <div
+    className="hidden absolute w-fit max-w-xs flex-col justify-evenly items-center rounded-lg shadow-lg p-2 bg-white dark:bg-gray-130 text-gray-80 dark:text-gray-10 text-sm text-center group-hover:flex"
+    style={
+      Object {
+        "left": "undefinedpx",
+        "top": "undefinedpx",
+      }
+    }
+  >
+    Please use this field to add additional information
+  </div>
+</div>
+`;

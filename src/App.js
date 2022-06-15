@@ -1,13 +1,13 @@
 import { ColourThemeSwatch } from "./components/colourThemeSwatch/ColourThemeSwatch";
 import { IdentifierIcon } from "./components/identifierIcon/IdentifierIcon";
 import { IconTooltip } from "./components/tooltip/IconTooltip";
+import { Tooltip } from "./components/tooltip/Tooltip";
 import { BanIconComponent } from "./components/banIconComponent/BanIconComponent";
 import { InformationCircleIcon, DocumentIcon, BellIcon, InboxIcon } from '@heroicons/react/outline'
 import { Tag } from "./components/tags/Tag";
 import { AddTag } from "./components/tags/AddTag";
 import { Modal } from "./components/modal/Modal";
 import { Badge } from "./components/badge/Badge";
-
 
 function App() {
   return (
@@ -22,17 +22,30 @@ function App() {
         status={true}
         initials="gJ"  
     /> */}
-      <IconTooltip
-        selected="click"
+
+      {/* <IconTooltip
+        // selected="click"
         Icon={InformationCircleIcon}
-        // clickOnText="Click here"
-        pointerPosition="top"
+        pointerPosition="left"
         arrowPosition="centre"
       >
         <h3 className="m-1 font-semibold">Info Header</h3>
-        <p className="m-1 font-redhat">Please use this field to add additional information Please use this field to add additional information</p>
+        <p className="m-1 font-redhat">Please use this field to add additional information Please use this field to add additional information </p>
         <a href="https://test.com" className="m-1 text-blue-60 dark:text-blue-50">Link</a>
-      </IconTooltip>
+      </IconTooltip> */}
+
+
+      <Tooltip 
+        // hoverText="Click here"
+      >
+        <h3 className="m-1 font-semibold">Info Header</h3>
+        <p className="m-1 font-redhat">Please use this field to add additional information Please use this field to add additional information Please use this field to add additional information Please use this field to add additional information Please use this field to add additional information Please use this field to add additional information Please use this field to add additional information Please use this field to add additional information </p>
+        <a href="https://test.com" className="m-1 text-blue-60 dark:text-blue-50">Link</a>
+      </Tooltip>
+
+
+
+
       {/* <AddTag 
         // children="Remove Tag"
         // size="lg"

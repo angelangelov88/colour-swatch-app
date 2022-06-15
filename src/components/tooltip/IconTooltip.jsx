@@ -8,7 +8,6 @@ const IconTooltip = (props) => {
     children,
     selected,
     Icon,
-    clickOnText,
     pointerPosition,
     arrowPosition
   } = props
@@ -22,7 +21,7 @@ const IconTooltip = (props) => {
   }
 
   const classes = classNames(
-    "relative font-ibm pt-2 text-gray-50 group",
+    "relative w-10 p-2 flex font-ibm text-gray-50 group",
     clicked && "text-gray-70",
     selected === "hover" && "hover:text-gray-70",
     className
@@ -31,34 +30,24 @@ const IconTooltip = (props) => {
   const tooltipClasses = classNames(
     clicked ? "flex" : "hidden",
     selected === "hover" && "group-hover:flex",
-    "bg-white dark:bg-gray-130 text-gray-80 dark:text-gray-10 text-sm text-center p-2",
-    "absolute max-w-xs flex-col justify-evenly items-center rounded-lg shadow-lg",
+    "absolute w-64 flex-col justify-evenly items-center p-2 rounded-lg shadow-lg bg-white dark:bg-gray-130 text-gray-80 dark:text-gray-10 text-sm text-center",
     "after:absolute after:content:none after:border-[10px] after:border-transparent",
-    (pointerPosition === "bottom" && arrowPosition === "centre") && "bottom-8 -left-11 -ml-0.5 after:left-[40.5%] after:-bottom-[8px] after:border-b-0 after:border-t-white dark:after:border-t-gray-130",
-    (pointerPosition === "bottom" && arrowPosition === "left") && "bottom-8 -left-2 after:left-[7%] after:-bottom-[8px] after:border-b-0 after:border-t-white dark:after:border-t-gray-130",
-    (pointerPosition === "bottom" && arrowPosition === "right") && "bottom-8 -right-2 -ml-0.5 after:right-[7%] after:-bottom-[8px] after:border-b-0 after:border-t-white dark:after:border-t-gray-130",
-    pointerPosition === "top" && "top-8 -left-11 -ml-0.5 after:left-[41%] after:-top-4 after:border-b-white after:border-t-8 dark:after:border-b-gray-130",
-    pointerPosition === "left" && "-top-12 left-8 after:-left-4 after:bottom-[40%] after:border-r-white after:border-t-10 after:border-l-8 dark:after:border-r-gray-130",
-    pointerPosition === "right" && "-top-11 right-8 -mt-0.5 after:-right-5 after:bottom-[43%] after:border-b-8 after:border-l-white dark:after:border-l-gray-130",
+    (pointerPosition === "bottom" && arrowPosition === "centre") && "bottom-10 -left-[108px] -ml-0.5 after:left-[46%] after:-bottom-[8px] after:border-b-0 after:border-t-white dark:after:border-t-gray-130",
+    (pointerPosition === "bottom" && arrowPosition === "left") && "bottom-10 -left-[10px] after:left-[7%] after:-bottom-[8px] after:border-b-0 after:border-t-white dark:after:border-t-gray-130",
+    (pointerPosition === "bottom" && arrowPosition === "right") && "bottom-10 -right-2 -ml-0.5 after:right-[7%] after:-bottom-[8px] after:border-b-0 after:border-t-white dark:after:border-t-gray-130",
+    pointerPosition === "top" && "top-10 -left-[105px] -ml-0.5 after:left-[45%] after:-top-4 after:border-b-white after:border-t-8 dark:after:border-b-gray-130",
+    pointerPosition === "left" && "-top-[50px] left-10 after:-left-4 after:bottom-[43%] after:border-r-white after:border-t-10 after:border-l-8 dark:after:border-r-gray-130",
+    pointerPosition === "right" && "-top-[50px] right-12 -mt-0.5 after:-right-5 after:bottom-[44%] after:border-b-8 after:border-l-white dark:after:border-l-gray-130",
     className
   )
 
+
   return (
     <div className={classes}>
-      {Icon &&
         <Icon
           className="w-5 cursor-pointer"
           onClick={handleClick}
         />
-      }
-      {clickOnText &&
-        <div
-          className="cursor-pointer w-max"
-          onClick={handleClick}
-        >
-          {clickOnText}
-        </div>
-      }
       <div className={tooltipClasses}>{children}</div>
     </div>
   )
@@ -76,7 +65,6 @@ IconTooltip.propTypes = {
   children: PropTypes.node,
   selected: PropTypes.oneOf(["hover", "click"]),
   Icon: PropTypes.object,
-  clickOnText: PropTypes.string,
   pointerPosition: PropTypes.oneOf([
     "bottom",
     "top",

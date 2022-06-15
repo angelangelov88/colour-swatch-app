@@ -1,0 +1,431 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render on click and with info icon 1`] = `
+<div
+  className="relative w-10 p-2 flex font-ibm text-gray-50 group"
+>
+  <svg
+    aria-hidden="true"
+    className="w-5 cursor-pointer"
+    fill="none"
+    onClick={[Function]}
+    stroke="currentColor"
+    strokeWidth={2}
+    viewBox="0 0 24 24"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <path
+      d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    />
+  </svg>
+  <div
+    className="hidden absolute w-64 flex-col justify-evenly items-center p-2 rounded-lg shadow-lg bg-white dark:bg-gray-130 text-gray-80 dark:text-gray-10 text-sm text-center after:absolute after:content:none after:border-[10px] after:border-transparent bottom-10 -left-[108px] -ml-0.5 after:left-[46%] after:-bottom-[8px] after:border-b-0 after:border-t-white dark:after:border-t-gray-130"
+  >
+    Tooltip text
+  </div>
+</div>
+`;
+
+exports[`should render with click, bell icon and text with html on top with left arrow 1`] = `
+<div
+  className="relative w-10 p-2 flex font-ibm text-gray-50 group"
+>
+  <svg
+    aria-hidden="true"
+    className="w-5 cursor-pointer"
+    fill="none"
+    onClick={[Function]}
+    stroke="currentColor"
+    strokeWidth={2}
+    viewBox="0 0 24 24"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <path
+      d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    />
+  </svg>
+  <div
+    className="hidden absolute w-64 flex-col justify-evenly items-center p-2 rounded-lg shadow-lg bg-white dark:bg-gray-130 text-gray-80 dark:text-gray-10 text-sm text-center after:absolute after:content:none after:border-[10px] after:border-transparent bottom-10 -left-[10px] after:left-[7%] after:-bottom-[8px] after:border-b-0 after:border-t-white dark:after:border-t-gray-130"
+  >
+    <h3
+      className="m-1 font-semibold"
+    >
+      Info Header
+    </h3>
+    <p
+      className="m-1 font-redhat"
+    >
+      Please use this field to add additional information Please use this field to add additional information 
+    </p>
+    <a
+      className="m-1 text-blue-60 dark:text-blue-50"
+      href="https://test.com"
+    >
+      Link
+    </a>
+  </div>
+</div>
+`;
+
+exports[`should render with click, inbox icon and html on the left 1`] = `
+<div
+  className="relative w-10 p-2 flex font-ibm text-gray-50 group"
+>
+  <svg
+    aria-hidden="true"
+    className="w-5 cursor-pointer"
+    fill="none"
+    onClick={[Function]}
+    stroke="currentColor"
+    strokeWidth={2}
+    viewBox="0 0 24 24"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <path
+      d="M20 13V6a2 2 0 00-2-2H6a2 2 0 00-2 2v7m16 0v5a2 2 0 01-2 2H6a2 2 0 01-2-2v-5m16 0h-2.586a1 1 0 00-.707.293l-2.414 2.414a1 1 0 01-.707.293h-3.172a1 1 0 01-.707-.293l-2.414-2.414A1 1 0 006.586 13H4"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    />
+  </svg>
+  <div
+    className="hidden absolute w-64 flex-col justify-evenly items-center p-2 rounded-lg shadow-lg bg-white dark:bg-gray-130 text-gray-80 dark:text-gray-10 text-sm text-center after:absolute after:content:none after:border-[10px] after:border-transparent -top-[50px] right-12 -mt-0.5 after:-right-5 after:bottom-[44%] after:border-b-8 after:border-l-white dark:after:border-l-gray-130"
+  >
+    <h1>
+      Title
+    </h1>
+    <p>
+      This is the content
+    </p>
+    <p>
+      This is the content
+    </p>
+    <p>
+      This is the content
+    </p>
+    <a
+      href="#"
+    >
+      Link supposed to be here
+    </a>
+  </div>
+</div>
+`;
+
+exports[`should render with hover(default), info icon and text on the top 1`] = `
+<div
+  className="relative w-10 p-2 flex font-ibm text-gray-50 group hover:text-gray-70"
+>
+  <svg
+    aria-hidden="true"
+    className="w-5 cursor-pointer"
+    fill="none"
+    onClick={[Function]}
+    stroke="currentColor"
+    strokeWidth={2}
+    viewBox="0 0 24 24"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <path
+      d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    />
+  </svg>
+  <div
+    className="hidden group-hover:flex absolute w-64 flex-col justify-evenly items-center p-2 rounded-lg shadow-lg bg-white dark:bg-gray-130 text-gray-80 dark:text-gray-10 text-sm text-center after:absolute after:content:none after:border-[10px] after:border-transparent bottom-10 -left-[108px] -ml-0.5 after:left-[46%] after:-bottom-[8px] after:border-b-0 after:border-t-white dark:after:border-t-gray-130"
+  >
+    Tooltip Text
+  </div>
+</div>
+`;
+
+exports[`should render with hover, Inbox icon, text and position bottom of the tooltip 1`] = `
+<div
+  className="relative w-10 p-2 flex font-ibm text-gray-50 group hover:text-gray-70"
+>
+  <svg
+    aria-hidden="true"
+    className="w-5 cursor-pointer"
+    fill="none"
+    onClick={[Function]}
+    stroke="currentColor"
+    strokeWidth={2}
+    viewBox="0 0 24 24"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <path
+      d="M20 13V6a2 2 0 00-2-2H6a2 2 0 00-2 2v7m16 0v5a2 2 0 01-2 2H6a2 2 0 01-2-2v-5m16 0h-2.586a1 1 0 00-.707.293l-2.414 2.414a1 1 0 01-.707.293h-3.172a1 1 0 01-.707-.293l-2.414-2.414A1 1 0 006.586 13H4"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    />
+  </svg>
+  <div
+    className="hidden group-hover:flex absolute w-64 flex-col justify-evenly items-center p-2 rounded-lg shadow-lg bg-white dark:bg-gray-130 text-gray-80 dark:text-gray-10 text-sm text-center after:absolute after:content:none after:border-[10px] after:border-transparent top-10 -left-[105px] -ml-0.5 after:left-[45%] after:-top-4 after:border-b-white after:border-t-8 dark:after:border-b-gray-130"
+  >
+    Tooltip Text
+  </div>
+</div>
+`;
+
+exports[`should render with hover, bell icon and text on top with left arrow 1`] = `
+<div
+  className="relative w-10 p-2 flex font-ibm text-gray-50 group hover:text-gray-70"
+>
+  <svg
+    aria-hidden="true"
+    className="w-5 cursor-pointer"
+    fill="none"
+    onClick={[Function]}
+    stroke="currentColor"
+    strokeWidth={2}
+    viewBox="0 0 24 24"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <path
+      d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    />
+  </svg>
+  <div
+    className="hidden group-hover:flex absolute w-64 flex-col justify-evenly items-center p-2 rounded-lg shadow-lg bg-white dark:bg-gray-130 text-gray-80 dark:text-gray-10 text-sm text-center after:absolute after:content:none after:border-[10px] after:border-transparent bottom-10 -left-[10px] after:left-[7%] after:-bottom-[8px] after:border-b-0 after:border-t-white dark:after:border-t-gray-130"
+  >
+    Tooltip Text
+  </div>
+</div>
+`;
+
+exports[`should render with hover, document icon and text on top with right arrow 1`] = `
+<div
+  className="relative w-10 p-2 flex font-ibm text-gray-50 group hover:text-gray-70"
+>
+  <svg
+    aria-hidden="true"
+    className="w-5 cursor-pointer"
+    fill="none"
+    onClick={[Function]}
+    stroke="currentColor"
+    strokeWidth={2}
+    viewBox="0 0 24 24"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <path
+      d="M7 21h10a2 2 0 002-2V9.414a1 1 0 00-.293-.707l-5.414-5.414A1 1 0 0012.586 3H7a2 2 0 00-2 2v14a2 2 0 002 2z"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    />
+  </svg>
+  <div
+    className="hidden group-hover:flex absolute w-64 flex-col justify-evenly items-center p-2 rounded-lg shadow-lg bg-white dark:bg-gray-130 text-gray-80 dark:text-gray-10 text-sm text-center after:absolute after:content:none after:border-[10px] after:border-transparent bottom-10 -right-2 -ml-0.5 after:right-[7%] after:-bottom-[8px] after:border-b-0 after:border-t-white dark:after:border-t-gray-130"
+  >
+    Tooltip Text
+  </div>
+</div>
+`;
+
+exports[`should render with hover, document icon, text as html and pointerPosition bottom 1`] = `
+<div
+  className="relative w-10 p-2 flex font-ibm text-gray-50 group hover:text-gray-70"
+>
+  <svg
+    aria-hidden="true"
+    className="w-5 cursor-pointer"
+    fill="none"
+    onClick={[Function]}
+    stroke="currentColor"
+    strokeWidth={2}
+    viewBox="0 0 24 24"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <path
+      d="M7 21h10a2 2 0 002-2V9.414a1 1 0 00-.293-.707l-5.414-5.414A1 1 0 0012.586 3H7a2 2 0 00-2 2v14a2 2 0 002 2z"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    />
+  </svg>
+  <div
+    className="hidden group-hover:flex absolute w-64 flex-col justify-evenly items-center p-2 rounded-lg shadow-lg bg-white dark:bg-gray-130 text-gray-80 dark:text-gray-10 text-sm text-center after:absolute after:content:none after:border-[10px] after:border-transparent bottom-10 -left-[108px] -ml-0.5 after:left-[46%] after:-bottom-[8px] after:border-b-0 after:border-t-white dark:after:border-t-gray-130"
+  >
+    <h1>
+      Title
+    </h1>
+    <p>
+      This is a paragraph
+    </p>
+    <a
+      href="#"
+    >
+      Link to nowhere
+    </a>
+  </div>
+</div>
+`;
+
+exports[`should render with hover, document icon, text as html and pointerPosition bottom with arrow position right 1`] = `
+<div
+  className="relative w-10 p-2 flex font-ibm text-gray-50 group hover:text-gray-70"
+>
+  <svg
+    aria-hidden="true"
+    className="w-5 cursor-pointer"
+    fill="none"
+    onClick={[Function]}
+    stroke="currentColor"
+    strokeWidth={2}
+    viewBox="0 0 24 24"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <path
+      d="M7 21h10a2 2 0 002-2V9.414a1 1 0 00-.293-.707l-5.414-5.414A1 1 0 0012.586 3H7a2 2 0 00-2 2v14a2 2 0 002 2z"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    />
+  </svg>
+  <div
+    className="hidden group-hover:flex absolute w-64 flex-col justify-evenly items-center p-2 rounded-lg shadow-lg bg-white dark:bg-gray-130 text-gray-80 dark:text-gray-10 text-sm text-center after:absolute after:content:none after:border-[10px] after:border-transparent bottom-10 -right-2 -ml-0.5 after:right-[7%] after:-bottom-[8px] after:border-b-0 after:border-t-white dark:after:border-t-gray-130"
+  >
+    <h1>
+      Title
+    </h1>
+    <p>
+      This is a paragraph
+    </p>
+    <a
+      href="#"
+    >
+      Link to nowhere
+    </a>
+  </div>
+</div>
+`;
+
+exports[`should render with hover, info icon and text on the right of the tooltip(left pointerPosition) 1`] = `
+<div
+  className="relative w-10 p-2 flex font-ibm text-gray-50 group hover:text-gray-70"
+>
+  <svg
+    aria-hidden="true"
+    className="w-5 cursor-pointer"
+    fill="none"
+    onClick={[Function]}
+    stroke="currentColor"
+    strokeWidth={2}
+    viewBox="0 0 24 24"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <path
+      d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    />
+  </svg>
+  <div
+    className="hidden group-hover:flex absolute w-64 flex-col justify-evenly items-center p-2 rounded-lg shadow-lg bg-white dark:bg-gray-130 text-gray-80 dark:text-gray-10 text-sm text-center after:absolute after:content:none after:border-[10px] after:border-transparent -top-[50px] left-10 after:-left-4 after:bottom-[43%] after:border-r-white after:border-t-10 after:border-l-8 dark:after:border-r-gray-130"
+  >
+    <h3
+      className="m-1 font-semibold"
+    >
+      Info Header
+    </h3>
+    <p
+      className="m-1 font-redhat"
+    >
+      Please use this field to add additional information Please use this field to add additional information 
+    </p>
+    <a
+      className="m-1 text-blue-60 dark:text-blue-50"
+      href="https://test.com"
+    >
+      Link
+    </a>
+  </div>
+</div>
+`;
+
+exports[`should render with info icon and long text 1`] = `
+<div
+  className="relative w-10 p-2 flex font-ibm text-gray-50 group hover:text-gray-70"
+>
+  <svg
+    aria-hidden="true"
+    className="w-5 cursor-pointer"
+    fill="none"
+    onClick={[Function]}
+    stroke="currentColor"
+    strokeWidth={2}
+    viewBox="0 0 24 24"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <path
+      d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    />
+  </svg>
+  <div
+    className="hidden group-hover:flex absolute w-64 flex-col justify-evenly items-center p-2 rounded-lg shadow-lg bg-white dark:bg-gray-130 text-gray-80 dark:text-gray-10 text-sm text-center after:absolute after:content:none after:border-[10px] after:border-transparent bottom-10 -left-[108px] -ml-0.5 after:left-[46%] after:-bottom-[8px] after:border-b-0 after:border-t-white dark:after:border-t-gray-130"
+  >
+    Please use this field to add additional information Please use this field to add additional information Please use this field to add additional information Please use this field to add additional information Please use this field to add additional information Please use this field to add additional information Please use this field to add additional information Please use this field to add additional information Please use this field to add additional information Please use this field to add additional information Please use this field to add additional information Please use this field to add additional information 
+  </div>
+</div>
+`;
+
+exports[`should render with info icon, pointerPosition top of the icon and the text in children 1`] = `
+<div
+  className="relative w-10 p-2 flex font-ibm text-gray-50 group hover:text-gray-70"
+>
+  <svg
+    aria-hidden="true"
+    className="w-5 cursor-pointer"
+    fill="none"
+    onClick={[Function]}
+    stroke="currentColor"
+    strokeWidth={2}
+    viewBox="0 0 24 24"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <path
+      d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    />
+  </svg>
+  <div
+    className="hidden group-hover:flex absolute w-64 flex-col justify-evenly items-center p-2 rounded-lg shadow-lg bg-white dark:bg-gray-130 text-gray-80 dark:text-gray-10 text-sm text-center after:absolute after:content:none after:border-[10px] after:border-transparent top-10 -left-[105px] -ml-0.5 after:left-[45%] after:-top-4 after:border-b-white after:border-t-8 dark:after:border-b-gray-130"
+  >
+    Tooltip Text
+  </div>
+</div>
+`;
+
+exports[`should render with info icon, text and pointerPosition default/bottom 1`] = `
+<div
+  className="relative w-10 p-2 flex font-ibm text-gray-50 group hover:text-gray-70"
+>
+  <svg
+    aria-hidden="true"
+    className="w-5 cursor-pointer"
+    fill="none"
+    onClick={[Function]}
+    stroke="currentColor"
+    strokeWidth={2}
+    viewBox="0 0 24 24"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <path
+      d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    />
+  </svg>
+  <div
+    className="hidden group-hover:flex absolute w-64 flex-col justify-evenly items-center p-2 rounded-lg shadow-lg bg-white dark:bg-gray-130 text-gray-80 dark:text-gray-10 text-sm text-center after:absolute after:content:none after:border-[10px] after:border-transparent bottom-10 -left-[108px] -ml-0.5 after:left-[46%] after:-bottom-[8px] after:border-b-0 after:border-t-white dark:after:border-t-gray-130"
+  >
+    Tooltip Text
+  </div>
+</div>
+`;
