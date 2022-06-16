@@ -1,11 +1,11 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`should render with default values - primary color, lg, initials, status online but have initials rt instead of the default 1`] = `
+exports[`should render with color blue 1`] = `
 <div
-  className="flex items-center justify-center relative rounded-full font-ibm text-white uppercase w-11 h-11 text-xl bg-primary-50"
+  className="flex items-center justify-center relative rounded-full font-ibm text-white uppercase w-11 h-11 text-xl bg-blue-50"
 >
   <span>
-    Rt
+    kl
   </span>
   <div
     className="absolute bottom-0 right-0 rounded-full  outline-2 outline outline-white w-2.5 h-2.5 bg-green-50"
@@ -13,186 +13,256 @@ exports[`should render with default values - primary color, lg, initials, status
 </div>
 `;
 
-exports[`should render with initals RR, default color, small size, and status offline/gray/false 1`] = `
+exports[`should render with color cyan 1`] = `
 <div
-  className="flex items-center justify-center relative rounded-full font-ibm text-white uppercase w-9 h-9 text-base bg-primary-50"
+  className="flex items-center justify-center relative rounded-full font-ibm text-white uppercase w-11 h-11 text-xl bg-cyan-60"
 >
   <span>
-    RR
+    kl
   </span>
   <div
-    className="absolute bottom-0 right-0 rounded-full  outline-2 outline outline-white w-2 h-2 bg-gray-30"
+    className="absolute bottom-0 right-0 rounded-full  outline-2 outline outline-white w-2.5 h-2.5 bg-green-50"
   />
 </div>
 `;
 
-exports[`should render with props color="blue" size="sm" type="icon" Icon={DocumentIcon} statusIndicator={true} status={true} 1`] = `
+exports[`should render with color gray 1`] = `
 <div
-  className="flex items-center justify-center relative rounded-full font-ibm text-white uppercase w-9 h-9 text-base bg-blue-50"
+  className="flex items-center justify-center relative rounded-full font-ibm text-white uppercase w-11 h-11 text-xl bg-gray-60"
 >
-  <svg
-    aria-hidden="true"
-    className="w-full p-2"
-    fill="none"
-    stroke="currentColor"
-    strokeWidth={2}
-    viewBox="0 0 24 24"
-    xmlns="http://www.w3.org/2000/svg"
-  >
-    <path
-      d="M7 21h10a2 2 0 002-2V9.414a1 1 0 00-.293-.707l-5.414-5.414A1 1 0 0012.586 3H7a2 2 0 00-2 2v14a2 2 0 002 2z"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-    />
-  </svg>
+  <span>
+    kl
+  </span>
+  <div
+    className="absolute bottom-0 right-0 rounded-full  outline-2 outline outline-white w-2.5 h-2.5 bg-green-50"
+  />
+</div>
+`;
+
+exports[`should render with color green 1`] = `
+<div
+  className="flex items-center justify-center relative rounded-full font-ibm text-white uppercase w-11 h-11 text-xl bg-green-60"
+>
+  <span>
+    kl
+  </span>
+  <div
+    className="absolute bottom-0 right-0 rounded-full  outline-2 outline outline-white w-2.5 h-2.5 bg-green-50"
+  />
+</div>
+`;
+
+exports[`should render with color lightblue 1`] = `
+<div
+  className="flex items-center justify-center relative rounded-full font-ibm text-white uppercase w-11 h-11 text-xl bg-lightblue-60"
+>
+  <span>
+    kl
+  </span>
+  <div
+    className="absolute bottom-0 right-0 rounded-full  outline-2 outline outline-white w-2.5 h-2.5 bg-green-50"
+  />
+</div>
+`;
+
+exports[`should render with color primary 1`] = `
+<div
+  className="flex items-center justify-center relative rounded-full font-ibm text-white uppercase w-11 h-11 text-xl bg-primary-50"
+>
+  <span>
+    kl
+  </span>
+  <div
+    className="absolute bottom-0 right-0 rounded-full  outline-2 outline outline-white w-2.5 h-2.5 bg-green-50"
+  />
+</div>
+`;
+
+exports[`should render with color purple 1`] = `
+<div
+  className="flex items-center justify-center relative rounded-full font-ibm text-white uppercase w-11 h-11 text-xl bg-purple-50"
+>
+  <span>
+    kl
+  </span>
+  <div
+    className="absolute bottom-0 right-0 rounded-full  outline-2 outline outline-white w-2.5 h-2.5 bg-green-50"
+  />
+</div>
+`;
+
+exports[`should render with color red 1`] = `
+<div
+  className="flex items-center justify-center relative rounded-full font-ibm text-white uppercase w-11 h-11 text-xl bg-red-50"
+>
+  <span>
+    kl
+  </span>
+  <div
+    className="absolute bottom-0 right-0 rounded-full  outline-2 outline outline-white w-2.5 h-2.5 bg-green-50"
+  />
+</div>
+`;
+
+exports[`should render with color teal 1`] = `
+<div
+  className="flex items-center justify-center relative rounded-full font-ibm text-white uppercase w-11 h-11 text-xl bg-teal-60"
+>
+  <span>
+    kl
+  </span>
+  <div
+    className="absolute bottom-0 right-0 rounded-full  outline-2 outline outline-white w-2.5 h-2.5 bg-green-50"
+  />
+</div>
+`;
+
+exports[`should render with color yellow 1`] = `
+<div
+  className="flex items-center justify-center relative rounded-full font-ibm text-white uppercase w-11 h-11 text-xl bg-yellow-60"
+>
+  <span>
+    kl
+  </span>
+  <div
+    className="absolute bottom-0 right-0 rounded-full  outline-2 outline outline-white w-2.5 h-2.5 bg-green-50"
+  />
+</div>
+`;
+
+exports[`should render with default props 1`] = `
+<div
+  className="flex items-center justify-center relative rounded-full font-ibm text-white uppercase w-11 h-11 text-xl bg-primary-50"
+>
+  <span>
+    kl
+  </span>
+  <div
+    className="absolute bottom-0 right-0 rounded-full  outline-2 outline outline-white w-2.5 h-2.5 bg-green-50"
+  />
+</div>
+`;
+
+exports[`should render with initials DA 1`] = `
+<div
+  className="flex items-center justify-center relative rounded-full font-ibm text-white uppercase w-11 h-11 text-xl bg-primary-50"
+>
+  <span>
+    DA
+  </span>
+  <div
+    className="absolute bottom-0 right-0 rounded-full  outline-2 outline outline-white w-2.5 h-2.5 bg-green-50"
+  />
+</div>
+`;
+
+exports[`should render with initials PH 1`] = `
+<div
+  className="flex items-center justify-center relative rounded-full font-ibm text-white uppercase w-11 h-11 text-xl bg-primary-50"
+>
+  <span>
+    PH
+  </span>
+  <div
+    className="absolute bottom-0 right-0 rounded-full  outline-2 outline outline-white w-2.5 h-2.5 bg-green-50"
+  />
+</div>
+`;
+
+exports[`should render with size lg 1`] = `
+<div
+  className="flex items-center justify-center relative rounded-full font-ibm text-white uppercase w-11 h-11 text-xl bg-primary-50"
+>
+  <span>
+    kl
+  </span>
+  <div
+    className="absolute bottom-0 right-0 rounded-full  outline-2 outline outline-white w-2.5 h-2.5 bg-green-50"
+  />
+</div>
+`;
+
+exports[`should render with size md 1`] = `
+<div
+  className="flex items-center justify-center relative rounded-full font-ibm text-white uppercase w-10 h-10 text-lg bg-primary-50"
+>
+  <span>
+    kl
+  </span>
+  <div
+    className="absolute bottom-0 right-0 rounded-full  outline-2 outline outline-white w-2.5 h-2.5 bg-green-50"
+  />
+</div>
+`;
+
+exports[`should render with size sm 1`] = `
+<div
+  className="flex items-center justify-center relative rounded-full font-ibm text-white uppercase w-9 h-9 text-base bg-primary-50"
+>
+  <span>
+    kl
+  </span>
   <div
     className="absolute bottom-0 right-0 rounded-full  outline-2 outline outline-white w-2 h-2 bg-green-50"
   />
 </div>
 `;
 
-exports[`should render with props color="purple" size="lg" type="initials" statusIndicator={true} status={true} initials="gJ" 1`] = `
+exports[`should render with size xs 1`] = `
 <div
-  className="flex items-center justify-center relative rounded-full font-ibm text-white uppercase w-11 h-11 text-xl bg-purple-50"
+  className="flex items-center justify-center relative rounded-full font-ibm text-white uppercase w-8 h-8 text-xs bg-primary-50"
 >
   <span>
-    gJ
+    kl
   </span>
   <div
-    className="absolute bottom-0 right-0 rounded-full  outline-2 outline outline-white w-2.5 h-2.5 bg-green-50"
+    className="absolute bottom-0 right-0 rounded-full  outline-2 outline outline-white w-2 h-2 bg-green-50"
   />
 </div>
 `;
 
-exports[`should render with props color=red and Document icon 1`] = `
-<div
-  className="flex items-center justify-center relative rounded-full font-ibm text-white uppercase w-11 h-11 text-xl bg-red-50"
->
-  <svg
-    aria-hidden="true"
-    className="w-full p-2"
-    fill="none"
-    stroke="currentColor"
-    strokeWidth={2}
-    viewBox="0 0 24 24"
-    xmlns="http://www.w3.org/2000/svg"
-  >
-    <path
-      d="M7 21h10a2 2 0 002-2V9.414a1 1 0 00-.293-.707l-5.414-5.414A1 1 0 0012.586 3H7a2 2 0 00-2 2v14a2 2 0 002 2z"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-    />
-  </svg>
-  <div
-    className="absolute bottom-0 right-0 rounded-full  outline-2 outline outline-white w-2.5 h-2.5 bg-green-50"
-  />
-</div>
-`;
-
-exports[`should render with props type="icon" Icon={DocumentIcon} no status 1`] = `
+exports[`should render with status false 1`] = `
 <div
   className="flex items-center justify-center relative rounded-full font-ibm text-white uppercase w-11 h-11 text-xl bg-primary-50"
 >
-  <svg
-    aria-hidden="true"
-    className="w-full p-2"
-    fill="none"
-    stroke="currentColor"
-    strokeWidth={2}
-    viewBox="0 0 24 24"
-    xmlns="http://www.w3.org/2000/svg"
-  >
-    <path
-      d="M7 21h10a2 2 0 002-2V9.414a1 1 0 00-.293-.707l-5.414-5.414A1 1 0 0012.586 3H7a2 2 0 00-2 2v14a2 2 0 002 2z"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-    />
-  </svg>
-  <div
-    className="absolute bottom-0 right-0 rounded-full  outline-2 outline outline-white w-2.5 h-2.5 hidden bg-green-50"
-  />
-</div>
-`;
-
-exports[`should render with props type="icon" Icon={DocumentIcon} statusIndicator={true} status={false} 1`] = `
-<div
-  className="flex items-center justify-center relative rounded-full font-ibm text-white uppercase w-11 h-11 text-xl bg-primary-50"
->
-  <svg
-    aria-hidden="true"
-    className="w-full p-2"
-    fill="none"
-    stroke="currentColor"
-    strokeWidth={2}
-    viewBox="0 0 24 24"
-    xmlns="http://www.w3.org/2000/svg"
-  >
-    <path
-      d="M7 21h10a2 2 0 002-2V9.414a1 1 0 00-.293-.707l-5.414-5.414A1 1 0 0012.586 3H7a2 2 0 00-2 2v14a2 2 0 002 2z"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-    />
-  </svg>
+  <span>
+    kl
+  </span>
   <div
     className="absolute bottom-0 right-0 rounded-full  outline-2 outline outline-white w-2.5 h-2.5 bg-gray-30"
   />
 </div>
 `;
 
-exports[`should render with props type="initials" statusIndicator={false} initials="AH" 1`] = `
+exports[`should render with status indicator 1`] = `
 <div
   className="flex items-center justify-center relative rounded-full font-ibm text-white uppercase w-11 h-11 text-xl bg-primary-50"
 >
   <span>
-    AH
+    kl
   </span>
   <div
-    className="absolute bottom-0 right-0 rounded-full  outline-2 outline outline-white w-2.5 h-2.5 hidden bg-green-50"
+    className="absolute bottom-0 right-0 rounded-full  outline-2 outline outline-white w-2.5 h-2.5 bg-green-50"
   />
 </div>
 `;
 
-exports[`should render with red color, document icon and no status shown 1`] = `
+exports[`should render with status true 1`] = `
 <div
-  className="flex items-center justify-center relative rounded-full font-ibm text-white uppercase w-11 h-11 text-xl bg-red-50"
->
-  <svg
-    aria-hidden="true"
-    className="w-full p-2"
-    fill="none"
-    stroke="currentColor"
-    strokeWidth={2}
-    viewBox="0 0 24 24"
-    xmlns="http://www.w3.org/2000/svg"
-  >
-    <path
-      d="M7 21h10a2 2 0 002-2V9.414a1 1 0 00-.293-.707l-5.414-5.414A1 1 0 0012.586 3H7a2 2 0 00-2 2v14a2 2 0 002 2z"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-    />
-  </svg>
-  <div
-    className="absolute bottom-0 right-0 rounded-full  outline-2 outline outline-white w-2.5 h-2.5 hidden bg-gray-30"
-  />
-</div>
-`;
-
-exports[`should render with small size, initials AF, status shown but offline and purple color 1`] = `
-<div
-  className="flex items-center justify-center relative rounded-full font-ibm text-white uppercase w-9 h-9 text-base bg-purple-50"
+  className="flex items-center justify-center relative rounded-full font-ibm text-white uppercase w-11 h-11 text-xl bg-primary-50"
 >
   <span>
-    af
+    kl
   </span>
   <div
-    className="absolute bottom-0 right-0 rounded-full  outline-2 outline outline-white w-2 h-2 bg-gray-30"
+    className="absolute bottom-0 right-0 rounded-full  outline-2 outline outline-white w-2.5 h-2.5 bg-green-50"
   />
 </div>
 `;
 
-exports[`should render with yellow color, document icon and online status displayed 1`] = `
+exports[`should render with type icon and DocumentIcon 1`] = `
 <div
-  className="flex items-center justify-center relative rounded-full font-ibm text-white uppercase w-11 h-11 text-xl bg-yellow-60"
+  className="flex items-center justify-center relative rounded-full font-ibm text-white uppercase w-11 h-11 text-xl bg-primary-50"
 >
   <svg
     aria-hidden="true"
@@ -211,6 +281,32 @@ exports[`should render with yellow color, document icon and online status displa
   </svg>
   <div
     className="absolute bottom-0 right-0 rounded-full  outline-2 outline outline-white w-2.5 h-2.5 bg-green-50"
+  />
+</div>
+`;
+
+exports[`should render with type initials 1`] = `
+<div
+  className="flex items-center justify-center relative rounded-full font-ibm text-white uppercase w-11 h-11 text-xl bg-primary-50"
+>
+  <span>
+    kl
+  </span>
+  <div
+    className="absolute bottom-0 right-0 rounded-full  outline-2 outline outline-white w-2.5 h-2.5 bg-green-50"
+  />
+</div>
+`;
+
+exports[`should render without status indicator 1`] = `
+<div
+  className="flex items-center justify-center relative rounded-full font-ibm text-white uppercase w-11 h-11 text-xl bg-primary-50"
+>
+  <span>
+    kl
+  </span>
+  <div
+    className="absolute bottom-0 right-0 rounded-full  outline-2 outline outline-white w-2.5 h-2.5 hidden bg-green-50"
   />
 </div>
 `;

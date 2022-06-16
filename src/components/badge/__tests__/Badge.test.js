@@ -2,196 +2,260 @@ import renderer from 'react-test-renderer'
 import { Badge } from "../Badge";
 import { DocumentIcon, InboxIcon, BellIcon, InformationCircleIcon } from '@heroicons/react/outline'
 
-it('should render with text 1, large size, blue colour, 2 icons(InboxIcon and BellIcon), fully rounded', () => {
+it('should render with children 1', () => {
   const component = renderer.create(
-    <Badge 
-      children="1"
-      size="lg"
-      color="blue"
-      LeadingIcon={InboxIcon}
-      TrailingIcon={BellIcon}
-      rounded="full"
-      iconOnly={false}
-  />
+    <Badge />
 );
   let tree = component.toJSON()
   expect(tree).toMatchSnapshot()
 });
 
 
-it('should render with text 12, large size, red colour, 1 icon(InformationCircleIcon) as leading icon and be fully rounded', () => {
+it('should render with children 1', () => {
+  const component = renderer.create(
+    <Badge 
+      children="1"
+    />
+);
+  let tree = component.toJSON()
+  expect(tree).toMatchSnapshot()
+});
+
+
+it('should render with children 12', () => {
   const component = renderer.create(
     <Badge 
       children="12"
+    />
+);
+  let tree = component.toJSON()
+  expect(tree).toMatchSnapshot()
+});
+
+
+it('should render with size small', () => {
+  const component = renderer.create(
+    <Badge 
+      size="sm"
+    />
+);
+  let tree = component.toJSON()
+  expect(tree).toMatchSnapshot()
+});
+
+
+it('should render with size large', () => {
+  const component = renderer.create(
+    <Badge 
       size="lg"
-      color="red"
-      LeadingIcon={InformationCircleIcon}
-      rounded="full"
-      iconOnly={false}
-  />
+    />
 );
   let tree = component.toJSON()
   expect(tree).toMatchSnapshot()
 });
 
 
-it('should render with no text, small size, green colour, 1 icon(DocumentIcon), fully rounded', () => {
+it('should render with colour gray', () => {
   const component = renderer.create(
     <Badge 
-      children=""
-      size="sm"
-      color="green"
-      TrailingIcon={DocumentIcon}
-      rounded="full"
-      iconOnly={true}
-  />
-);
-  let tree = component.toJSON()
-  expect(tree).toMatchSnapshot()
-});
-
-
-it('should render with large size, blue colour, icon only and fully rounded', () => {
-  const component = renderer.create(
-    <Badge 
-      children="1"
-      size="lg"
-      color="blue"
-      LeadingIcon={InboxIcon}
-      rounded="full"
-      iconOnly={true}
-  />
-);
-  let tree = component.toJSON()
-  expect(tree).toMatchSnapshot()
-});
-
-
-it('should render with small size, cyan colour, 2 icons(DocumentIcon and InboxIcon) and not rounded', () => {
-  const component = renderer.create(
-    <Badge 
-      children="1"
-      size="sm"
-      color="cyan"
-      LeadingIcon={DocumentIcon}
-      TrailingIcon={InboxIcon}
-      rounded="none"
-      iconOnly={false}
-  />
-);
-  let tree = component.toJSON()
-  expect(tree).toMatchSnapshot()
-});
-
-
-it('should render with text - Legal, small size, gray colour, 2 icons(InboxIcon and BellIcon) and not rounded', () => {
-  const component = renderer.create(
-    <Badge 
-      children="Legal"
-      size="sm"
       color="gray"
-      LeadingIcon={InboxIcon}
-      TrailingIcon={BellIcon}
-      rounded="none"
-      iconOnly={false}
-  />
+    />
 );
   let tree = component.toJSON()
   expect(tree).toMatchSnapshot()
 });
 
 
-it('should render with large size, blue colour, 2 icons(InboxIcon and BellIcon), sm rounded', () => {
+it('should render with colour primary', () => {
   const component = renderer.create(
     <Badge 
-      children="1"
-      size="lg"
-      color="blue"
-      LeadingIcon={InboxIcon}
-      TrailingIcon={BellIcon}
-      rounded="sm"
-      iconOnly={false}
-  />
-);
-  let tree = component.toJSON()
-  expect(tree).toMatchSnapshot()
-});
-
-
-it('should render with large size, yellow colour, 1 trailing icon(BellIcon), sm rounded', () => {
-  const component = renderer.create(
-    <Badge 
-      children="1"
-      size="lg"
-      color="yellow"
-      TrailingIcon={BellIcon}
-      rounded="sm"
-      iconOnly={false}
-  />
-);
-  let tree = component.toJSON()
-  expect(tree).toMatchSnapshot()
-});
-
-
-it('should render with large size, purple colour, 2 icons(InboxIcon and BellIcon) and not rounded', () => {
-  const component = renderer.create(
-    <Badge 
-      children="1"
-      size="lg"
-      color="purple"
-      LeadingIcon={InboxIcon}
-      TrailingIcon={BellIcon}
-      rounded="none"
-      iconOnly={false}
-  />
-);
-  let tree = component.toJSON()
-  expect(tree).toMatchSnapshot()
-});
-
-
-it('should render with blue colour and one icon only (trailing one) and fully rounded', () => {
-  const component = renderer.create(
-    <Badge 
-      children="1"
-      size="lg"
-      color="blue"
-      TrailingIcon={BellIcon}
-      rounded="full"
-      iconOnly={true}
-  />
-);
-  let tree = component.toJSON()
-  expect(tree).toMatchSnapshot()
-});
-
-
-it('should render with small size, red colour, 1 icon(InboxIcon as leading) and sm rounded', () => {
-  const component = renderer.create(
-    <Badge 
-      children="1"
-      size="sm"
-      color="red"
-      LeadingIcon={InboxIcon}
-      rounded="sm"
-      iconOnly={false}
-  />
-);
-  let tree = component.toJSON()
-  expect(tree).toMatchSnapshot()
-});
-
-
-it('should render with small size, primary colour, 1 icon(DocumentIcon as trailing) and not rounded', () => {
-  const component = renderer.create(
-    <Badge 
-      children="1"
-      size="sm"
       color="primary"
+    />
+);
+  let tree = component.toJSON()
+  expect(tree).toMatchSnapshot()
+});
+
+
+it('should render with colour purple', () => {
+  const component = renderer.create(
+    <Badge 
+      color="purple"
+    />
+);
+  let tree = component.toJSON()
+  expect(tree).toMatchSnapshot()
+});
+
+
+it('should render with colour blue', () => {
+  const component = renderer.create(
+    <Badge 
+      color="blue"
+    />
+);
+  let tree = component.toJSON()
+  expect(tree).toMatchSnapshot()
+});
+
+
+it('should render with colour lightblue', () => {
+  const component = renderer.create(
+    <Badge 
+      color="lightblue"
+    />
+);
+  let tree = component.toJSON()
+  expect(tree).toMatchSnapshot()
+});
+
+
+it('should render with colour cyan', () => {
+  const component = renderer.create(
+    <Badge 
+      color="cyan"
+    />
+);
+  let tree = component.toJSON()
+  expect(tree).toMatchSnapshot()
+});
+
+
+it('should render with colour teal', () => {
+  const component = renderer.create(
+    <Badge 
+      color="teal"
+    />
+);
+  let tree = component.toJSON()
+  expect(tree).toMatchSnapshot()
+});
+
+
+it('should render with colour grene', () => {
+  const component = renderer.create(
+    <Badge 
+      color="green"
+    />
+);
+  let tree = component.toJSON()
+  expect(tree).toMatchSnapshot()
+});
+
+
+it('should render with colour yellow', () => {
+  const component = renderer.create(
+    <Badge 
+      color="yellow"
+    />
+);
+  let tree = component.toJSON()
+  expect(tree).toMatchSnapshot()
+});
+
+
+it('should render with colour red', () => {
+  const component = renderer.create(
+    <Badge 
+      color="red"
+    />
+);
+  let tree = component.toJSON()
+  expect(tree).toMatchSnapshot()
+});
+
+
+it('should render with a leading icon DocumentIcon', () => {
+  const component = renderer.create(
+    <Badge 
+      LeadingIcon={DocumentIcon}
+    />
+);
+  let tree = component.toJSON()
+  expect(tree).toMatchSnapshot()
+});
+
+
+it('should render with leading icon InboxIcon', () => {
+  const component = renderer.create(
+    <Badge 
       LeadingIcon={InboxIcon}
+    />
+);
+  let tree = component.toJSON()
+  expect(tree).toMatchSnapshot()
+});
+
+
+it('should render with trailing icon BellIcon', () => {
+  const component = renderer.create(
+    <Badge 
+      TrailingIcon={BellIcon}
+    />
+);
+  let tree = component.toJSON()
+  expect(tree).toMatchSnapshot()
+});
+
+
+it('should render with trailing icon DocumentIcon', () => {
+  const component = renderer.create(
+    <Badge 
       TrailingIcon={DocumentIcon}
+    />
+);
+  let tree = component.toJSON()
+  expect(tree).toMatchSnapshot()
+});
+
+
+it('should render with rounded none', () => {
+  const component = renderer.create(
+    <Badge 
       rounded="none"
+    />
+);
+  let tree = component.toJSON()
+  expect(tree).toMatchSnapshot()
+});
+
+
+it('should render with rounded sm', () => {
+  const component = renderer.create(
+    <Badge 
+      rounded="sm"
+    />
+);
+  let tree = component.toJSON()
+  expect(tree).toMatchSnapshot()
+});
+
+
+it('should render with rounded full', () => {
+  const component = renderer.create(
+    <Badge 
+      rounded="full"
+    />
+);
+  let tree = component.toJSON()
+  expect(tree).toMatchSnapshot()
+});
+
+
+it('should render with iconOnly', () => {
+  const component = renderer.create(
+    <Badge 
+      iconOnly={true}
+    />
+);
+  let tree = component.toJSON()
+  expect(tree).toMatchSnapshot()
+});
+
+
+it('should render with iconOnly false', () => {
+  const component = renderer.create(
+    <Badge 
       iconOnly={false}
   />
 );

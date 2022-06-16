@@ -23,7 +23,7 @@ function App() {
         initials="gJ"  
     /> */}
 
-      <IconTooltip
+      {/* <IconTooltip
         // selected="click"
         Icon={InformationCircleIcon}
         pointerPosition="top"
@@ -32,7 +32,7 @@ function App() {
         <h3 className="m-1 font-semibold">Info Header</h3>
         <p className="m-1 font-redhat">Please use this field to add additional information Please use this field to add additional information Please use th</p>
         <a href="https://test.com" className="m-1 text-blue-60 dark:text-blue-50">Link</a>
-      </IconTooltip>
+      </IconTooltip> */}
 
 
       {/* <Tooltip 
@@ -66,16 +66,28 @@ function App() {
           <p><span className="font-medium">Warning:</span> Warning text here</p> 
         }
       /> */}
+
+
+      <Modal 
+        children="Hello there"
+        title="New Document"
+        infoTextColor="green"
+        infoTextChildren={
+          <p><span className="font-medium">Warning:</span> Warning text here</p> 
+        }
+      />
+
       {/* <Badge 
-        children="1"
-        className=""
-        size="lg"
-        color="teal"
-        LeadingIcon={InboxIcon}
-        TrailingIcon={BellIcon}
-        rounded="full"
-        iconOnly={false}
+        // children="1"
+        // className=""
+        // size="lg"
+        // color="teal"
+        // LeadingIcon={InboxIcon}
+        // TrailingIcon={BellIcon}
+        // rounded="full"
+        // iconOnly={false}
       />  */}
+
     </div>
   );
 }
