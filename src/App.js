@@ -26,11 +26,11 @@ function App() {
       <IconTooltip
         // selected="click"
         Icon={InformationCircleIcon}
-        pointerPosition="right"
-        arrowPosition="centre"
+        pointerPosition="top"
+        arrowPosition="left"
       >
         <h3 className="m-1 font-semibold">Info Header</h3>
-        <p className="m-1 font-redhat">Please use this field to add additional information Please use this field to add additional information  </p>
+        <p className="m-1 font-redhat">Please use this field to add additional information Please use this field to add additional information Please use th</p>
         <a href="https://test.com" className="m-1 text-blue-60 dark:text-blue-50">Link</a>
       </IconTooltip>
 
