@@ -1,16 +1,17 @@
 import React from 'react'
 import PropTypes from 'prop-types'
+import classNames from 'classnames'
 import { Dialog, Transition } from '@headlessui/react'
 import { Fragment, useState } from 'react'
 import { XIcon, ChevronRightIcon } from '@heroicons/react/outline'
 import { Button } from '../button/Button'
-import { InfoText } from './InfoText'
 
 const Modal = (props) => {
   let {
+    className,
     children,
     title,
-    infoTextColor,
+    color,
     infoTextChildren,
   } = props
 
@@ -23,6 +24,16 @@ const Modal = (props) => {
   function openModal() {
     setOpen(true)
   }
+
+  const classes = classNames(
+    "my-6 py-5 px-6 text-sm",
+    color === "primary" && "text-primary-100 bg-primary-10 border-l-8 border-l-primary-60",
+    color === "green" && "text-green-100 bg-green-10 border-l-8 border-l-green-60",
+    color === "yellow" && "text-yellow-100 bg-yellow-10 border-l-8 border-l-yellow-60",
+    color === "red" && "text-red-100 bg-red-10 border-l-8 border-l-red-60",
+    className
+  )
+
 
   return (
     <>
@@ -45,14 +56,12 @@ const Modal = (props) => {
               <p className="text-3xl font-medium px-6">{title}</p>
               <span onClick={closeModal}>
                 <XIcon 
-                  className="absolute top-6 right-6 w-7 h-7 text-gray-50 hover:cursor-pointer" 
+                  className="absolute top-6 right-6 w-7 h-7 text-gray-50 hover:cursor-pointer focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary-light" 
+                  tabIndex={0}
                 />
               </span>
             </Dialog.Title>
-            <InfoText 
-              color={infoTextColor} 
-              children={infoTextChildren}
-            />
+            <div className={classes}>{ infoTextChildren }</div>    
             <div className="h-[20rem] mb-6">
               {children}
             </div>
@@ -80,14 +89,15 @@ const Modal = (props) => {
 Modal.defaultProps = {
   children: undefined,
   title: "Title",
-  infoTextColor: "primary",
+  color: "primary",
   infoTextChildren: "There are a few ways to get started with a new document in Legalesign. Start by telling us what you’d like to do:",
 }
 
 Modal.propTypes = {
+  className: PropTypes.string,
   children: PropTypes.node,
   title: PropTypes.string,
-  infoTextColor: PropTypes.oneOf([
+  color: PropTypes.oneOf([
     "primary",
     "green",
     "yellow",

@@ -1,56 +1,6 @@
 import renderer from 'react-test-renderer'
 import {Modal} from "../Modal"
 
-it('should render with children just as text and the rest default', () => {
-  const component = renderer.create(
-  <Modal 
-    children="Hello there"
-    />,
-  );
-  let tree = component.toJSON()
-  expect(tree).toMatchSnapshot()
-});
-
-
-it('should render with red info text and title "My new title"', () => {
-  const component = renderer.create(
-  <Modal 
-    title="My new title"
-    infoTextColor="red"
-  />,
-  );
-  let tree = component.toJSON()
-  expect(tree).toMatchSnapshot()
-});
-
-
-it('should render with yellow info text and heading in it saying: Test which is bold and warning text here', () => {
-  const component = renderer.create(
-  <Modal 
-    infoTextColor="yellow"
-    infoTextChildren={
-      <p><span className="font-medium">Test:</span> Warning text here</p> 
-    }
-  />,
-  );
-  let tree = component.toJSON()
-  expect(tree).toMatchSnapshot()
-});
-
-
-it('should render with red color and text Warning! which is font-weight 500 and no more text', () => {
-  const component = renderer.create(
-  <Modal 
-    infoTextColor="red"
-    infoTextChildren={
-      <p><span className="font-medium">Warning:</span></p> 
-    }
-  />,
-  );
-  let tree = component.toJSON()
-  expect(tree).toMatchSnapshot()
-});
-
 
 it('should render with all default settings', () => {
   const component = renderer.create(
@@ -61,11 +11,10 @@ it('should render with all default settings', () => {
 });
 
 
-it('should render with yellow color and title "Open your app"', () => {
+it('should render with children as text', () => {
   const component = renderer.create(
-  <Modal 
-    title="Open your app"
-    infoTextColor="yellow"
+    <Modal 
+      children="Hello there"
     />,
   );
   let tree = component.toJSON()
@@ -73,3 +22,97 @@ it('should render with yellow color and title "Open your app"', () => {
 });
 
 
+it('should render with children as html', () => {
+  const component = renderer.create(
+  <Modal 
+    children={
+      <div>
+        <h1>This is a children title</h1>
+        <p>This is a children paragraph</p>
+        <p>This is the text in the children element</p>
+      </div>
+    }
+  />,
+  );
+  let tree = component.toJSON()
+  expect(tree).toMatchSnapshot()
+});
+
+
+it('should render with title', () => {
+  const component = renderer.create(
+  <Modal 
+    title="This is a title"
+  />,
+  );
+  let tree = component.toJSON()
+  expect(tree).toMatchSnapshot()
+});
+
+
+it('should render with text in children"', () => {
+  const component = renderer.create(
+  <Modal 
+    infoTextChildren="This is the text in the children element"
+  />,
+  );
+  let tree = component.toJSON()
+  expect(tree).toMatchSnapshot()
+});
+
+
+it('should render with text in children"', () => {
+  const component = renderer.create(
+  <Modal 
+    infoTextChildren={
+      <p><span className="font-medium">Test:</span> Warning text here</p> 
+    }
+  />,
+  );
+  let tree = component.toJSON()
+  expect(tree).toMatchSnapshot()
+});
+
+
+it('should render in primary"', () => {
+  const component = renderer.create(
+  <Modal 
+    color="primary"
+  />,
+  );
+  let tree = component.toJSON()
+  expect(tree).toMatchSnapshot()
+});
+
+
+it('should render in green"', () => {
+  const component = renderer.create(
+  <Modal 
+    color="green"
+  />,
+  );
+  let tree = component.toJSON()
+  expect(tree).toMatchSnapshot()
+});
+
+
+it('should render in yellow"', () => {
+  const component = renderer.create(
+  <Modal 
+    color="yellow"
+  />,
+  );
+  let tree = component.toJSON()
+  expect(tree).toMatchSnapshot()
+});
+
+
+it('should render in red"', () => {
+  const component = renderer.create(
+  <Modal 
+    color="red"
+  />,
+  );
+  let tree = component.toJSON()
+  expect(tree).toMatchSnapshot()
+});

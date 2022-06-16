@@ -6,7 +6,7 @@ const Tooltip = (props) => {
   let {
     className,
     children,
-    hoverText,
+    text,
   } = props
 
   const [x, setX] = React.useState()
@@ -36,21 +36,21 @@ const Tooltip = (props) => {
       className={classes}
       onMouseMove={tooltipHoverFunction}
     >
-      <div className="cursor-pointer w-max">{hoverText}</div>
-      <div className={tooltipClasses} style={{left:`${x}px`,top:`${y}px`}}>{children}</div>
+      <div className="cursor-pointer w-max">{children}</div>
+      <div className={tooltipClasses} style={{left:`${x}px`,top:`${y}px`}}>{text}</div>
     </div>
   )
 }
 
 Tooltip.defaultProps = {
   children: undefined,
-  hoverText: "Click here"
+  text: "Click here"
 }
 
 Tooltip.propTypes = {
   className: PropTypes.string,
   children: PropTypes.node,
-  hoverText: PropTypes.string,
+  text: PropTypes.node,
 }
 
 export { Tooltip }

@@ -23,8 +23,8 @@ function App() {
         initials="gJ"  
     /> */}
 
-      {/* <IconTooltip
-        // selected="click"
+      <IconTooltip
+        selected="click"
         Icon={InformationCircleIcon}
         pointerPosition="top"
         arrowPosition="left"
@@ -32,19 +32,20 @@ function App() {
         <h3 className="m-1 font-semibold">Info Header</h3>
         <p className="m-1 font-redhat">Please use this field to add additional information Please use this field to add additional information Please use th</p>
         <a href="https://test.com" className="m-1 text-blue-60 dark:text-blue-50">Link</a>
-      </IconTooltip> */}
+      </IconTooltip>
 
 
       {/* <Tooltip 
-        // hoverText="Click here"
+        text={
+        <>
+          <h3 className="m-1 font-semibold">Info Header</h3>
+          <p className="m-1 font-redhat">Please use this field to add additional information Please use this field to add additional information Please use this field to add additional information Please use this field to add additional information Please use this field to add additional information Please use this field to add additional information Please use this field to add additional information Please use this field to add additional information </p>
+        </>
+        }
+        // text="tooltadd addit"
       >
-        <h3 className="m-1 font-semibold">Info Header</h3>
-        <p className="m-1 font-redhat">Please use this field to add additional information Please use this field to add additional information Please use this field to add additional information Please use this field to add additional information Please use this field to add additional information Please use this field to add additional information Please use this field to add additional information Please use this field to add additional information </p>
-        <a href="https://test.com" className="m-1 text-blue-60 dark:text-blue-50">Link</a>
+        Click here
       </Tooltip> */}
-
-
-
 
       {/* <AddTag 
         // children="Remove Tag"
@@ -66,16 +67,6 @@ function App() {
           <p><span className="font-medium">Warning:</span> Warning text here</p> 
         }
       /> */}
-
-
-      <Modal 
-        children="Hello there"
-        title="New Document"
-        infoTextColor="green"
-        infoTextChildren={
-          <p><span className="font-medium">Warning:</span> Warning text here</p> 
-        }
-      />
 
       {/* <Badge 
         // children="1"

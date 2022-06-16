@@ -1,5 +1,37 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`should render in green" 1`] = `
+<div
+  onClick={[Function]}
+>
+  Open Modal
+</div>
+`;
+
+exports[`should render in primary" 1`] = `
+<div
+  onClick={[Function]}
+>
+  Open Modal
+</div>
+`;
+
+exports[`should render in red" 1`] = `
+<div
+  onClick={[Function]}
+>
+  Open Modal
+</div>
+`;
+
+exports[`should render in yellow" 1`] = `
+<div
+  onClick={[Function]}
+>
+  Open Modal
+</div>
+`;
+
 exports[`should render with all default settings 1`] = `
 <div
   onClick={[Function]}
@@ -8,7 +40,7 @@ exports[`should render with all default settings 1`] = `
 </div>
 `;
 
-exports[`should render with children just as text and the rest default 1`] = `
+exports[`should render with children as html 1`] = `
 <div
   onClick={[Function]}
 >
@@ -16,7 +48,7 @@ exports[`should render with children just as text and the rest default 1`] = `
 </div>
 `;
 
-exports[`should render with red color and text Warning! which is font-weight 500 and no more text 1`] = `
+exports[`should render with children as text 1`] = `
 <div
   onClick={[Function]}
 >
@@ -24,7 +56,7 @@ exports[`should render with red color and text Warning! which is font-weight 500
 </div>
 `;
 
-exports[`should render with red info text and title "My new title" 1`] = `
+exports[`should render with text in children" 1`] = `
 <div
   onClick={[Function]}
 >
@@ -32,7 +64,7 @@ exports[`should render with red info text and title "My new title" 1`] = `
 </div>
 `;
 
-exports[`should render with yellow color and title "Open your app" 1`] = `
+exports[`should render with text in children" 2`] = `
 <div
   onClick={[Function]}
 >
@@ -40,7 +72,7 @@ exports[`should render with yellow color and title "Open your app" 1`] = `
 </div>
 `;
 
-exports[`should render with yellow info text and heading in it saying: Test which is bold and warning text here 1`] = `
+exports[`should render with title 1`] = `
 <div
   onClick={[Function]}
 >
