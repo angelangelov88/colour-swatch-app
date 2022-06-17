@@ -23,23 +23,24 @@ function App() {
         initials="gJ"  
     /> */}
 
-      <IconTooltip
+      {/* <IconTooltip
         selected="click"
         Icon={InformationCircleIcon}
-        pointerPosition="top"
-        arrowPosition="left"
+        pointerPosition="left"
+        arrowPosition="centre"
       >
         <h3 className="m-1 font-semibold">Info Header</h3>
-        <p className="m-1 font-redhat">Please use this field to add additional information Please use this field to add additional information Please use th</p>
+        <p className="m-1 font-redhat">Please use this field to add additional information Please use this field to add additional information Please use this field to add additional information Please use this field to add additional information Please use this field to add additional information Please use this field to add additional information Please use this field to add additional information Please use this field to add additional information Please use this field to add additional information Please use this field to add additional information</p>
         <a href="https://test.com" className="m-1 text-blue-60 dark:text-blue-50">Link</a>
-      </IconTooltip>
+        
+      </IconTooltip>  */}
 
 
       {/* <Tooltip 
         text={
         <>
           <h3 className="m-1 font-semibold">Info Header</h3>
-          <p className="m-1 font-redhat">Please use this field to add additional information Please use this field to add additional information Please use this field to add additional information Please use this field to add additional information Please use this field to add additional information Please use this field to add additional information Please use this field to add additional information Please use this field to add additional information </p>
+          <p className="m-1 font-redhat">Please use this field to add additional information Please use this field to add additional</p>
         </>
         }
         // text="tooltadd addit"
@@ -59,14 +60,32 @@ function App() {
         icon={true}
         iconType="add"
       /> */}
-      {/* <Modal 
+
+      
+      <Modal 
         children="Hello there"
         title="New Document"
         infoTextColor="green"
         infoTextChildren={
           <p><span className="font-medium">Warning:</span> Warning text here</p> 
         }
-      /> */}
+        btnText="Again"
+        BtnIcon={InboxIcon}
+        handleClick={() => {
+          console.log("handled!")
+        }}
+      >
+          <h3 className="m-1 font-semibold">Info Header</h3>
+          <p className="m-1 font-redhat">Please use this field to add additional information Please use this field to add additional</p>
+          <h3 className="m-1 font-semibold">Info Header</h3>
+          <p className="m-1 font-redhat">Please use this field to add additional information Please use this field to add additional</p>
+
+
+      </Modal>
+
+
+
+
 
       {/* <Badge 
         // children="1"

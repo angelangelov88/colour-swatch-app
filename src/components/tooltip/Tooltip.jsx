@@ -9,10 +9,10 @@ const Tooltip = (props) => {
     text,
   } = props
 
-  const [x, setX] = React.useState()
-  const [y, setY] = React.useState()
+  const [x, setX] = React.useState(0)
+  const [y, setY] = React.useState(0)
 
-  const tooltipHoverFunction = (e) => {
+  const HandleTooltipPosition = (e) => {
     let x = e.clientX
     let y = e.clientY
     setX(x-300)
@@ -26,7 +26,7 @@ const Tooltip = (props) => {
   )
 
   const tooltipClasses = classNames(
-    "hidden absolute w-fit max-w-xs flex-col justify-evenly items-center rounded-lg shadow-lg p-2 bg-white dark:bg-gray-130 text-gray-80 dark:text-gray-10 text-sm text-center",
+    "hidden absolute w-fit max-w-xs flex-col justify-evenly items-center rounded-lg shadow-[2px_4px_17px_-5px_rgba(97,97,98)] p-2 bg-white dark:bg-gray-130 text-gray-80 dark:text-gray-10 text-sm text-center",
     "group-hover:flex",
     className
   )
@@ -34,7 +34,7 @@ const Tooltip = (props) => {
   return (
     <div 
       className={classes}
-      onMouseMove={tooltipHoverFunction}
+      onMouseMove={HandleTooltipPosition}
     >
       <div className="cursor-pointer w-max">{children}</div>
       <div className={tooltipClasses} style={{left:`${x}px`,top:`${y}px`}}>{text}</div>

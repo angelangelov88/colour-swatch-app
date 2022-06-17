@@ -1,5 +1,6 @@
 import renderer from 'react-test-renderer'
 import {Modal} from "../Modal"
+import { BellIcon } from '@heroicons/react/outline'
 
 
 it('should render with all default settings', () => {
@@ -111,6 +112,39 @@ it('should render in red"', () => {
   const component = renderer.create(
   <Modal 
     color="red"
+  />,
+  );
+  let tree = component.toJSON()
+  expect(tree).toMatchSnapshot()
+});
+
+
+it('should render with btnText Again"', () => {
+  const component = renderer.create(
+  <Modal 
+    btnText="Again"
+  />,
+  );
+  let tree = component.toJSON()
+  expect(tree).toMatchSnapshot()
+});
+
+
+it('should render with BtnIcon bell"', () => {
+  const component = renderer.create(
+  <Modal 
+    BtnIcon={BellIcon}
+  />,
+  );
+  let tree = component.toJSON()
+  expect(tree).toMatchSnapshot()
+});
+
+
+it('should render with function for the button which displays handled! in console"', () => {
+  const component = renderer.create(
+  <Modal 
+    handleClick={() => {}}
   />,
   );
   let tree = component.toJSON()
