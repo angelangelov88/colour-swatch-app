@@ -24,30 +24,6 @@ exports[`should render in red" 1`] = `
 </div>
 `;
 
-exports[`should render in red" 2`] = `
-<div
-  onClick={[Function]}
->
-  Open Modal
-</div>
-`;
-
-exports[`should render in red" 3`] = `
-<div
-  onClick={[Function]}
->
-  Open Modal
-</div>
-`;
-
-exports[`should render in red" 4`] = `
-<div
-  onClick={[Function]}
->
-  Open Modal
-</div>
-`;
-
 exports[`should render in yellow" 1`] = `
 <div
   onClick={[Function]}
@@ -97,14 +73,6 @@ exports[`should render with children as text 1`] = `
 `;
 
 exports[`should render with function for the button which displays handled! in console" 1`] = `
-<div
-  onClick={[Function]}
->
-  Open Modal
-</div>
-`;
-
-exports[`should render with function for the button which displays handled!" 1`] = `
 <div
   onClick={[Function]}
 >

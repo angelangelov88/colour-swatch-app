@@ -1,13 +1,13 @@
-import { ColourThemeSwatch } from "./components/colourThemeSwatch/ColourThemeSwatch";
-import { IdentifierIcon } from "./components/identifierIcon/IdentifierIcon";
-import { IconTooltip } from "./components/tooltip/IconTooltip";
-import { Tooltip } from "./components/tooltip/Tooltip";
-import { BanIconComponent } from "./components/banIconComponent/BanIconComponent";
-import { InformationCircleIcon, DocumentIcon, BellIcon, InboxIcon } from '@heroicons/react/outline'
-import { Tag } from "./components/tags/Tag";
-import { AddTag } from "./components/tags/AddTag";
-import { Modal } from "./components/modal/Modal";
-import { Badge } from "./components/badge/Badge";
+import { ColourThemeSwatch } from './components/colourThemeSwatch/ColourThemeSwatch';
+import { IdentifierIcon } from './components/identifierIcon/IdentifierIcon';
+import { IconTooltip } from './components/tooltip/IconTooltip';
+import { Tooltip } from './components/tooltip/Tooltip';
+import { BanIconComponent } from './components/banIconComponent/BanIconComponent';
+import { InformationCircleIcon, DocumentIcon, BellIcon, InboxIcon } from '@heroicons/react/outline';
+import { Tag } from './components/tags/Tag';
+import { AddTag } from './components/tags/AddTag';
+import { Modal } from './components/modal/Modal';
+import { Badge } from './components/badge/Badge';
 
 function App() {
   return (
@@ -62,7 +62,7 @@ function App() {
       /> */}
 
       
-      <Modal 
+      {/* <Modal 
         children="Hello there"
         title="New Document"
         infoTextColor="green"
@@ -82,6 +82,7 @@ function App() {
 
 
       </Modal>
+ */}
 
 
 
