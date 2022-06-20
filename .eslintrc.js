@@ -20,5 +20,6 @@ module.exports = {
   ],
   rules: {
     'import/no-unresolved': 0,
+    'max-len': 0,
   },
 };

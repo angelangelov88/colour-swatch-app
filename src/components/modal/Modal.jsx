@@ -7,8 +7,7 @@ import { XIcon } from '@heroicons/react/outline';
 // import { Button } from 'le-component-library';
 import { Button } from '../button/Button';
 
-// 
-../button/Button) {
+function Modal(props) {
   const {
     className,
     children,
@@ -89,7 +88,7 @@ Modal.propTypes = {
   className: PropTypes.string,
   children: PropTypes.node,
   open: PropTypes.bool,
-  onClose: PropTypes.shape,
+  onClose: PropTypes.func,
   title: PropTypes.string,
   color: PropTypes.oneOf([
     'primary',
@@ -98,7 +97,8 @@ Modal.propTypes = {
     'red',
   ]),
   text: PropTypes.node,
-  SubmitButton: PropTypes.shape,
+  SubmitButton: PropTypes.func,
 };
 
 export default Modal;
+export { Modal };
