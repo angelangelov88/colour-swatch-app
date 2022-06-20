@@ -28,7 +28,7 @@ function AddTag(props) {
   );
 
   return (
-    <div className={classes} tabIndex={0}>
+    <div className={classes}>
       <div className={iconClasses}>
         <PlusIcon />
       </div>
@@ -39,6 +39,7 @@ function AddTag(props) {
 
 AddTag.defaultProps = {
   children: 'Add Tag',
+  className: undefined,
   size: 'lg',
 };
 
@@ -48,4 +49,5 @@ AddTag.propTypes = {
   size: PropTypes.oneOf(['sm', 'lg']),
 };
 
+export default AddTag;
 export { AddTag };

@@ -1,21 +1,21 @@
+/* eslint-disable */
 import React from 'react';
-// import {
-//   InformationCircleIcon, DocumentIcon, BellIcon, InboxIcon,
-// } from '@heroicons/react/outline';
+import {
+  InformationCircleIcon, DocumentIcon, BellIcon, InboxIcon,
+} from '@heroicons/react/outline';
 import { ColourThemeSwatch } from './components/colourThemeSwatch/ColourThemeSwatch';
-// import { IdentifierIcon } from './components/identifierIcon/IdentifierIcon';
-// import { IconTooltip } from './components/tooltip/IconTooltip';
-// import { Tooltip } from './components/tooltip/Tooltip';
-// import { BanIconComponent } from './components/banIconComponent/BanIconComponent';
-// import { Tag } from './components/tags/Tag';
-// import { AddTag } from './components/tags/AddTag';
-// import { Modal } from './components/modal/Modal';
-// import { Badge } from './components/badge/Badge';
+import { IdentifierIcon } from './components/identifierIcon/IdentifierIcon';
+import { IconTooltip } from './components/tooltip/IconTooltip';
+import { Tooltip } from './components/tooltip/Tooltip';
+import { Tag } from './components/tags/Tag';
+import { AddTag } from './components/tags/AddTag';
+import { Modal } from './components/modal/Modal';
+import { Badge } from './components/badge/Badge';
 
 function App() {
   return (
     <div className="App m-40">
-      <ColourThemeSwatch color="yellow" />
+      {/* <ColourThemeSwatch color="yellow" /> */}
       {/* <IdentifierIcon
         color="green"
         size="sm"
@@ -38,7 +38,7 @@ function App() {
 
       </IconTooltip>  */}
 
-      {/* <Tooltip
+      <Tooltip
         text={
         <>
           <h3 className="m-1 font-semibold">Info Header</h3>
@@ -48,7 +48,7 @@ function App() {
         // text="tooltadd addit"
       >
         Click here
-      </Tooltip> */}
+      </Tooltip>
 
       {/* <AddTag
         // children="Remove Tag"

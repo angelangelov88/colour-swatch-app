@@ -4,7 +4,6 @@ import classNames from 'classnames';
 import { Dialog, Transition } from '@headlessui/react';
 import { XIcon } from '@heroicons/react/outline';
 
-// import { Button } from 'le-component-library';
 import { Button } from '../button/Button';
 
 function Modal(props) {
