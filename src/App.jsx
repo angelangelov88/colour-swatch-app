@@ -10,6 +10,8 @@ import { AddTag } from './components/tags/AddTag';
 import { Modal } from './components/modal/Modal';
 import { Badge } from './components/badge/Badge';
 import Button from './components/button/Button';
+import Label from './components/label/Label';
+import Toggle from './components/toggle/Toggle';
 
 function App() {
   return (
@@ -93,36 +95,6 @@ function App() {
         // rounded="full"
         // iconOnly={false}
       />  */}
-
-
-      <Button />
-      <Button>Text</Button>
-      <Button><DocumentIcon className="w-5 h-5" /></Button>
-      <Button outline />
-      <Button outline={false} />
-      <Button variant="primary" />
-      <Button variant="secondary" />
-      <Button variant="tertiary" />
-      <Button size="base" />
-      <Button size="sm" />
-      <Button size="md" />
-      <Button size="lg" />
-      <Button size="icon" />
-      <Button rounded="none" />
-      <Button rounded="sm" />
-      <Button rounded="md" />
-      <Button rounded="lg" />
-      <Button rounded="full" />
-      <Button type="button" />
-      <Button type="submit" />
-      <Button type="reset" />
-      <Button disabled />
-      <Button disabled={false} />
-      <Button tabIndex="0" />
-      <Button onClick={() => {}} />
-      <Button className="text-red-50" children="text" />
-      <Button ariaLabel="this is a button" />
-
 
 
 

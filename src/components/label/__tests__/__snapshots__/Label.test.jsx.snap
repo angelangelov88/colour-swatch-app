@@ -1,0 +1,45 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render with default 1`] = `
+<span
+  className="font-ibm inline-flex items-center text-xs leading-4 font-medium px-1.5 py-1 text-sm"
+/>
+`;
+
+exports[`should render with default 2`] = `
+<span
+  className="font-ibm inline-flex items-center text-xs leading-4 font-medium px-1.5 py-1 text-sm"
+>
+  Label2
+</span>
+`;
+
+exports[`should render with default 3`] = `
+<span
+  className="font-ibm inline-flex items-center text-xs leading-4 font-medium px-1.5 py-1 text-sm"
+/>
+`;
+
+exports[`should render with default 4`] = `
+<span
+  className="font-ibm inline-flex items-center text-xs leading-4 font-medium px-1 py-0.5 text-xs"
+/>
+`;
+
+exports[`should render with default 5`] = `
+<span
+  className="font-ibm inline-flex items-center text-xs leading-4 font-medium px-1.5 py-1 text-sm"
+/>
+`;
+
+exports[`should render with default 6`] = `
+<span
+  className="font-ibm inline-flex items-center text-xs leading-4 font-medium px-1.5 py-1 text-sm border-2 border-secondary-300"
+/>
+`;
+
+exports[`should render with default 7`] = `
+<span
+  className="font-ibm inline-flex items-center text-xs leading-4 font-medium px-1.5 py-1 text-sm text-red-50"
+/>
+`;
