@@ -10,6 +10,7 @@ function IconTooltip(props) {
     Icon,
     pointerPosition,
     arrowPosition,
+    tooltipWidth,
   } = props;
 
   const [clicked, setClicked] = React.useState(false);
@@ -30,6 +31,7 @@ function IconTooltip(props) {
   const tooltipClasses = classNames(
     clicked ? 'flex' : 'hidden',
     selected === 'hover' && 'group-hover:flex',
+    (tooltipWidth && (pointerPosition === 'left' || pointerPosition === 'right')) && `${tooltipWidth}`,
     'absolute flex-col justify-evenly items-center p-2 rounded-lg shadow-[2px_4px_17px_-5px_rgba(97,97,98)] dark:bg-gray-130 text-gray-80 dark:text-gray-10 text-sm text-center',
     'after:absolute after:content:none after:border-[10px] after:border-transparent',
     (pointerPosition === 'bottom' && arrowPosition === 'centre') && 'w-64 bottom-10 -left-[108px] -ml-0.5 after:left-[46%] after:-bottom-[8px] after:border-b-0 after:border-t-white dark:after:border-t-gray-130',
@@ -59,6 +61,7 @@ IconTooltip.defaultProps = {
   Icon: undefined,
   pointerPosition: 'bottom',
   arrowPosition: 'centre',
+  tooltipWidth: undefined,
 };
 
 IconTooltip.propTypes = {
@@ -77,6 +80,7 @@ IconTooltip.propTypes = {
     'left',
     'right',
   ]),
+  tooltipWidth: PropTypes.string,
 };
 
 export default IconTooltip;
