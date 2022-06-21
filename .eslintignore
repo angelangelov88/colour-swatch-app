@@ -2,3 +2,9 @@ src/App.js
 App.js
 src/index.js
 index.js
+
+# configs
+package.json
+jsconfig.json
+postcss.config.js
+tailwind.config.js

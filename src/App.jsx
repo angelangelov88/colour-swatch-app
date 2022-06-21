@@ -1,12 +1,10 @@
 /* eslint-disable */
 import React from 'react';
-import {
-  InformationCircleIcon, DocumentIcon, BellIcon, InboxIcon,
-} from '@heroicons/react/outline';
+import { InformationCircleIcon, DocumentIcon, BellIcon, InboxIcon } from "@heroicons/react/outline"
 import { ColourThemeSwatch } from './components/colourThemeSwatch/ColourThemeSwatch';
 import { IdentifierIcon } from './components/identifierIcon/IdentifierIcon';
 import { IconTooltip } from './components/tooltip/IconTooltip';
-import { Tooltip } from './components/tooltip/Tooltip';
+import { TooltipComponent } from './components/tooltip/Tooltip';
 import { Tag } from './components/tags/Tag';
 import { AddTag } from './components/tags/AddTag';
 import { Modal } from './components/modal/Modal';
@@ -38,17 +36,17 @@ function App() {
 
       </IconTooltip>  */}
 
-      <Tooltip
-        text={
-        <>
-          <h3 className="m-1 font-semibold">Info Header</h3>
-          <p className="m-1 font-redhat">Please use this field to add additional information Please use this field to add additional</p>
-        </>
-        }
-        // text="tooltadd addit"
+      <TooltipComponent
+        // text={
+        // <>
+        //   <h3 className="m-1 font-semibold">Info Header</h3>
+        //   <p className="m-1 font-redhat">Please use this field to add additional information Please use this field to add additional</p>
+        // </>
+        // }
+        text="tooltip"
       >
         Click here
-      </Tooltip>
+      </TooltipComponent>
 
       {/* <AddTag
         // children="Remove Tag"

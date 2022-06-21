@@ -1,19 +1,22 @@
+/* eslint-disable */
+
 module.exports = {
-  darkMode:'class',
-  mode: 'jit',
+  darkMode: 'class',
+  // mode: 'jit',
   content: [
-        "./src/**/*.{js,jsx,ts,tsx}",
+    './src/**/*.{js,jsx,ts,tsx}', 
+    './node_modules/@vechaiui/**/*.{js,ts,jsx,tsx}',
   ],
   theme: {
     fontFamily: {
-      'redhat': ['"Red Hat Display"', 'sans-serif'],
-      'ibm': ['"IBM Plex Sans"', 'sans-serif']
+      redhat: ['"Red Hat Display"', 'sans-serif'],
+      ibm: ['"IBM Plex Sans"', 'sans-serif'],
     },
     extend: {
       colors: {
-        'white': '#ffffff',
-        'black': '#000000',
-        'red': {
+        white: '#ffffff',
+        black: '#000000',
+        red: {
           10: '#FFF0F0',
           20: '#FFE1E0',
           30: '#FFC9C7',
@@ -23,9 +26,9 @@ module.exports = {
           70: '#DC2721',
           80: '#C1140E',
           90: '#990500',
-          100: '#7A1714'
+          100: '#7A1714',
         },
-        'yellow': {
+        yellow: {
           10: '#FFFCEF',
           20: '#FFF3C2',
           30: '#FCEC9D',
@@ -35,9 +38,9 @@ module.exports = {
           70: '#CC8904',
           80: '#9E5913',
           90: '#8A3F0E',
-          100: '#70350D'
+          100: '#70350D',
         },
-        'green': {
+        green: {
           10: '#EFFFF9',
           20: '#C5FDE8',
           30: '#9DF5D4',
@@ -47,9 +50,9 @@ module.exports = {
           70: '#33B88C',
           80: '#15946A',
           90: '#177559',
-          100: '#125241'
+          100: '#125241',
         },
-        'teal': {
+        teal: {
           10: '#EFFFFC',
           20: '#C5FCF1',
           30: '#A5FAE9',
@@ -59,9 +62,9 @@ module.exports = {
           70: '#33B8A2',
           80: '#148F7E',
           90: '#17756C',
-          100: '#15524C'
+          100: '#15524C',
         },
-        'cyan': {
+        cyan: {
           10: '#EFFFFF',
           20: '#C5FCFC',
           30: '#A0FAFA',
@@ -71,9 +74,9 @@ module.exports = {
           70: '#33B3B8',
           80: '#11868F',
           90: '#166A70',
-          100: '#11474D'
+          100: '#11474D',
         },
-        'lightblue': {
+        lightblue: {
           10: '#EFFBFF',
           20: '#C7F1FF',
           30: '#9DE4FC',
@@ -83,9 +86,9 @@ module.exports = {
           70: '#20A6D6',
           80: '#0B80B2',
           90: '#19648A',
-          100: '#0C3E57'
+          100: '#0C3E57',
         },
-        'blue': {
+        blue: {
           10: '#F0F6FF',
           20: '#E0ECFF',
           30: '#BED4FA',
@@ -95,9 +98,9 @@ module.exports = {
           70: '#4368E0',
           80: '#2D4DCC',
           90: '#233EAD',
-          100: '#14287A'
+          100: '#14287A',
         },
-        'purple': {
+        purple: {
           10: '#F4F0FF',
           20: '#EEE5FF',
           30: '#D6BEFA',
@@ -107,24 +110,24 @@ module.exports = {
           70: '#8743E0',
           80: '#722DCC',
           90: '#5F23AD',
-          100: '#40147A'
+          100: '#40147A',
         },
-        'primary': {
+        primary: {
           10: '#EFF4FF',
           20: '#C7DDFF',
           30: '#9DC3FC',
           40: '#79ADFC',
           50: '#5185FF',
           60: '#4456F6',
-          "light": '#4456F6',
+          light: '#4456F6',
           70: '#2134DC',
-          "blue": '#2134DC',
+          blue: '#2134DC',
           80: '#0E20C1',
-          "dark": '#0E20C1',
+          dark: '#0E20C1',
           90: '#000F99',
-          100: '#0C1457'
+          100: '#0C1457',
         },
-        'gray': {
+        gray: {
           10: '#F7F8FA',
           20: '#EDEFF2',
           30: '#E0E2E5',
@@ -138,10 +141,13 @@ module.exports = {
           110: '#292C33',
           120: '#151923',
           130: '#0C1019',
-          140: '#05080D'
+          140: '#05080D',
         },
       },
     },
   },
-  plugins: []
-}
+  plugins: [
+    require("@tailwindcss/forms"),
+    require("@vechaiui/core"),
+  ],
+};

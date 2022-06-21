@@ -1,8 +1,16 @@
-@tailwind base;
+/* @tailwind base;
 @tailwind components;
 @tailwind utilities;
+ */
 
-body {
+ @import "tailwindcss/base";
+
+ /* @import "tailwindcss/components"; */
+ 
+ @import "tailwindcss/utilities";
+
+
+ body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
@@ -16,36 +24,3 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
-
-/* Rounded arrow for the tooltip in CSS */
-/* .arrow {
-	display: block;
-	position: absolute;
-	top: 50%;
-	left: -10px;
-	margin-top: -9px;
-	background-color: white;
-}
-.arrow:before,
-.arrow:after {
-	content: '';
-	position: absolute;
-	background-color: inherit;
-}
-.arrow,
-.arrow:before,
-.arrow:after {
-	width: 12px;
-	height: 12px;
-	border-top-right-radius: 5px;
-}
-
-.arrow {
-	transform: rotate(-30deg) skewX(-30deg) scale(1,.866);
-}
-.arrow:before {
-  transform: rotate(-135deg) skewX(-45deg) scale(1.414,.707) translate(0,-50%);
-}
-.arrow:after {
-  transform: rotate(135deg) skewY(-45deg) scale(.707,1.414) translate(50%);
-} */

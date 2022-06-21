@@ -1,63 +1,40 @@
 import React from 'react';
-import classNames from 'classnames';
 import PropTypes from 'prop-types';
+import * as Tooltip from '@radix-ui/react-tooltip';
 
-function Tooltip(props) {
+function TooltipComponent(props) {
   const {
-    className,
     children,
     text,
   } = props;
 
-  // const [x, setX] = React.useState(0);
-  // const [y, setY] = React.useState(0);
-
-  // const HandleTooltipPosition = (e) => {
-  //   const x = e.clientX;
-  //   const y = e.clientY;
-  //   setX(x - 300);
-  //   setY(y - 140);
-  // };
-
-  const classes = classNames(
-    'relative pt-2 font-ibm text-gray-50 group',
-    'hover:text-gray-70',
-    className,
-  );
-
-  const tooltipClasses = classNames(
-    'hidden absolute w-fit max-w-xs flex-col justify-evenly items-center rounded-lg shadow-[2px_4px_17px_-5px_rgba(97,97,98)] p-2 bg-white dark:bg-gray-130 text-gray-80 dark:text-gray-10 text-sm text-center',
-    'group-hover:flex',
-    className,
-  );
-
   return (
-    <div
-      className={classes}
-      // onMouseMove={HandleTooltipPosition}
-    >
-      <div className="cursor-pointer w-max">{children}</div>
-      <div
-        className={tooltipClasses}
-        // style={{ left: `${x}px`, top: `${y}px` }}
-      >
-        {text}
-      </div>
+    <div className="relative pt-2 font-ibm text-gray-50 hover:text-gray-70">
+      <Tooltip.Root delayDuration={0} className="w-max">
+        <Tooltip.Trigger>
+          <div>{children}</div>
+        </Tooltip.Trigger>
+        <Tooltip.Content
+          sideOffset={5}
+          className="absolute w-max max-w-xs flex-col justify-evenly items-center rounded-lg shadow-[2px_4px_17px_-5px_rgba(97,97,98)] p-2 bg-white dark:bg-gray-130 text-gray-80 dark:text-gray-10 text-sm text-center"
+        >
+          {text}
+        </Tooltip.Content>
+      </Tooltip.Root>
     </div>
+
   );
 }
 
-Tooltip.defaultProps = {
-  className: undefined,
+TooltipComponent.defaultProps = {
   children: undefined,
   text: 'Click here',
 };
 
-Tooltip.propTypes = {
-  className: PropTypes.string,
+TooltipComponent.propTypes = {
   children: PropTypes.node,
   text: PropTypes.node,
 };
 
-export default Tooltip;
-export { Tooltip };
+export default TooltipComponent;
+export { TooltipComponent };
