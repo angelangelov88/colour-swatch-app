@@ -83,5 +83,5 @@ Button.propTypes = {
   ariaLabel: PropTypes.string,
 };
 
-export { Button };
 export default Button;
+export { Button };

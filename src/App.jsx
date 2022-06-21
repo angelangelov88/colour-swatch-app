@@ -4,11 +4,12 @@ import { InformationCircleIcon, DocumentIcon, BellIcon, InboxIcon } from "@heroi
 import { ColourThemeSwatch } from './components/colourThemeSwatch/ColourThemeSwatch';
 import { IdentifierIcon } from './components/identifierIcon/IdentifierIcon';
 import { IconTooltip } from './components/tooltip/IconTooltip';
-import { TooltipComponent } from './components/tooltip/Tooltip';
+import { Tooltip } from './components/tooltip/Tooltip';
 import { Tag } from './components/tags/Tag';
 import { AddTag } from './components/tags/AddTag';
 import { Modal } from './components/modal/Modal';
 import { Badge } from './components/badge/Badge';
+import Button from './components/button/Button';
 
 function App() {
   return (
@@ -31,12 +32,12 @@ function App() {
         arrowPosition="centre"
       >
         <h3 className="m-1 font-semibold">Info Header</h3>
-        <p className="m-1 font-redhat">Please use this field to add additional information Please use this field to add additional information Please use this field to add additional information Please use this field to add additional information Please use this field to add additional information Please use this field to add additional information Please use this field to add additional information Please use this field to add additional information Please use this field to add additional information Please use this field to add additional information</p>
+        <p className="m-1 font-redhat">Please use this field to add additional information Please use this field to add additional information Please use this field to add additional information</p>
         <a href="https://test.com" className="m-1 text-blue-60 dark:text-blue-50">Link</a>
 
       </IconTooltip>  */}
 
-      <TooltipComponent
+      {/* <Tooltip
         // text={
         // <>
         //   <h3 className="m-1 font-semibold">Info Header</h3>
@@ -46,7 +47,7 @@ function App() {
         text="tooltip"
       >
         Click here
-      </TooltipComponent>
+      </Tooltip> */}
 
       {/* <AddTag
         // children="Remove Tag"
@@ -92,6 +93,38 @@ function App() {
         // rounded="full"
         // iconOnly={false}
       />  */}
+
+
+      <Button />
+      <Button>Text</Button>
+      <Button><DocumentIcon className="w-5 h-5" /></Button>
+      <Button outline />
+      <Button outline={false} />
+      <Button variant="primary" />
+      <Button variant="secondary" />
+      <Button variant="tertiary" />
+      <Button size="base" />
+      <Button size="sm" />
+      <Button size="md" />
+      <Button size="lg" />
+      <Button size="icon" />
+      <Button rounded="none" />
+      <Button rounded="sm" />
+      <Button rounded="md" />
+      <Button rounded="lg" />
+      <Button rounded="full" />
+      <Button type="button" />
+      <Button type="submit" />
+      <Button type="reset" />
+      <Button disabled />
+      <Button disabled={false} />
+      <Button tabIndex="0" />
+      <Button onClick={() => {}} />
+      <Button className="text-red-50" children="text" />
+      <Button ariaLabel="this is a button" />
+
+
+
 
     </div>
   );
