@@ -1,6 +1,6 @@
 /* eslint-disable */
 import React from 'react';
-import { InformationCircleIcon, DocumentIcon, BellIcon, InboxIcon } from "@heroicons/react/outline"
+import { InformationCircleIcon, DocumentIcon, BellIcon, InboxIcon, DotsHorizontalIcon, DotsVerticalIcon } from "@heroicons/react/outline"
 import { ColourThemeSwatch } from './components/colourThemeSwatch/ColourThemeSwatch';
 import { IdentifierIcon } from './components/identifierIcon/IdentifierIcon';
 import { IconTooltip } from './components/tooltip/IconTooltip';
@@ -15,7 +15,8 @@ import Toggle from './components/toggle/Toggle';
 
 function App() {
   return (
-    <div className="App m-40">
+    // <div className="App m-40">
+    <div className="App relative top-40 left-10">
       {/* <ColourThemeSwatch color="yellow" /> */}
       {/* <IdentifierIcon
         color="green"
@@ -27,30 +28,32 @@ function App() {
         initials="gJ"
     /> */}
 
-      <IconTooltip
+      {/* <IconTooltip
         selected="click"
         Icon={InformationCircleIcon}
-        pointerPosition="left"
-        arrowPosition="centre"
-        // tooltipWidth="w-72"
+        pointerPosition="right"
+        // arrowPosition="centre"
+        // tooltipWidth="w-36"
       >
         <h3 className="m-1 font-semibold">Info Header</h3>
-        <p className="m-1 font-redhat">Please use this field to add additional information Please use this field to add additional information Please use this field to add additional information</p>
+        <p className="m-1 font-redhat">Please use this field to add additional information</p>
         <a href="https://test.com" className="m-1 text-blue-60 dark:text-blue-50">Link</a>
 
-      </IconTooltip> 
+      </IconTooltip>  */}
 
       <Tooltip
-        text={
-        <>
-          <h3 className="m-1 font-semibold">Info Header</h3>
-          <p className="m-1 font-redhat">Please use this field to add additional information Please use this field to add additional</p>
-        </>
-        }
-        // text="tooltip"
+        // text={
+        // <>
+        //   <h3 className="m-1 font-semibold">Info Header</h3>
+        //   <p className="m-1 font-redhat">Please use this field to add additional information</p>
+        // </>
+        // }
+        text="tooltip"
       >
-        Click here
+        {/* <InformationCircleIcon className='w-5 h-5' /> */}
+        <p>Click here</p>
       </Tooltip>
+
 
       {/* <AddTag
         // children="Remove Tag"
@@ -96,7 +99,6 @@ function App() {
         // rounded="full"
         // iconOnly={false}
       />  */}
-
 
 
     </div>

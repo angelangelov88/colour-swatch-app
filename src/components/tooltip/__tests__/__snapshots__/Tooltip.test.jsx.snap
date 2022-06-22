@@ -1,0 +1,135 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render with long text as text on hover and long text as children,  1`] = `
+<div
+  className="relative pt-2 font-ibm text-gray-50 hover:text-gray-70"
+>
+  <button
+    data-state="closed"
+    onBlur={[Function]}
+    onClick={[Function]}
+    onFocus={[Function]}
+    onMouseDown={[Function]}
+    onMouseEnter={[Function]}
+    onMouseLeave={[Function]}
+  >
+    <div>
+      Please use this field to add additional information Please use this field to add additional information Please use this field to add additional informationPlease use this field to add additional informationPlease use this field to add additional informationPlease use this field to add additional informationPlease use this field to add additional information Please use this field to add additional informationPlease use this field to add additional informationPlease use this field to add additional informationPlease use this field to add additional information
+    </div>
+  </button>
+</div>
+`;
+
+exports[`should render with text to hover over and little text as children,  1`] = `
+<div
+  className="relative pt-2 font-ibm text-gray-50 hover:text-gray-70"
+>
+  <button
+    data-state="closed"
+    onBlur={[Function]}
+    onClick={[Function]}
+    onFocus={[Function]}
+    onMouseDown={[Function]}
+    onMouseEnter={[Function]}
+    onMouseLeave={[Function]}
+  >
+    <div>
+      <h3
+        className="m-1 font-semibold"
+      >
+        Info Header
+      </h3>
+      <p
+        className="m-1 font-redhat"
+      >
+        Please use this field to add additional information Please use this field to add additional information 
+      </p>
+      <a
+        className="m-1 text-blue-60 dark:text-blue-50"
+        href="https://test.com"
+      >
+        Link
+      </a>
+    </div>
+  </button>
+</div>
+`;
+
+exports[`should render with text to hover over and long html,  1`] = `
+<div
+  className="relative pt-2 font-ibm text-gray-50 hover:text-gray-70"
+>
+  <button
+    data-state="closed"
+    onBlur={[Function]}
+    onClick={[Function]}
+    onFocus={[Function]}
+    onMouseDown={[Function]}
+    onMouseEnter={[Function]}
+    onMouseLeave={[Function]}
+  >
+    <div>
+      <h3
+        className="m-1 font-semibold"
+      >
+        Info Header
+      </h3>
+      <p
+        className="m-1 font-redhat"
+      >
+        Please use this field to add additional information Please use this field to add additional information Please use this field to add additional information Please use this field to add additional information Please use this field to add additional information Please use this field to add additional information Please use this field to add additional information Please use this field to add additional information 
+      </p>
+      <a
+        className="m-1 text-blue-60 dark:text-blue-50"
+        href="https://test.com"
+      >
+        Link
+      </a>
+    </div>
+  </button>
+</div>
+`;
+
+exports[`should render with text to hover over and text as children in html,  1`] = `
+<div
+  className="relative pt-2 font-ibm text-gray-50 hover:text-gray-70"
+>
+  <button
+    data-state="closed"
+    onBlur={[Function]}
+    onClick={[Function]}
+    onFocus={[Function]}
+    onMouseDown={[Function]}
+    onMouseEnter={[Function]}
+    onMouseLeave={[Function]}
+  >
+    <div>
+      <p
+        className="m-1 font-redhat"
+      >
+        Please use this field to add additional information 
+      </p>
+    </div>
+  </button>
+</div>
+`;
+
+exports[`should render with text to hover over and text as children prop,  1`] = `
+<div
+  className="relative pt-2 font-ibm text-gray-50 hover:text-gray-70"
+>
+  <button
+    data-state="closed"
+    onBlur={[Function]}
+    onClick={[Function]}
+    onFocus={[Function]}
+    onMouseDown={[Function]}
+    onMouseEnter={[Function]}
+    onMouseLeave={[Function]}
+  >
+    <div>
+      Please use this field to add additional information
+    </div>
+  </button>
+</div>
+`;
