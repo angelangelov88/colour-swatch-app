@@ -1,6 +1,8 @@
 /* eslint-disable */
 import React from 'react';
-import { InformationCircleIcon, DocumentIcon, BellIcon, InboxIcon, DotsHorizontalIcon, DotsVerticalIcon } from "@heroicons/react/outline"
+import {
+  InformationCircleIcon, DocumentIcon, BellIcon, InboxIcon, DotsHorizontalIcon, DotsVerticalIcon,
+} from '@heroicons/react/outline';
 import { ColourThemeSwatch } from './components/colourThemeSwatch/ColourThemeSwatch';
 import { IdentifierIcon } from './components/identifierIcon/IdentifierIcon';
 import { IconTooltip } from './components/tooltip/IconTooltip';
@@ -15,8 +17,8 @@ import Toggle from './components/toggle/Toggle';
 
 function App() {
   return (
-    // <div className="App m-40">
-    <div className="App relative top-40 left-10">
+    <div className="App m-40">
+      {/* <div className="App relative top-40 left-10"> */}
       {/* <ColourThemeSwatch color="yellow" /> */}
       {/* <IdentifierIcon
         color="green"
@@ -31,7 +33,7 @@ function App() {
       {/* <IconTooltip
         selected="click"
         Icon={InformationCircleIcon}
-        pointerPosition="right"
+        pointerPosition="top"
         // arrowPosition="centre"
         // tooltipWidth="w-36"
       >
@@ -39,21 +41,19 @@ function App() {
         <p className="m-1 font-redhat">Please use this field to add additional information</p>
         <a href="https://test.com" className="m-1 text-blue-60 dark:text-blue-50">Link</a>
 
-      </IconTooltip>  */}
+      </IconTooltip> */}
 
-      <Tooltip
+      {/* <Tooltip
         // text={
         // <>
         //   <h3 className="m-1 font-semibold">Info Header</h3>
         //   <p className="m-1 font-redhat">Please use this field to add additional information</p>
         // </>
         // }
-        text="tooltip"
+        text="tooltip Please use this field to add additional informationPlease use this field to add additional informationPlease use this field to add additional informationPlease use this field to add additional informationPlease use this field to add additional information"
       >
-        {/* <InformationCircleIcon className='w-5 h-5' /> */}
         <p>Click here</p>
-      </Tooltip>
-
+      </Tooltip> */}
 
       {/* <AddTag
         // children="Remove Tag"
@@ -89,17 +89,16 @@ function App() {
       </Modal>
  */}
 
-      {/* <Badge
-        // children="1"
-        // className=""
-        // size="lg"
-        // color="teal"
-        // LeadingIcon={InboxIcon}
-        // TrailingIcon={BellIcon}
-        // rounded="full"
-        // iconOnly={false}
-      />  */}
-
+      <Badge
+        children="1"
+        className=""
+        size="lg"
+        color="teal"
+        LeadingIcon={InboxIcon}
+        TrailingIcon={BellIcon}
+        rounded="full"
+        iconOnly={false}
+      /> 
 
     </div>
   );
