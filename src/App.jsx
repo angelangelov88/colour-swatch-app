@@ -157,13 +157,52 @@ import {IndustryBuildingsV3 as IndustryBuildingsV3Dark} from './components/picto
 import {SustainableCycle as SustainableCycleLight} from './components/pictograms/light/SustainableCycle';
 import {SustainableCycle as SustainableCycleDark} from './components/pictograms/dark/SustainableCycle';
 
+import {PadlockCheck as PadlockCheckLight} from './components/pictograms/light/PadlockCheck';
+import {PadlockCheck as PadlockCheckDark} from './components/pictograms/dark/PadlockCheck';
+import {PadlockShield as PadlockShieldLight} from './components/pictograms/light/PadlockShield';
+import {PadlockShield as PadlockShieldDark} from './components/pictograms/dark/PadlockShield';
+import {PadlockShieldAndStars as PadlockShieldAndStarsLight} from './components/pictograms/light/PadlockShieldAndStars';
+import {PadlockShieldAndStars as PadlockShieldAndStarsDark} from './components/pictograms/dark/PadlockShieldAndStars';
+
+import {HandChatBubbleQuestion as HandChatBubbleQuestionLight} from './components/pictograms/light/HandChatBubbleQuestion';
+import {HandChatBubbleQuestion as HandChatBubbleQuestionDark} from './components/pictograms/dark/HandChatBubbleQuestion';
+import {HandChatBubbleText as HandChatBubbleTextLight} from './components/pictograms/light/HandChatBubbleText';
+import {HandChatBubbleText as HandChatBubbleTextDark} from './components/pictograms/dark/HandChatBubbleText';
+import {HandChatBubbleDots as HandChatBubbleDotsLight} from './components/pictograms/light/HandChatBubbleDots';
+import {HandChatBubbleDots as HandChatBubbleDotsDark} from './components/pictograms/dark/HandChatBubbleDots';
+
+import {UploadDocumentSuccessful as UploadDocumentSuccessfulLight} from './components/pictograms/light/UploadDocumentSuccessful';
+import {UploadDocumentSuccessful as UploadDocumentSuccessfulDark} from './components/pictograms/dark/UploadDocumentSuccessful';
+import {UploadDocumentFailed as UploadDocumentFailedLight} from './components/pictograms/light/UploadDocumentFailed';
+import {UploadDocumentFailed as UploadDocumentFailedDark} from './components/pictograms/dark/UploadDocumentFailed';
+import {UploadDocumentWarning as UploadDocumentWarningLight} from './components/pictograms/light/UploadDocumentWarning';
+import {UploadDocumentWarning as UploadDocumentWarningDark} from './components/pictograms/dark/UploadDocumentWarning';
+import {UploadDocumentPreUpload as UploadDocumentPreUploadLight} from './components/pictograms/light/UploadDocumentPreUpload';
+import {UploadDocumentPreUpload as UploadDocumentPreUploadDark} from './components/pictograms/dark/UploadDocumentPreUpload';
+
+import {UploadImagePreUploadRectangle as UploadImagePreUploadRectangleLight} from './components/pictograms/light/UploadImagePreUploadRectangle';
+import {UploadImagePreUploadRectangle as UploadImagePreUploadRectangleDark} from './components/pictograms/dark/UploadImagePreUploadRectangle';
+import {UploadImageSuccessfulRectangle as UploadImageSuccessfulRectangleLight} from './components/pictograms/light/UploadImageSuccessfulRectangle';
+import {UploadImageSuccessfulRectangle as UploadImageSuccessfulRectangleDark} from './components/pictograms/dark/UploadImageSuccessfulRectangle';
+import {UploadImageWarningRectangle as UploadImageWarningRectangleLight} from './components/pictograms/light/UploadImageWarningRectangle';
+import {UploadImageWarningRectangle as UploadImageWarningRectangleDark} from './components/pictograms/dark/UploadImageWarningRectangle';
+import {UploadImageFailedRectangle as UploadImageFailedRectangleLight} from './components/pictograms/light/UploadImageFailedRectangle';
+import {UploadImageFailedRectangle as UploadImageFailedRectangleDark} from './components/pictograms/dark/UploadImageFailedRectangle';
+import {UploadImagePreUploadSquare as UploadImagePreUploadSquareLight} from './components/pictograms/light/UploadImagePreUploadSquare';
+import {UploadImagePreUploadSquare as UploadImagePreUploadSquareDark} from './components/pictograms/dark/UploadImagePreUploadSquare';
+import {UploadImageSuccessfulSquare as UploadImageSuccessfulSquareLight} from './components/pictograms/light/UploadImageSuccessfulSquare';
+import {UploadImageSuccessfulSquare as UploadImageSuccessfulSquareDark} from './components/pictograms/dark/UploadImageSuccessfulSquare';
+import {UploadImageWarningSquare as UploadImageWarningSquareLight} from './components/pictograms/light/UploadImageWarningSquare';
+import {UploadImageWarningSquare as UploadImageWarningSquareDark} from './components/pictograms/dark/UploadImageWarningSquare';
+import {UploadImageFailedSquare as UploadImageFailedSquareLight} from './components/pictograms/light/UploadImageFailedSquare';
+import {UploadImageFailedSquare as UploadImageFailedSquareDark} from './components/pictograms/dark/UploadImageFailedSquare';
+
 function App() {
   return (
     <div className="App m-40">
       {/* <div className="App relative top-40 left-10"> */}
 
-      <div className='flex flex-wrap justify-evenly m-5 p-5 bg-yellow-400'>
-
+      <div className='flex flex-wrap justify-evenly m-5 p-5 bg-teal-10'>
         {/* <CreateDocumentLight />
         <EmailLight />
         <PrintLight />
@@ -233,7 +272,7 @@ function App() {
         <SustainableLightbulbLight /> */}
 
 
-        <MoneyPageLight />
+        {/* <MoneyPageLight />
         <OnlineApprovalLight />
         <ChatBubbleV1Light />
         <ChatBubbleV2Light />
@@ -241,7 +280,33 @@ function App() {
         <IndustryBuildingsV1Light />
         <IndustryBuildingsV2Light />
         <IndustryBuildingsV3Light />
-        <SustainableCycleLight />
+        <SustainableCycleLight /> */}
+
+
+        {/* <PadlockCheckLight />
+        <PadlockShieldLight />
+        <PadlockShieldAndStarsLight /> */}
+
+        {/* <HandChatBubbleQuestionLight />
+        <HandChatBubbleTextLight />
+        <HandChatBubbleDotsLight /> */}
+
+
+        {/* <UploadDocumentSuccessfulLight />
+        <UploadDocumentFailedLight />
+        <UploadDocumentWarningLight />
+        <UploadDocumentPreUploadLight /> */}
+
+
+        <UploadImagePreUploadRectangleLight />
+        <UploadImageSuccessfulRectangleLight />
+        <UploadImageWarningRectangleLight />
+        <UploadImageFailedRectangleLight />
+        <UploadImagePreUploadSquareLight />
+        <UploadImageSuccessfulSquareLight />
+        <UploadImageWarningSquareLight />
+        <UploadImageFailedSquareLight />
+
       </div>
 
       <div className='flex flex-wrap justify-evenly m-5 p-5 bg-green-900'>
@@ -315,7 +380,7 @@ function App() {
         <SustainableLightbulbDark /> */}
 
 
-        <MoneyPageDark />
+        {/* <MoneyPageDark />
         <OnlineApprovalDark />
         <ChatBubbleV1Dark />
         <ChatBubbleV2Dark />
@@ -323,7 +388,32 @@ function App() {
         <IndustryBuildingsV1Dark />
         <IndustryBuildingsV2Dark />
         <IndustryBuildingsV3Dark />
-        <SustainableCycleDark />
+        <SustainableCycleDark /> */}
+
+        {/* <PadlockCheckDark />
+        <PadlockShieldDark />
+        <PadlockShieldAndStarsDark /> */}
+
+
+        {/* <HandChatBubbleQuestionDark />
+        <HandChatBubbleTextDark />
+        <HandChatBubbleDotsDark /> */}
+
+
+        {/* <UploadDocumentSuccessfulDark />
+        <UploadDocumentFailedDark />
+        <UploadDocumentWarningDark />
+        <UploadDocumentPreUploadDark /> */}
+
+
+        <UploadImagePreUploadRectangleDark />
+        <UploadImageSuccessfulRectangleDark />
+        <UploadImageWarningRectangleDark />
+        <UploadImageFailedRectangleDark />
+        <UploadImagePreUploadSquareDark />
+        <UploadImageSuccessfulSquareDark />
+        <UploadImageWarningSquareDark />
+        <UploadImageFailedSquareDark />
       </div>
 
 
