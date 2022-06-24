@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-function UploadDocumentSuccessful(props) {
+function UploadImageSuccessfulRectangle(props) {
   const { className } = props;
 
   return (
@@ -16,13 +16,13 @@ function UploadDocumentSuccessful(props) {
   );
 }
 
-UploadDocumentSuccessful.defaultProps = {
+UploadImageSuccessfulRectangle.defaultProps = {
   className: undefined,
 };
 
-UploadDocumentSuccessful.propTypes = {
+UploadImageSuccessfulRectangle.propTypes = {
   className: PropTypes.string,
 };
 
-export default UploadDocumentSuccessful;
-export { UploadDocumentSuccessful };
+export default UploadImageSuccessfulRectangle;
+export { UploadImageSuccessfulRectangle };

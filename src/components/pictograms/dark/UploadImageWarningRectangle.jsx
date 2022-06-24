@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-function UploadDocumentWarning(props) {
+function UploadImageWarningRectangle(props) {
   const { className } = props;
 
   return (
@@ -15,13 +15,13 @@ function UploadDocumentWarning(props) {
   );
 }
 
-UploadDocumentWarning.defaultProps = {
+UploadImageWarningRectangle.defaultProps = {
   className: undefined,
 };
 
-UploadDocumentWarning.propTypes = {
+UploadImageWarningRectangle.propTypes = {
   className: PropTypes.string,
 };
 
-export default UploadDocumentWarning;
-export { UploadDocumentWarning };
+export default UploadImageWarningRectangle;
+export { UploadImageWarningRectangle };

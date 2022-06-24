@@ -203,6 +203,9 @@ function App() {
       {/* <div className="App relative top-40 left-10"> */}
 
       <div className='flex flex-wrap justify-evenly m-5 p-5 bg-teal-10'>
+
+
+
         {/* <CreateDocumentLight />
         <EmailLight />
         <PrintLight />
@@ -298,14 +301,14 @@ function App() {
         <UploadDocumentPreUploadLight /> */}
 
 
-        <UploadImagePreUploadRectangleLight />
+        {/* <UploadImagePreUploadRectangleLight />
         <UploadImageSuccessfulRectangleLight />
         <UploadImageWarningRectangleLight />
         <UploadImageFailedRectangleLight />
         <UploadImagePreUploadSquareLight />
         <UploadImageSuccessfulSquareLight />
         <UploadImageWarningSquareLight />
-        <UploadImageFailedSquareLight />
+        <UploadImageFailedSquareLight /> */}
 
       </div>
 
@@ -406,14 +409,14 @@ function App() {
         <UploadDocumentPreUploadDark /> */}
 
 
-        <UploadImagePreUploadRectangleDark />
+        {/* <UploadImagePreUploadRectangleDark />
         <UploadImageSuccessfulRectangleDark />
         <UploadImageWarningRectangleDark />
         <UploadImageFailedRectangleDark />
         <UploadImagePreUploadSquareDark />
         <UploadImageSuccessfulSquareDark />
         <UploadImageWarningSquareDark />
-        <UploadImageFailedSquareDark />
+        <UploadImageFailedSquareDark /> */}
       </div>
 
 
