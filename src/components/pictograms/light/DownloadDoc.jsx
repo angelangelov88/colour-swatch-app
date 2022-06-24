@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-function Download(props) {
+function DownloadDoc(props) {
   const { className } = props;
 
   return (
@@ -18,13 +18,13 @@ function Download(props) {
   );
 }
 
-Download.defaultProps = {
+DownloadDoc.defaultProps = {
   className: undefined,
 };
 
-Download.propTypes = {
+DownloadDoc.propTypes = {
   className: PropTypes.string,
 };
 
-export default Download;
-export { Download };
+export default DownloadDoc;
+export { DownloadDoc };

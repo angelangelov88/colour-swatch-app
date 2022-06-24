@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-function LightBulb(props) {
+function Lightbulb(props) {
   const { className } = props;
 
   return (
@@ -13,13 +13,13 @@ function LightBulb(props) {
   );
 }
 
-LightBulb.defaultProps = {
+Lightbulb.defaultProps = {
   className: undefined,
 };
 
-LightBulb.propTypes = {
+Lightbulb.propTypes = {
   className: PropTypes.string,
 };
 
-export default LightBulb;
-export { LightBulb };
+export default Lightbulb;
+export { Lightbulb };

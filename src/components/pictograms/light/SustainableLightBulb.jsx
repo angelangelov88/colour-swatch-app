@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-function SustainableLightBulb(props) {
+function SustainableLightbulb(props) {
   const { className } = props;
 
   return (
@@ -12,13 +12,13 @@ function SustainableLightBulb(props) {
   );
 }
 
-SustainableLightBulb.defaultProps = {
+SustainableLightbulb.defaultProps = {
   className: undefined,
 };
 
-SustainableLightBulb.propTypes = {
+SustainableLightbulb.propTypes = {
   className: PropTypes.string,
 };
 
-export default SustainableLightBulb;
-export { SustainableLightBulb };
+export default SustainableLightbulb;
+export { SustainableLightbulb };
