@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-function MoneyLineGraphV2(props) {
+function MoneyLineGraphV2Pictogram(props) {
   const { className } = props;
 
   return (
@@ -18,13 +18,13 @@ function MoneyLineGraphV2(props) {
   );
 }
 
-MoneyLineGraphV2.defaultProps = {
+MoneyLineGraphV2Pictogram.defaultProps = {
   className: undefined,
 };
 
-MoneyLineGraphV2.propTypes = {
+MoneyLineGraphV2Pictogram.propTypes = {
   className: PropTypes.string,
 };
 
-export default MoneyLineGraphV2;
-export { MoneyLineGraphV2 };
+export default MoneyLineGraphV2Pictogram;
+export { MoneyLineGraphV2Pictogram };

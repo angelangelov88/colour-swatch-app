@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-function SustainableCycle(props) {
+function SustainableCyclePictogram(props) {
   const { className } = props;
 
   return (
@@ -15,13 +15,13 @@ function SustainableCycle(props) {
   );
 }
 
-SustainableCycle.defaultProps = {
+SustainableCyclePictogram.defaultProps = {
   className: undefined,
 };
 
-SustainableCycle.propTypes = {
+SustainableCyclePictogram.propTypes = {
   className: PropTypes.string,
 };
 
-export default SustainableCycle;
-export { SustainableCycle };
+export default SustainableCyclePictogram;
+export { SustainableCyclePictogram };

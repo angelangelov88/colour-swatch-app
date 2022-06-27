@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-function Signer(props) {
+function SignerPictogram(props) {
   const { className } = props;
 
   return (
@@ -13,13 +13,13 @@ function Signer(props) {
   );
 }
 
-Signer.defaultProps = {
+SignerPictogram.defaultProps = {
   className: undefined,
 };
 
-Signer.propTypes = {
+SignerPictogram.propTypes = {
   className: PropTypes.string,
 };
 
-export default Signer;
-export { Signer };
+export default SignerPictogram;
+export { SignerPictogram };

@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-function UploadDocumentPreUpload(props) {
+function UploadDocumentPreUploadPictogram(props) {
   const { className } = props;
 
   return (
@@ -17,13 +17,13 @@ function UploadDocumentPreUpload(props) {
   );
 }
 
-UploadDocumentPreUpload.defaultProps = {
+UploadDocumentPreUploadPictogram.defaultProps = {
   className: undefined,
 };
 
-UploadDocumentPreUpload.propTypes = {
+UploadDocumentPreUploadPictogram.propTypes = {
   className: PropTypes.string,
 };
 
-export default UploadDocumentPreUpload;
-export { UploadDocumentPreUpload };
+export default UploadDocumentPreUploadPictogram;
+export { UploadDocumentPreUploadPictogram };

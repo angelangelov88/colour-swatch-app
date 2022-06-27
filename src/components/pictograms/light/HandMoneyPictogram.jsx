@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-function HandMoney(props) {
+function HandMoneyPictogram(props) {
   const { className } = props;
 
   return (
@@ -18,13 +18,13 @@ function HandMoney(props) {
   );
 }
 
-HandMoney.defaultProps = {
+HandMoneyPictogram.defaultProps = {
   className: undefined,
 };
 
-HandMoney.propTypes = {
+HandMoneyPictogram.propTypes = {
   className: PropTypes.string,
 };
 
-export default HandMoney;
-export { HandMoney };
+export default HandMoneyPictogram;
+export { HandMoneyPictogram };

@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-function SettingsAlt2(props) {
+function SettingsAlt2Pictogram(props) {
   const { className } = props;
 
   return (
@@ -24,13 +24,13 @@ function SettingsAlt2(props) {
   );
 }
 
-SettingsAlt2.defaultProps = {
+SettingsAlt2Pictogram.defaultProps = {
   className: undefined,
 };
 
-SettingsAlt2.propTypes = {
+SettingsAlt2Pictogram.propTypes = {
   className: PropTypes.string,
 };
 
-export default SettingsAlt2;
-export { SettingsAlt2 };
+export default SettingsAlt2Pictogram;
+export { SettingsAlt2Pictogram };

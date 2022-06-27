@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-function UploadImageFailedRectangle(props) {
+function UploadImageFailedRectanglePictogram(props) {
   const { className } = props;
 
   return (
@@ -27,13 +27,13 @@ function UploadImageFailedRectangle(props) {
   );
 }
 
-UploadImageFailedRectangle.defaultProps = {
+UploadImageFailedRectanglePictogram.defaultProps = {
   className: undefined,
 };
 
-UploadImageFailedRectangle.propTypes = {
+UploadImageFailedRectanglePictogram.propTypes = {
   className: PropTypes.string,
 };
 
-export default UploadImageFailedRectangle;
-export { UploadImageFailedRectangle };
+export default UploadImageFailedRectanglePictogram;
+export { UploadImageFailedRectanglePictogram };

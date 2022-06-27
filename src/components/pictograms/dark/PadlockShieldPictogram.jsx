@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-function PadlockShield(props) {
+function PadlockShieldPictogram(props) {
   const { className } = props;
 
   return (
@@ -14,13 +14,13 @@ function PadlockShield(props) {
   );
 }
 
-PadlockShield.defaultProps = {
+PadlockShieldPictogram.defaultProps = {
   className: undefined,
 };
 
-PadlockShield.propTypes = {
+PadlockShieldPictogram.propTypes = {
   className: PropTypes.string,
 };
 
-export default PadlockShield;
-export { PadlockShield };
+export default PadlockShieldPictogram;
+export { PadlockShieldPictogram };

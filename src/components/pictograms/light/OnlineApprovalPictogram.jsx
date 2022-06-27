@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-function OnlineApproval(props) {
+function OnlineApprovalPictogram(props) {
   const { className } = props;
 
   return (
@@ -22,13 +22,13 @@ function OnlineApproval(props) {
   );
 }
 
-OnlineApproval.defaultProps = {
+OnlineApprovalPictogram.defaultProps = {
   className: undefined,
 };
 
-OnlineApproval.propTypes = {
+OnlineApprovalPictogram.propTypes = {
   className: PropTypes.string,
 };
 
-export default OnlineApproval;
-export { OnlineApproval };
+export default OnlineApprovalPictogram;
+export { OnlineApprovalPictogram };

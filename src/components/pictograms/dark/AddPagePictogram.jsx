@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-function AddPage(props) {
+function AddPagePictogram(props) {
   const { className } = props;
 
   return (
@@ -13,13 +13,13 @@ function AddPage(props) {
   );
 }
 
-AddPage.defaultProps = {
+AddPagePictogram.defaultProps = {
   className: undefined,
 };
 
-AddPage.propTypes = {
+AddPagePictogram.propTypes = {
   className: PropTypes.string,
 };
 
-export default AddPage;
-export { AddPage };
+export default AddPagePictogram;
+export { AddPagePictogram };

@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-function Search(props) {
+function SearchPictogram(props) {
   const { className } = props;
 
   return (
@@ -24,13 +24,13 @@ function Search(props) {
   );
 }
 
-Search.defaultProps = {
+SearchPictogram.defaultProps = {
   className: undefined,
 };
 
-Search.propTypes = {
+SearchPictogram.propTypes = {
   className: PropTypes.string,
 };
 
-export default Search;
-export { Search };
+export default SearchPictogram;
+export { SearchPictogram };

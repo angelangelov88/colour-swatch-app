@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-function Email(props) {
+function EmailPictogram(props) {
   const { className } = props;
 
   return (
@@ -13,13 +13,13 @@ function Email(props) {
   );
 }
 
-Email.defaultProps = {
+EmailPictogram.defaultProps = {
   className: undefined,
 };
 
-Email.propTypes = {
+EmailPictogram.propTypes = {
   className: PropTypes.string,
 };
 
-export default Email;
-export { Email };
+export default EmailPictogram;
+export { EmailPictogram };

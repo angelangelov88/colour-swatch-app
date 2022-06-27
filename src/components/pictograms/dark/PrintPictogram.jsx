@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-function Print(props) {
+function PrintPictogram(props) {
   const { className } = props;
 
   return (
@@ -16,13 +16,13 @@ function Print(props) {
   );
 }
 
-Print.defaultProps = {
+PrintPictogram.defaultProps = {
   className: undefined,
 };
 
-Print.propTypes = {
+PrintPictogram.propTypes = {
   className: PropTypes.string,
 };
 
-export default Print;
-export { Print };
+export default PrintPictogram;
+export { PrintPictogram };

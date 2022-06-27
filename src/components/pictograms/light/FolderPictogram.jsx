@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-function Folder(props) {
+function FolderPictogram(props) {
   const { className } = props;
 
   return (
@@ -15,13 +15,13 @@ function Folder(props) {
   );
 }
 
-Folder.defaultProps = {
+FolderPictogram.defaultProps = {
   className: undefined,
 };
 
-Folder.propTypes = {
+FolderPictogram.propTypes = {
   className: PropTypes.string,
 };
 
-export default Folder;
-export { Folder };
+export default FolderPictogram;
+export { FolderPictogram };

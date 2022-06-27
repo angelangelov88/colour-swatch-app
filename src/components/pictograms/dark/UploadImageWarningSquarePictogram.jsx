@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-function UploadImageWarningSquare(props) {
+function UploadImageWarningSquarePictogram(props) {
   const { className } = props;
 
   return (
@@ -15,13 +15,13 @@ function UploadImageWarningSquare(props) {
   );
 }
 
-UploadImageWarningSquare.defaultProps = {
+UploadImageWarningSquarePictogram.defaultProps = {
   className: undefined,
 };
 
-UploadImageWarningSquare.propTypes = {
+UploadImageWarningSquarePictogram.propTypes = {
   className: PropTypes.string,
 };
 
-export default UploadImageWarningSquare;
-export { UploadImageWarningSquare };
+export default UploadImageWarningSquarePictogram;
+export { UploadImageWarningSquarePictogram };

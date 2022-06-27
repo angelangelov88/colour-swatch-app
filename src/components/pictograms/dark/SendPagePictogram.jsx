@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-function SendPage(props) {
+function SendPagePictogram(props) {
   const { className } = props;
 
   return (
@@ -20,13 +20,13 @@ function SendPage(props) {
   );
 }
 
-SendPage.defaultProps = {
+SendPagePictogram.defaultProps = {
   className: undefined,
 };
 
-SendPage.propTypes = {
+SendPagePictogram.propTypes = {
   className: PropTypes.string,
 };
 
-export default SendPage;
-export { SendPage };
+export default SendPagePictogram;
+export { SendPagePictogram };

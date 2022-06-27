@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-function Wetlink(props) {
+function WetlinkPictogram(props) {
   const { className } = props;
 
   return (
@@ -25,13 +25,13 @@ function Wetlink(props) {
   );
 }
 
-Wetlink.defaultProps = {
+WetlinkPictogram.defaultProps = {
   className: undefined,
 };
 
-Wetlink.propTypes = {
+WetlinkPictogram.propTypes = {
   className: PropTypes.string,
 };
 
-export default Wetlink;
-export { Wetlink };
+export default WetlinkPictogram;
+export { WetlinkPictogram };

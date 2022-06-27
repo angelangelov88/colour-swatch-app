@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-function SustainablePageV1(props) {
+function SustainablePageV1Pictogram(props) {
   const { className } = props;
 
   return (
@@ -20,13 +20,13 @@ function SustainablePageV1(props) {
   );
 }
 
-SustainablePageV1.defaultProps = {
+SustainablePageV1Pictogram.defaultProps = {
   className: undefined,
 };
 
-SustainablePageV1.propTypes = {
+SustainablePageV1Pictogram.propTypes = {
   className: PropTypes.string,
 };
 
-export default SustainablePageV1;
-export { SustainablePageV1 };
+export default SustainablePageV1Pictogram;
+export { SustainablePageV1Pictogram };

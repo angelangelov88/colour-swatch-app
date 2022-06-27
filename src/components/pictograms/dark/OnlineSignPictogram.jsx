@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-function OnlineSign(props) {
+function OnlineSignPictogram(props) {
   const { className } = props;
 
   return (
@@ -15,13 +15,13 @@ function OnlineSign(props) {
   );
 }
 
-OnlineSign.defaultProps = {
+OnlineSignPictogram.defaultProps = {
   className: undefined,
 };
 
-OnlineSign.propTypes = {
+OnlineSignPictogram.propTypes = {
   className: PropTypes.string,
 };
 
-export default OnlineSign;
-export { OnlineSign };
+export default OnlineSignPictogram;
+export { OnlineSignPictogram };

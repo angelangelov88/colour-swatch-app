@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-function Online(props) {
+function OnlinePictogram(props) {
   const { className } = props;
 
   return (
@@ -16,13 +16,13 @@ function Online(props) {
   );
 }
 
-Online.defaultProps = {
+OnlinePictogram.defaultProps = {
   className: undefined,
 };
 
-Online.propTypes = {
+OnlinePictogram.propTypes = {
   className: PropTypes.string,
 };
 
-export default Online;
-export { Online };
+export default OnlinePictogram;
+export { OnlinePictogram };

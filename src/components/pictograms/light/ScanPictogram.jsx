@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-function Scan(props) {
+function ScanPictogram(props) {
   const { className } = props;
 
   return (
@@ -22,13 +22,13 @@ function Scan(props) {
   );
 }
 
-Scan.defaultProps = {
+ScanPictogram.defaultProps = {
   className: undefined,
 };
 
-Scan.propTypes = {
+ScanPictogram.propTypes = {
   className: PropTypes.string,
 };
 
-export default Scan;
-export { Scan };
+export default ScanPictogram;
+export { ScanPictogram };

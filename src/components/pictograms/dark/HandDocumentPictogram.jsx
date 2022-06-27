@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-function HandDocument(props) {
+function HandDocumentPictogram(props) {
   const { className } = props;
 
   return (
@@ -17,13 +17,13 @@ function HandDocument(props) {
   );
 }
 
-HandDocument.defaultProps = {
+HandDocumentPictogram.defaultProps = {
   className: undefined,
 };
 
-HandDocument.propTypes = {
+HandDocumentPictogram.propTypes = {
   className: PropTypes.string,
 };
 
-export default HandDocument;
-export { HandDocument };
+export default HandDocumentPictogram;
+export { HandDocumentPictogram };

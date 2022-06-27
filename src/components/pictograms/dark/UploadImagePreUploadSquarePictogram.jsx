@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-function UploadImagePreUploadSquare(props) {
+function UploadImagePreUploadSquarePictogram(props) {
   const { className } = props;
 
   return (
@@ -14,13 +14,13 @@ function UploadImagePreUploadSquare(props) {
   );
 }
 
-UploadImagePreUploadSquare.defaultProps = {
+UploadImagePreUploadSquarePictogram.defaultProps = {
   className: undefined,
 };
 
-UploadImagePreUploadSquare.propTypes = {
+UploadImagePreUploadSquarePictogram.propTypes = {
   className: PropTypes.string,
 };
 
-export default UploadImagePreUploadSquare;
-export { UploadImagePreUploadSquare };
+export default UploadImagePreUploadSquarePictogram;
+export { UploadImagePreUploadSquarePictogram };

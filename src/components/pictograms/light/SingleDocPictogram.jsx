@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-function SingleDoc(props) {
+function SingleDocPictogram(props) {
   const { className } = props;
 
   return (
@@ -19,13 +19,13 @@ function SingleDoc(props) {
   );
 }
 
-SingleDoc.defaultProps = {
+SingleDocPictogram.defaultProps = {
   className: undefined,
 };
 
-SingleDoc.propTypes = {
+SingleDocPictogram.propTypes = {
   className: PropTypes.string,
 };
 
-export default SingleDoc;
-export { SingleDoc };
+export default SingleDocPictogram;
+export { SingleDocPictogram };

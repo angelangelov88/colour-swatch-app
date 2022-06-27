@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-function ChatBubbleV2(props) {
+function ChatBubbleV2Pictogram(props) {
   const { className } = props;
 
   return (
@@ -16,13 +16,13 @@ function ChatBubbleV2(props) {
   );
 }
 
-ChatBubbleV2.defaultProps = {
+ChatBubbleV2Pictogram.defaultProps = {
   className: undefined,
 };
 
-ChatBubbleV2.propTypes = {
+ChatBubbleV2Pictogram.propTypes = {
   className: PropTypes.string,
 };
 
-export default ChatBubbleV2;
-export { ChatBubbleV2 };
+export default ChatBubbleV2Pictogram;
+export { ChatBubbleV2Pictogram };

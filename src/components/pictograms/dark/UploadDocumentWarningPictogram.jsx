@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-function UploadDocumentWarning(props) {
+function UploadDocumentWarningPictogram(props) {
   const { className } = props;
 
   return (
@@ -19,13 +19,13 @@ function UploadDocumentWarning(props) {
   );
 }
 
-UploadDocumentWarning.defaultProps = {
+UploadDocumentWarningPictogram.defaultProps = {
   className: undefined,
 };
 
-UploadDocumentWarning.propTypes = {
+UploadDocumentWarningPictogram.propTypes = {
   className: PropTypes.string,
 };
 
-export default UploadDocumentWarning;
-export { UploadDocumentWarning };
+export default UploadDocumentWarningPictogram;
+export { UploadDocumentWarningPictogram };

@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-function HandChatBubbleDots(props) {
+function HandChatBubbleDotsPictogram(props) {
   const { className } = props;
 
   return (
@@ -17,13 +17,13 @@ function HandChatBubbleDots(props) {
   );
 }
 
-HandChatBubbleDots.defaultProps = {
+HandChatBubbleDotsPictogram.defaultProps = {
   className: undefined,
 };
 
-HandChatBubbleDots.propTypes = {
+HandChatBubbleDotsPictogram.propTypes = {
   className: PropTypes.string,
 };
 
-export default HandChatBubbleDots;
-export { HandChatBubbleDots };
+export default HandChatBubbleDotsPictogram;
+export { HandChatBubbleDotsPictogram };

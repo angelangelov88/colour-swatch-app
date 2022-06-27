@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-function DocumentConnect(props) {
+function DocumentConnectPictogram(props) {
   const { className } = props;
 
   return (
@@ -21,13 +21,13 @@ function DocumentConnect(props) {
   );
 }
 
-DocumentConnect.defaultProps = {
+DocumentConnectPictogram.defaultProps = {
   className: undefined,
 };
 
-DocumentConnect.propTypes = {
+DocumentConnectPictogram.propTypes = {
   className: PropTypes.string,
 };
 
-export default DocumentConnect;
-export { DocumentConnect };
+export default DocumentConnectPictogram;
+export { DocumentConnectPictogram };

@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-function UploadImageSuccessfulSquare(props) {
+function UploadImageSuccessfulSquarePictogram(props) {
   const { className } = props;
 
   return (
@@ -16,13 +16,13 @@ function UploadImageSuccessfulSquare(props) {
   );
 }
 
-UploadImageSuccessfulSquare.defaultProps = {
+UploadImageSuccessfulSquarePictogram.defaultProps = {
   className: undefined,
 };
 
-UploadImageSuccessfulSquare.propTypes = {
+UploadImageSuccessfulSquarePictogram.propTypes = {
   className: PropTypes.string,
 };
 
-export default UploadImageSuccessfulSquare;
-export { UploadImageSuccessfulSquare };
+export default UploadImageSuccessfulSquarePictogram;
+export { UploadImageSuccessfulSquarePictogram };

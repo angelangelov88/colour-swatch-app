@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-function UploadImageFailedSquare(props) {
+function UploadImageFailedSquarePictogram(props) {
   const { className } = props;
 
   return (
@@ -17,13 +17,13 @@ function UploadImageFailedSquare(props) {
   );
 }
 
-UploadImageFailedSquare.defaultProps = {
+UploadImageFailedSquarePictogram.defaultProps = {
   className: undefined,
 };
 
-UploadImageFailedSquare.propTypes = {
+UploadImageFailedSquarePictogram.propTypes = {
   className: PropTypes.string,
 };
 
-export default UploadImageFailedSquare;
-export { UploadImageFailedSquare };
+export default UploadImageFailedSquarePictogram;
+export { UploadImageFailedSquarePictogram };

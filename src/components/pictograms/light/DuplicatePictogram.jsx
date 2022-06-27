@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-function Duplicate(props) {
+function DuplicatePictogram(props) {
   const { className } = props;
 
   return (
@@ -23,13 +23,13 @@ function Duplicate(props) {
   );
 }
 
-Duplicate.defaultProps = {
+DuplicatePictogram.defaultProps = {
   className: undefined,
 };
 
-Duplicate.propTypes = {
+DuplicatePictogram.propTypes = {
   className: PropTypes.string,
 };
 
-export default Duplicate;
-export { Duplicate };
+export default DuplicatePictogram;
+export { DuplicatePictogram };

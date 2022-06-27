@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-function SendDoc(props) {
+function SendDocPictogram(props) {
   const { className } = props;
 
   return (
@@ -19,13 +19,13 @@ function SendDoc(props) {
   );
 }
 
-SendDoc.defaultProps = {
+SendDocPictogram.defaultProps = {
   className: undefined,
 };
 
-SendDoc.propTypes = {
+SendDocPictogram.propTypes = {
   className: PropTypes.string,
 };
 
-export default SendDoc;
-export { SendDoc };
+export default SendDocPictogram;
+export { SendDocPictogram };

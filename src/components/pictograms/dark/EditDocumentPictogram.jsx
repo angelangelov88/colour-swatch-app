@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-function EditDocument(props) {
+function EditDocumentPictogram(props) {
   const { className } = props;
 
   return (
@@ -20,13 +20,13 @@ function EditDocument(props) {
   );
 }
 
-EditDocument.defaultProps = {
+EditDocumentPictogram.defaultProps = {
   className: undefined,
 };
 
-EditDocument.propTypes = {
+EditDocumentPictogram.propTypes = {
   className: PropTypes.string,
 };
 
-export default EditDocument;
-export { EditDocument };
+export default EditDocumentPictogram;
+export { EditDocumentPictogram };

@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-function MultiDocs(props) {
+function MultiDocsPictogram(props) {
   const { className } = props;
 
   return (
@@ -19,13 +19,13 @@ function MultiDocs(props) {
   );
 }
 
-MultiDocs.defaultProps = {
+MultiDocsPictogram.defaultProps = {
   className: undefined,
 };
 
-MultiDocs.propTypes = {
+MultiDocsPictogram.propTypes = {
   className: PropTypes.string,
 };
 
-export default MultiDocs;
-export { MultiDocs };
+export default MultiDocsPictogram;
+export { MultiDocsPictogram };

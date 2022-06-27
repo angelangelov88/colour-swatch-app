@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-function CreateDocument(props) {
+function CreateDocumentPictogram(props) {
   const { className } = props;
 
   return (
@@ -13,13 +13,13 @@ function CreateDocument(props) {
   );
 }
 
-CreateDocument.defaultProps = {
+CreateDocumentPictogram.defaultProps = {
   className: undefined,
 };
 
-CreateDocument.propTypes = {
+CreateDocumentPictogram.propTypes = {
   className: PropTypes.string,
 };
 
-export default CreateDocument;
-export { CreateDocument };
+export default CreateDocumentPictogram;
+export { CreateDocumentPictogram };

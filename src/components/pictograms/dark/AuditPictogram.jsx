@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-function Audit(props) {
+function AuditPictogram(props) {
   const { className } = props;
 
   return (
@@ -44,13 +44,13 @@ function Audit(props) {
   );
 }
 
-Audit.defaultProps = {
+AuditPictogram.defaultProps = {
   className: undefined,
 };
 
-Audit.propTypes = {
+AuditPictogram.propTypes = {
   className: PropTypes.string,
 };
 
-export default Audit;
-export { Audit };
+export default AuditPictogram;
+export { AuditPictogram };

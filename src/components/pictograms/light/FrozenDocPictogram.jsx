@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-function FrozenDoc(props) {
+function FrozenDocPictogram(props) {
   const { className } = props;
 
   return (
@@ -20,13 +20,13 @@ function FrozenDoc(props) {
   );
 }
 
-FrozenDoc.defaultProps = {
+FrozenDocPictogram.defaultProps = {
   className: undefined,
 };
 
-FrozenDoc.propTypes = {
+FrozenDocPictogram.propTypes = {
   className: PropTypes.string,
 };
 
-export default FrozenDoc;
-export { FrozenDoc };
+export default FrozenDocPictogram;
+export { FrozenDocPictogram };

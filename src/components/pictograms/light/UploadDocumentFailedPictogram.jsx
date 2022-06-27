@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-function UploadDocumentFailed(props) {
+function UploadDocumentFailedPictogram(props) {
   const { className } = props;
 
   return (
@@ -19,13 +19,13 @@ function UploadDocumentFailed(props) {
   );
 }
 
-UploadDocumentFailed.defaultProps = {
+UploadDocumentFailedPictogram.defaultProps = {
   className: undefined,
 };
 
-UploadDocumentFailed.propTypes = {
+UploadDocumentFailedPictogram.propTypes = {
   className: PropTypes.string,
 };
 
-export default UploadDocumentFailed;
-export { UploadDocumentFailed };
+export default UploadDocumentFailedPictogram;
+export { UploadDocumentFailedPictogram };

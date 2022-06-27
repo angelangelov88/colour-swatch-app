@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-function MoneyPage(props) {
+function MoneyPagePictogram(props) {
   const { className } = props;
 
   return (
@@ -21,13 +21,13 @@ function MoneyPage(props) {
   );
 }
 
-MoneyPage.defaultProps = {
+MoneyPagePictogram.defaultProps = {
   className: undefined,
 };
 
-MoneyPage.propTypes = {
+MoneyPagePictogram.propTypes = {
   className: PropTypes.string,
 };
 
-export default MoneyPage;
-export { MoneyPage };
+export default MoneyPagePictogram;
+export { MoneyPagePictogram };

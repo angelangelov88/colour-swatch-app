@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-function MoneyBarChart(props) {
+function MoneyBarChartPictogram(props) {
   const { className } = props;
 
   return (
@@ -18,13 +18,13 @@ function MoneyBarChart(props) {
   );
 }
 
-MoneyBarChart.defaultProps = {
+MoneyBarChartPictogram.defaultProps = {
   className: undefined,
 };
 
-MoneyBarChart.propTypes = {
+MoneyBarChartPictogram.propTypes = {
   className: PropTypes.string,
 };
 
-export default MoneyBarChart;
-export { MoneyBarChart };
+export default MoneyBarChartPictogram;
+export { MoneyBarChartPictogram };

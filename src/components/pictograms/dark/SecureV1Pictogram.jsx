@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-function SecureV1(props) {
+function SecureV1Pictogram(props) {
   const { className } = props;
 
   return (
@@ -20,13 +20,13 @@ function SecureV1(props) {
   );
 }
 
-SecureV1.defaultProps = {
+SecureV1Pictogram.defaultProps = {
   className: undefined,
 };
 
-SecureV1.propTypes = {
+SecureV1Pictogram.propTypes = {
   className: PropTypes.string,
 };
 
-export default SecureV1;
-export { SecureV1 };
+export default SecureV1Pictogram;
+export { SecureV1Pictogram };

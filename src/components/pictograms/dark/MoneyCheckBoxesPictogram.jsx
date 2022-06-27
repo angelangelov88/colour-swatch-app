@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-function MoneyCheckBoxes(props) {
+function MoneyCheckBoxesPictogram(props) {
   const { className } = props;
 
   return (
@@ -21,13 +21,13 @@ function MoneyCheckBoxes(props) {
   );
 }
 
-MoneyCheckBoxes.defaultProps = {
+MoneyCheckBoxesPictogram.defaultProps = {
   className: undefined,
 };
 
-MoneyCheckBoxes.propTypes = {
+MoneyCheckBoxesPictogram.propTypes = {
   className: PropTypes.string,
 };
 
-export default MoneyCheckBoxes;
-export { MoneyCheckBoxes };
+export default MoneyCheckBoxesPictogram;
+export { MoneyCheckBoxesPictogram };

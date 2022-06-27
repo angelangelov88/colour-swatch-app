@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-function Link(props) {
+function LinkPictogram(props) {
   const { className } = props;
 
   return (
@@ -17,13 +17,13 @@ function Link(props) {
   );
 }
 
-Link.defaultProps = {
+LinkPictogram.defaultProps = {
   className: undefined,
 };
 
-Link.propTypes = {
+LinkPictogram.propTypes = {
   className: PropTypes.string,
 };
 
-export default Link;
-export { Link };
+export default LinkPictogram;
+export { LinkPictogram };

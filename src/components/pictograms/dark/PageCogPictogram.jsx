@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-function PageCog(props) {
+function PageCogPictogram(props) {
   const { className } = props;
 
   return (
@@ -20,13 +20,13 @@ function PageCog(props) {
   );
 }
 
-PageCog.defaultProps = {
+PageCogPictogram.defaultProps = {
   className: undefined,
 };
 
-PageCog.propTypes = {
+PageCogPictogram.propTypes = {
   className: PropTypes.string,
 };
 
-export default PageCog;
-export { PageCog };
+export default PageCogPictogram;
+export { PageCogPictogram };

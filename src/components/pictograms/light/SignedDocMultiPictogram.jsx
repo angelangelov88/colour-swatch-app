@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-function SignedDocMulti(props) {
+function SignedDocMultiPictogram(props) {
   const { className } = props;
 
   return (
@@ -18,13 +18,13 @@ function SignedDocMulti(props) {
   );
 }
 
-SignedDocMulti.defaultProps = {
+SignedDocMultiPictogram.defaultProps = {
   className: undefined,
 };
 
-SignedDocMulti.propTypes = {
+SignedDocMultiPictogram.propTypes = {
   className: PropTypes.string,
 };
 
-export default SignedDocMulti;
-export { SignedDocMulti };
+export default SignedDocMultiPictogram;
+export { SignedDocMultiPictogram };

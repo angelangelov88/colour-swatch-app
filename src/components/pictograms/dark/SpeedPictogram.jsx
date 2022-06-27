@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-function Speed(props) {
+function SpeedPictogram(props) {
   const { className } = props;
 
   return (
@@ -25,13 +25,13 @@ function Speed(props) {
   );
 }
 
-Speed.defaultProps = {
+SpeedPictogram.defaultProps = {
   className: undefined,
 };
 
-Speed.propTypes = {
+SpeedPictogram.propTypes = {
   className: PropTypes.string,
 };
 
-export default Speed;
-export { Speed };
+export default SpeedPictogram;
+export { SpeedPictogram };

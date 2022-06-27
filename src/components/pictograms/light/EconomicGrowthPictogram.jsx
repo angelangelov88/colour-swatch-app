@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-function EconomicGrowth(props) {
+function EconomicGrowthPictogram(props) {
   const { className } = props;
 
   return (
@@ -14,13 +14,13 @@ function EconomicGrowth(props) {
   );
 }
 
-EconomicGrowth.defaultProps = {
+EconomicGrowthPictogram.defaultProps = {
   className: undefined,
 };
 
-EconomicGrowth.propTypes = {
+EconomicGrowthPictogram.propTypes = {
   className: PropTypes.string,
 };
 
-export default EconomicGrowth;
-export { EconomicGrowth };
+export default EconomicGrowthPictogram;
+export { EconomicGrowthPictogram };

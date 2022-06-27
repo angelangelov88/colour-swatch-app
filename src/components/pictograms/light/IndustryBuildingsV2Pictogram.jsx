@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-function IndustryBuildingsV2(props) {
+function IndustryBuildingsV2Pictogram(props) {
   const { className } = props;
 
   return (
@@ -48,13 +48,13 @@ function IndustryBuildingsV2(props) {
   );
 }
 
-IndustryBuildingsV2.defaultProps = {
+IndustryBuildingsV2Pictogram.defaultProps = {
   className: undefined,
 };
 
-IndustryBuildingsV2.propTypes = {
+IndustryBuildingsV2Pictogram.propTypes = {
   className: PropTypes.string,
 };
 
-export default IndustryBuildingsV2;
-export { IndustryBuildingsV2 };
+export default IndustryBuildingsV2Pictogram;
+export { IndustryBuildingsV2Pictogram };

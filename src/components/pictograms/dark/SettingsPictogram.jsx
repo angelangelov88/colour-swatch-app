@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-function Settings(props) {
+function SettingsPictogram(props) {
   const { className } = props;
 
   return (
@@ -20,13 +20,13 @@ function Settings(props) {
   );
 }
 
-Settings.defaultProps = {
+SettingsPictogram.defaultProps = {
   className: undefined,
 };
 
-Settings.propTypes = {
+SettingsPictogram.propTypes = {
   className: PropTypes.string,
 };
 
-export default Settings;
-export { Settings };
+export default SettingsPictogram;
+export { SettingsPictogram };

@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-function ReloadPage(props) {
+function ReloadPagePictogram(props) {
   const { className } = props;
 
   return (
@@ -20,13 +20,13 @@ function ReloadPage(props) {
   );
 }
 
-ReloadPage.defaultProps = {
+ReloadPagePictogram.defaultProps = {
   className: undefined,
 };
 
-ReloadPage.propTypes = {
+ReloadPagePictogram.propTypes = {
   className: PropTypes.string,
 };
 
-export default ReloadPage;
-export { ReloadPage };
+export default ReloadPagePictogram;
+export { ReloadPagePictogram };

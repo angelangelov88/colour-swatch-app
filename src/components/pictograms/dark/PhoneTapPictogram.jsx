@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-function PhoneTap(props) {
+function PhoneTapPictogram(props) {
   const { className } = props;
 
   return (
@@ -18,13 +18,13 @@ function PhoneTap(props) {
   );
 }
 
-PhoneTap.defaultProps = {
+PhoneTapPictogram.defaultProps = {
   className: undefined,
 };
 
-PhoneTap.propTypes = {
+PhoneTapPictogram.propTypes = {
   className: PropTypes.string,
 };
 
-export default PhoneTap;
-export { PhoneTap };
+export default PhoneTapPictogram;
+export { PhoneTapPictogram };

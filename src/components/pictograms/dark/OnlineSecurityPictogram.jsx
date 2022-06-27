@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-function OnlineSecurity(props) {
+function OnlineSecurityPictogram(props) {
   const { className } = props;
 
   return (
@@ -14,13 +14,13 @@ function OnlineSecurity(props) {
   );
 }
 
-OnlineSecurity.defaultProps = {
+OnlineSecurityPictogram.defaultProps = {
   className: undefined,
 };
 
-OnlineSecurity.propTypes = {
+OnlineSecurityPictogram.propTypes = {
   className: PropTypes.string,
 };
 
-export default OnlineSecurity;
-export { OnlineSecurity };
+export default OnlineSecurityPictogram;
+export { OnlineSecurityPictogram };

@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-function Diamond(props) {
+function DiamondPictogram(props) {
   const { className } = props;
 
   return (
@@ -15,13 +15,13 @@ function Diamond(props) {
   );
 }
 
-Diamond.defaultProps = {
+DiamondPictogram.defaultProps = {
   className: undefined,
 };
 
-Diamond.propTypes = {
+DiamondPictogram.propTypes = {
   className: PropTypes.string,
 };
 
-export default Diamond;
-export { Diamond };
+export default DiamondPictogram;
+export { DiamondPictogram };

@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-function FolderAlt3(props) {
+function FolderAlt3Pictogram(props) {
   const { className } = props;
 
   return (
@@ -15,13 +15,13 @@ function FolderAlt3(props) {
   );
 }
 
-FolderAlt3.defaultProps = {
+FolderAlt3Pictogram.defaultProps = {
   className: undefined,
 };
 
-FolderAlt3.propTypes = {
+FolderAlt3Pictogram.propTypes = {
   className: PropTypes.string,
 };
 
-export default FolderAlt3;
-export { FolderAlt3 };
+export default FolderAlt3Pictogram;
+export { FolderAlt3Pictogram };

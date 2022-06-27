@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-function HandGlobe(props) {
+function HandGlobePictogram(props) {
   const { className } = props;
 
   return (
@@ -15,13 +15,13 @@ function HandGlobe(props) {
   );
 }
 
-HandGlobe.defaultProps = {
+HandGlobePictogram.defaultProps = {
   className: undefined,
 };
 
-HandGlobe.propTypes = {
+HandGlobePictogram.propTypes = {
   className: PropTypes.string,
 };
 
-export default HandGlobe;
-export { HandGlobe };
+export default HandGlobePictogram;
+export { HandGlobePictogram };

@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-function GDPR(props) {
+function GDPRPictogram(props) {
   const { className } = props;
 
   return (
@@ -23,13 +23,13 @@ function GDPR(props) {
   );
 }
 
-GDPR.defaultProps = {
+GDPRPictogram.defaultProps = {
   className: undefined,
 };
 
-GDPR.propTypes = {
+GDPRPictogram.propTypes = {
   className: PropTypes.string,
 };
 
-export default GDPR;
-export { GDPR };
+export default GDPRPictogram;
+export { GDPRPictogram };

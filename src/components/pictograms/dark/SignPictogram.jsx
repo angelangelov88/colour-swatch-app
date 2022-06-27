@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-function Sign(props) {
+function SignPictogram(props) {
   const { className } = props;
   return (
     <svg width="24" height="24" className={className} viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -17,13 +17,13 @@ function Sign(props) {
   );
 }
 
-Sign.defaultProps = {
+SignPictogram.defaultProps = {
   className: undefined,
 };
 
-Sign.propTypes = {
+SignPictogram.propTypes = {
   className: PropTypes.string,
 };
 
-export default Sign;
-export { Sign };
+export default SignPictogram;
+export { SignPictogram };

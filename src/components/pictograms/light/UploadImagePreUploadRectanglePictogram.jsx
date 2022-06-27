@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-function UploadImagePreUploadRectangle(props) {
+function UploadImagePreUploadRectanglePictogram(props) {
   const { className } = props;
 
   return (
@@ -14,13 +14,13 @@ function UploadImagePreUploadRectangle(props) {
   );
 }
 
-UploadImagePreUploadRectangle.defaultProps = {
+UploadImagePreUploadRectanglePictogram.defaultProps = {
   className: undefined,
 };
 
-UploadImagePreUploadRectangle.propTypes = {
+UploadImagePreUploadRectanglePictogram.propTypes = {
   className: PropTypes.string,
 };
 
-export default UploadImagePreUploadRectangle;
-export { UploadImagePreUploadRectangle };
+export default UploadImagePreUploadRectanglePictogram;
+export { UploadImagePreUploadRectanglePictogram };

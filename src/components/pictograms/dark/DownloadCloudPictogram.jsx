@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-function DownloadCloud(props) {
+function DownloadCloudPictogram(props) {
   const { className } = props;
 
   return (
@@ -15,13 +15,13 @@ function DownloadCloud(props) {
   );
 }
 
-DownloadCloud.defaultProps = {
+DownloadCloudPictogram.defaultProps = {
   className: undefined,
 };
 
-DownloadCloud.propTypes = {
+DownloadCloudPictogram.propTypes = {
   className: PropTypes.string,
 };
 
-export default DownloadCloud;
-export { DownloadCloud };
+export default DownloadCloudPictogram;
+export { DownloadCloudPictogram };

@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-function Secure(props) {
+function SecurePictogram(props) {
   const { className } = props;
 
   return (
@@ -35,13 +35,13 @@ function Secure(props) {
   );
 }
 
-Secure.defaultProps = {
+SecurePictogram.defaultProps = {
   className: undefined,
 };
 
-Secure.propTypes = {
+SecurePictogram.propTypes = {
   className: PropTypes.string,
 };
 
-export default Secure;
-export { Secure };
+export default SecurePictogram;
+export { SecurePictogram };

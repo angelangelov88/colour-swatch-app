@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-function Overview(props) {
+function OverviewPictogram(props) {
   const { className } = props;
 
   return (
@@ -21,13 +21,13 @@ function Overview(props) {
   );
 }
 
-Overview.defaultProps = {
+OverviewPictogram.defaultProps = {
   className: undefined,
 };
 
-Overview.propTypes = {
+OverviewPictogram.propTypes = {
   className: PropTypes.string,
 };
 
-export default Overview;
-export { Overview };
+export default OverviewPictogram;
+export { OverviewPictogram };

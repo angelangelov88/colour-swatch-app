@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-function MailStack(props) {
+function MailStackPictogram(props) {
   const { className } = props;
 
   return (
@@ -13,13 +13,13 @@ function MailStack(props) {
   );
 }
 
-MailStack.defaultProps = {
+MailStackPictogram.defaultProps = {
   className: undefined,
 };
 
-MailStack.propTypes = {
+MailStackPictogram.propTypes = {
   className: PropTypes.string,
 };
 
-export default MailStack;
-export { MailStack };
+export default MailStackPictogram;
+export { MailStackPictogram };

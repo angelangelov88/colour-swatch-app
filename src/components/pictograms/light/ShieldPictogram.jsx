@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-function Shield(props) {
+function ShieldPictogram(props) {
   const { className } = props;
 
   return (
@@ -21,13 +21,13 @@ function Shield(props) {
   );
 }
 
-Shield.defaultProps = {
+ShieldPictogram.defaultProps = {
   className: undefined,
 };
 
-Shield.propTypes = {
+ShieldPictogram.propTypes = {
   className: PropTypes.string,
 };
 
-export default Shield;
-export { Shield };
+export default ShieldPictogram;
+export { ShieldPictogram };

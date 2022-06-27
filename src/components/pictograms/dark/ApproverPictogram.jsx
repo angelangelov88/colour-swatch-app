@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-function Approver(props) {
+function ApproverPictogram(props) {
   const { className } = props;
 
   return (
@@ -14,13 +14,13 @@ function Approver(props) {
   );
 }
 
-Approver.defaultProps = {
+ApproverPictogram.defaultProps = {
   className: undefined,
 };
 
-Approver.propTypes = {
+ApproverPictogram.propTypes = {
   className: PropTypes.string,
 };
 
-export default Approver;
-export { Approver };
+export default ApproverPictogram;
+export { ApproverPictogram };

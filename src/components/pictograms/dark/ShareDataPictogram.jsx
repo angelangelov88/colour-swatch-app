@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-function ShareData(props) {
+function ShareDataPictogram(props) {
   const { className } = props;
 
   return (
@@ -28,13 +28,13 @@ function ShareData(props) {
   );
 }
 
-ShareData.defaultProps = {
+ShareDataPictogram.defaultProps = {
   className: undefined,
 };
 
-ShareData.propTypes = {
+ShareDataPictogram.propTypes = {
   className: PropTypes.string,
 };
 
-export default ShareData;
-export { ShareData };
+export default ShareDataPictogram;
+export { ShareDataPictogram };

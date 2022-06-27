@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-function Time(props) {
+function TimePictogram(props) {
   const { className } = props;
 
   return (
@@ -13,13 +13,13 @@ function Time(props) {
   );
 }
 
-Time.defaultProps = {
+TimePictogram.defaultProps = {
   className: undefined,
 };
 
-Time.propTypes = {
+TimePictogram.propTypes = {
   className: PropTypes.string,
 };
 
-export default Time;
-export { Time };
+export default TimePictogram;
+export { TimePictogram };
