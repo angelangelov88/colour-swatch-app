@@ -16,193 +16,193 @@ import Label from './components/label/Label';
 import Toggle from './components/toggle/Toggle';
 
 
-import {CreateDocumentPictogram as CreateDocumentPictogramLight} from './components/pictograms/light/CreateDocumentPictogram';
-import {CreateDocumentPictogram as CreateDocumentPictogramDark} from './components/pictograms/dark/CreateDocumentPictogram';
-import {EmailPictogram as EmailPictogramLight} from './components/pictograms/light/EmailPictogram';
-import {EmailPictogram as EmailPictogramDark} from './components/pictograms/dark/EmailPictogram';
-import {PrintPictogram as PrintPictogramLight} from './components/pictograms/light/PrintPictogram';
-import {PrintPictogram as PrintPictogramDark} from './components/pictograms/dark/PrintPictogram';
-import {SignPictogram as SignPictogramLight} from './components/pictograms/light/SignPictogram';
-import {SignPictogram as SignPictogramDark} from './components/pictograms/dark/SignPictogram';
-import {ScanPictogram as ScanPictogramLight} from './components/pictograms/light/ScanPictogram';
-import {ScanPictogram as ScanPictogramDark} from './components/pictograms/dark/ScanPictogram';
-import {PhoneTapPictogram as PhoneTapPictogramLight} from './components/pictograms/light/PhoneTapPictogram';
-import {PhoneTapPictogram as PhoneTapPictogramDark} from './components/pictograms/dark/PhoneTapPictogram';
-import {EditDocumentPictogram as EditDocumentPictogramLight} from './components/pictograms/light/EditDocumentPictogram';
-import {EditDocumentPictogram as EditDocumentPictogramDark} from './components/pictograms/dark/EditDocumentPictogram';
-import {SendDocPictogram as SendDocPictogramLight} from './components/pictograms/light/SendDocPictogram';
-import {SendDocPictogram as SendDocPictogramDark} from './components/pictograms/dark/SendDocPictogram';
-import {ShareDataPictogram as ShareDataPictogramLight} from './components/pictograms/light/ShareDataPictogram';
-import {ShareDataPictogram as ShareDataPictogramDark} from './components/pictograms/dark/ShareDataPictogram';
-import {SignedDocPictogram as SignedDocPictogramLight} from './components/pictograms/light/SignedDocPictogram';
-import {SignedDocPictogram as SignedDocPictogramDark} from './components/pictograms/dark/SignedDocPictogram';
-import {SignedDocMultiPictogram as SignedDocMultiPictogramLight} from './components/pictograms/light/SignedDocMultiPictogram';
-import {SignedDocMultiPictogram as SignedDocMultiPictogramDark} from './components/pictograms/dark/SignedDocMultiPictogram';
-import {SignerPictogram as SignerPictogramLight} from './components/pictograms/light/SignerPictogram';
-import {SignerPictogram as SignerPictogramDark} from './components/pictograms/dark/SignerPictogram';
-import {UnknownSignerPictogram as UnknownSignerPictogramLight} from './components/pictograms/light/UnknownSignerPictogram';
-import {UnknownSignerPictogram as UnknownSignerPictogramDark} from './components/pictograms/dark/UnknownSignerPictogram';
-import {ApproverPictogram as ApproverPictogramLight} from './components/pictograms/light/ApproverPictogram';
-import {ApproverPictogram as ApproverPictogramDark} from './components/pictograms/dark/ApproverPictogram';
+import {CreateDocumentPictogram as CreateDocumentPictogramLight} from './components/pictograms/light';
+import {CreateDocumentPictogram as CreateDocumentPictogramDark} from './components/pictograms/dark';
+import {EmailPictogram as EmailPictogramLight} from './components/pictograms/light';
+import {EmailPictogram as EmailPictogramDark} from './components/pictograms/dark';
+import {PrintPictogram as PrintPictogramLight} from './components/pictograms/light';
+import {PrintPictogram as PrintPictogramDark} from './components/pictograms/dark';
+import {SignPictogram as SignPictogramLight} from './components/pictograms/light';
+import {SignPictogram as SignPictogramDark} from './components/pictograms/dark';
+import {ScanPictogram as ScanPictogramLight} from './components/pictograms/light';
+import {ScanPictogram as ScanPictogramDark} from './components/pictograms/dark';
+import {PhoneTapPictogram as PhoneTapPictogramLight} from './components/pictograms/light';
+import {PhoneTapPictogram as PhoneTapPictogramDark} from './components/pictograms/dark';
+import {EditDocumentPictogram as EditDocumentPictogramLight} from './components/pictograms/light';
+import {EditDocumentPictogram as EditDocumentPictogramDark} from './components/pictograms/dark';
+import {SendDocPictogram as SendDocPictogramLight} from './components/pictograms/light';
+import {SendDocPictogram as SendDocPictogramDark} from './components/pictograms/dark';
+import {ShareDataPictogram as ShareDataPictogramLight} from './components/pictograms/light';
+import {ShareDataPictogram as ShareDataPictogramDark} from './components/pictograms/dark';
+import {SignedDocPictogram as SignedDocPictogramLight} from './components/pictograms/light';
+import {SignedDocPictogram as SignedDocPictogramDark} from './components/pictograms/dark';
+import {SignedDocMultiPictogram as SignedDocMultiPictogramLight} from './components/pictograms/light';
+import {SignedDocMultiPictogram as SignedDocMultiPictogramDark} from './components/pictograms/dark';
+import {SignerPictogram as SignerPictogramLight} from './components/pictograms/light';
+import {SignerPictogram as SignerPictogramDark} from './components/pictograms/dark';
+import {UnknownSignerPictogram as UnknownSignerPictogramLight} from './components/pictograms/light';
+import {UnknownSignerPictogram as UnknownSignerPictogramDark} from './components/pictograms/dark';
+import {ApproverPictogram as ApproverPictogramLight} from './components/pictograms/light';
+import {ApproverPictogram as ApproverPictogramDark} from './components/pictograms/dark';
 
 
-import {AuditPictogram as AuditPictogramLight} from './components/pictograms/light/AuditPictogram';
-import {AuditPictogram as AuditPictogramDark} from './components/pictograms/dark/AuditPictogram';
-import {OnlineSignPictogram as OnlineSignPictogramLight} from './components/pictograms/light/OnlineSignPictogram';
-import {OnlineSignPictogram as OnlineSignPictogramDark} from './components/pictograms/dark/OnlineSignPictogram';
-import {DownloadDocPictogram as DownloadDocPictogramLight} from './components/pictograms/light/DownloadDocPictogram';
-import {DownloadDocPictogram as DownloadDocPictogramDark} from './components/pictograms/dark/DownloadDocPictogram';
-import {TimePictogram as TimePictogramLight} from './components/pictograms/light/TimePictogram';
-import {TimePictogram as TimePictogramDark} from './components/pictograms/dark/TimePictogram';
-import {SpeedPictogram as SpeedPictogramLight} from './components/pictograms/light/SpeedPictogram';
-import {SpeedPictogram as SpeedPictogramDark} from './components/pictograms/dark/SpeedPictogram';
-import {WetlinkPictogram as WetlinkPictogramLight} from './components/pictograms/light/WetlinkPictogram';
-import {WetlinkPictogram as WetlinkPictogramDark} from './components/pictograms/dark/WetlinkPictogram';
-import {OnlinePictogram as OnlinePictogramLight} from './components/pictograms/light/OnlinePictogram';
-import {OnlinePictogram as OnlinePictogramDark} from './components/pictograms/dark/OnlinePictogram';
-import {SecurePictogram as SecurePictogramLight} from './components/pictograms/light/SecurePictogram';
-import {SecurePictogram as SecurePictogramDark} from './components/pictograms/dark/SecurePictogram';
-import {LinkPictogram as LinkPictogramLight} from './components/pictograms/light/LinkPictogram';
-import {LinkPictogram as LinkPictogramDark} from './components/pictograms/dark/LinkPictogram';
-import {SingleDocPictogram as SingleDocPictogramLight} from './components/pictograms/light/SingleDocPictogram';
-import {SingleDocPictogram as SingleDocPictogramDark} from './components/pictograms/dark/SingleDocPictogram';
-import {MultiDocsPictogram as MultiDocsPictogramLight} from './components/pictograms/light/MultiDocsPictogram';
-import {MultiDocsPictogram as MultiDocsPictogramDark} from './components/pictograms/dark/MultiDocsPictogram';
-import {DuplicatePictogram as DuplicatePictogramLight} from './components/pictograms/light/DuplicatePictogram';
-import {DuplicatePictogram as DuplicatePictogramDark} from './components/pictograms/dark/DuplicatePictogram';
-import {AddPagePictogram as AddPagePictogramLight} from './components/pictograms/light/AddPagePictogram';
-import {AddPagePictogram as AddPagePictogramDark} from './components/pictograms/dark/AddPagePictogram';
-import {MailStackPictogram as MailStackPictogramLight} from './components/pictograms/light/MailStackPictogram';
-import {MailStackPictogram as MailStackPictogramDark} from './components/pictograms/dark/MailStackPictogram';
+import {AuditPictogram as AuditPictogramLight} from './components/pictograms/light';
+import {AuditPictogram as AuditPictogramDark} from './components/pictograms/dark';
+import {OnlineSignPictogram as OnlineSignPictogramLight} from './components/pictograms/light';
+import {OnlineSignPictogram as OnlineSignPictogramDark} from './components/pictograms/dark';
+import {DownloadDocPictogram as DownloadDocPictogramLight} from './components/pictograms/light';
+import {DownloadDocPictogram as DownloadDocPictogramDark} from './components/pictograms/dark';
+import {TimePictogram as TimePictogramLight} from './components/pictograms/light';
+import {TimePictogram as TimePictogramDark} from './components/pictograms/dark';
+import {SpeedPictogram as SpeedPictogramLight} from './components/pictograms/light';
+import {SpeedPictogram as SpeedPictogramDark} from './components/pictograms/dark';
+import {WetlinkPictogram as WetlinkPictogramLight} from './components/pictograms/light';
+import {WetlinkPictogram as WetlinkPictogramDark} from './components/pictograms/dark';
+import {OnlinePictogram as OnlinePictogramLight} from './components/pictograms/light';
+import {OnlinePictogram as OnlinePictogramDark} from './components/pictograms/dark';
+import {SecurePictogram as SecurePictogramLight} from './components/pictograms/light';
+import {SecurePictogram as SecurePictogramDark} from './components/pictograms/dark';
+import {LinkPictogram as LinkPictogramLight} from './components/pictograms/light';
+import {LinkPictogram as LinkPictogramDark} from './components/pictograms/dark';
+import {SingleDocPictogram as SingleDocPictogramLight} from './components/pictograms/light';
+import {SingleDocPictogram as SingleDocPictogramDark} from './components/pictograms/dark';
+import {MultiDocsPictogram as MultiDocsPictogramLight} from './components/pictograms/light';
+import {MultiDocsPictogram as MultiDocsPictogramDark} from './components/pictograms/dark';
+import {DuplicatePictogram as DuplicatePictogramLight} from './components/pictograms/light';
+import {DuplicatePictogram as DuplicatePictogramDark} from './components/pictograms/dark';
+import {AddPagePictogram as AddPagePictogramLight} from './components/pictograms/light';
+import {AddPagePictogram as AddPagePictogramDark} from './components/pictograms/dark';
+import {MailStackPictogram as MailStackPictogramLight} from './components/pictograms/light';
+import {MailStackPictogram as MailStackPictogramDark} from './components/pictograms/dark';
 
 
-import {UploadPictogram as UploadPictogramLight} from './components/pictograms/light/UploadPictogram';
-import {UploadPictogram as UploadPictogramDark} from './components/pictograms/dark/UploadPictogram';
-import {DownloadCloudPictogram as DownloadCloudPictogramLight} from './components/pictograms/light/DownloadCloudPictogram';
-import {DownloadCloudPictogram as DownloadCloudPictogramDark} from './components/pictograms/dark/DownloadCloudPictogram';
-import {LightbulbPictogram as LightbulbPictogramLight} from './components/pictograms/light/LightbulbPictogram';
-import {LightbulbPictogram as LightbulbPictogramDark} from './components/pictograms/dark/LightbulbPictogram';
-import {ShieldPictogram as ShieldPictogramLight} from './components/pictograms/light/ShieldPictogram';
-import {ShieldPictogram as ShieldPictogramDark} from './components/pictograms/dark/ShieldPictogram';
-import {ReloadPagePictogram as ReloadPagePictogramLight} from './components/pictograms/light/ReloadPagePictogram';
-import {ReloadPagePictogram as ReloadPagePictogramDark} from './components/pictograms/dark/ReloadPagePictogram';
-import {SendPagePictogram as SendPagePictogramLight} from './components/pictograms/light/SendPagePictogram';
-import {SendPagePictogram as SendPagePictogramDark} from './components/pictograms/dark/SendPagePictogram';
-import {FrozenDocPictogram as FrozenDocPictogramLight} from './components/pictograms/light/FrozenDocPictogram';
-import {FrozenDocPictogram as FrozenDocPictogramDark} from './components/pictograms/dark/FrozenDocPictogram';
-import {SearchPictogram as SearchPictogramLight} from './components/pictograms/light/SearchPictogram';
-import {SearchPictogram as SearchPictogramDark} from './components/pictograms/dark/SearchPictogram';
-import {FolderAltPictogram as FolderAltPictogramLight} from './components/pictograms/light/FolderAltPictogram';
-import {FolderAltPictogram as FolderAltPictogramDark} from './components/pictograms/dark/FolderAltPictogram';
-import {FolderPictogram as FolderPictogramLight} from './components/pictograms/light/FolderPictogram';
-import {FolderPictogram as FolderPictogramDark} from './components/pictograms/dark/FolderPictogram';
-import {FolderAlt2Pictogram as FolderAlt2PictogramLight} from './components/pictograms/light/FolderAlt2Pictogram';
-import {FolderAlt2Pictogram as FolderAlt2PictogramDark} from './components/pictograms/dark/FolderAlt2Pictogram';
-import {FolderAlt3Pictogram as FolderAlt3PictogramLight} from './components/pictograms/light/FolderAlt3Pictogram';
-import {FolderAlt3Pictogram as FolderAlt3PictogramDark} from './components/pictograms/dark/FolderAlt3Pictogram';
-import {SettingsPictogram as SettingsPictogramLight} from './components/pictograms/light/SettingsPictogram';
-import {SettingsPictogram as SettingsPictogramDark} from './components/pictograms/dark/SettingsPictogram';
-import {SettingsAlt2Pictogram as SettingsAlt2PictogramLight} from './components/pictograms/light/SettingsAlt2Pictogram';
-import {SettingsAlt2Pictogram as SettingsAlt2PictogramDark} from './components/pictograms/dark/SettingsAlt2Pictogram';
+import {UploadPictogram as UploadPictogramLight} from './components/pictograms/light';
+import {UploadPictogram as UploadPictogramDark} from './components/pictograms/dark';
+import {DownloadCloudPictogram as DownloadCloudPictogramLight} from './components/pictograms/light';
+import {DownloadCloudPictogram as DownloadCloudPictogramDark} from './components/pictograms/dark';
+import {LightbulbPictogram as LightbulbPictogramLight} from './components/pictograms/light';
+import {LightbulbPictogram as LightbulbPictogramDark} from './components/pictograms/dark';
+import {ShieldPictogram as ShieldPictogramLight} from './components/pictograms/light';
+import {ShieldPictogram as ShieldPictogramDark} from './components/pictograms/dark';
+import {ReloadPagePictogram as ReloadPagePictogramLight} from './components/pictograms/light';
+import {ReloadPagePictogram as ReloadPagePictogramDark} from './components/pictograms/dark';
+import {SendPagePictogram as SendPagePictogramLight} from './components/pictograms/light';
+import {SendPagePictogram as SendPagePictogramDark} from './components/pictograms/dark';
+import {FrozenDocPictogram as FrozenDocPictogramLight} from './components/pictograms/light';
+import {FrozenDocPictogram as FrozenDocPictogramDark} from './components/pictograms/dark';
+import {SearchPictogram as SearchPictogramLight} from './components/pictograms/light';
+import {SearchPictogram as SearchPictogramDark} from './components/pictograms/dark';
+import {FolderAltPictogram as FolderAltPictogramLight} from './components/pictograms/light';
+import {FolderAltPictogram as FolderAltPictogramDark} from './components/pictograms/dark';
+import {FolderPictogram as FolderPictogramLight} from './components/pictograms/light';
+import {FolderPictogram as FolderPictogramDark} from './components/pictograms/dark';
+import {FolderAlt2Pictogram as FolderAlt2PictogramLight} from './components/pictograms/light';
+import {FolderAlt2Pictogram as FolderAlt2PictogramDark} from './components/pictograms/dark';
+import {FolderAlt3Pictogram as FolderAlt3PictogramLight} from './components/pictograms/light';
+import {FolderAlt3Pictogram as FolderAlt3PictogramDark} from './components/pictograms/dark';
+import {SettingsPictogram as SettingsPictogramLight} from './components/pictograms/light';
+import {SettingsPictogram as SettingsPictogramDark} from './components/pictograms/dark';
+import {SettingsAlt2Pictogram as SettingsAlt2PictogramLight} from './components/pictograms/light';
+import {SettingsAlt2Pictogram as SettingsAlt2PictogramDark} from './components/pictograms/dark';
 
-import {OnlineSecurityPictogram as OnlineSecurityPictogramLight} from './components/pictograms/light/OnlineSecurityPictogram';
-import {OnlineSecurityPictogram as OnlineSecurityPictogramDark} from './components/pictograms/dark/OnlineSecurityPictogram';
-import {DiamondPictogram as DiamondPictogramLight} from './components/pictograms/light/DiamondPictogram';
-import {DiamondPictogram as DiamondPictogramDark} from './components/pictograms/dark/DiamondPictogram';
-import {OverviewPictogram as OverviewPictogramLight} from './components/pictograms/light/OverviewPictogram';
-import {OverviewPictogram as OverviewPictogramDark} from './components/pictograms/dark/OverviewPictogram';
-import {SecureV1Pictogram as SecureV1PictogramLight} from './components/pictograms/light/SecureV1Pictogram';
-import {SecureV1Pictogram as SecureV1PictogramDark} from './components/pictograms/dark/SecureV1Pictogram';
-import {PageCogPictogram as PageCogPictogramLight} from './components/pictograms/light/PageCogPictogram';
-import {PageCogPictogram as PageCogPictogramDark} from './components/pictograms/dark/PageCogPictogram';
-import {HandGlobePictogram as HandGlobePictogramLight} from './components/pictograms/light/HandGlobePictogram';
-import {HandGlobePictogram as HandGlobePictogramDark} from './components/pictograms/dark/HandGlobePictogram';
-import {HandDocumentPictogram as HandDocumentPictogramLight} from './components/pictograms/light/HandDocumentPictogram';
-import {HandDocumentPictogram as HandDocumentPictogramDark} from './components/pictograms/dark/HandDocumentPictogram';
+import {OnlineSecurityPictogram as OnlineSecurityPictogramLight} from './components/pictograms/light';
+import {OnlineSecurityPictogram as OnlineSecurityPictogramDark} from './components/pictograms/dark';
+import {DiamondPictogram as DiamondPictogramLight} from './components/pictograms/light';
+import {DiamondPictogram as DiamondPictogramDark} from './components/pictograms/dark';
+import {OverviewPictogram as OverviewPictogramLight} from './components/pictograms/light';
+import {OverviewPictogram as OverviewPictogramDark} from './components/pictograms/dark';
+import {SecureV1Pictogram as SecureV1PictogramLight} from './components/pictograms/light';
+import {SecureV1Pictogram as SecureV1PictogramDark} from './components/pictograms/dark';
+import {PageCogPictogram as PageCogPictogramLight} from './components/pictograms/light';
+import {PageCogPictogram as PageCogPictogramDark} from './components/pictograms/dark';
+import {HandGlobePictogram as HandGlobePictogramLight} from './components/pictograms/light';
+import {HandGlobePictogram as HandGlobePictogramDark} from './components/pictograms/dark';
+import {HandDocumentPictogram as HandDocumentPictogramLight} from './components/pictograms/light';
+import {HandDocumentPictogram as HandDocumentPictogramDark} from './components/pictograms/dark';
 
-import {MoneyCheckBoxesPictogram as MoneyCheckBoxesPictogramLight} from './components/pictograms/light/MoneyCheckBoxesPictogram';
-import {MoneyCheckBoxesPictogram as MoneyCheckBoxesPictogramDark} from './components/pictograms/dark/MoneyCheckBoxesPictogram';
-import {MoneyLineGraphV2Pictogram as MoneyLineGraphV2PictogramLight} from './components/pictograms/light/MoneyLineGraphV2Pictogram';
-import {MoneyLineGraphV2Pictogram as MoneyLineGraphV2PictogramDark} from './components/pictograms/dark/MoneyLineGraphV2Pictogram';
-import {MoneyLineGraphV1Pictogram as MoneyLineGraphV1PictogramLight} from './components/pictograms/light/MoneyLineGraphV1Pictogram';
-import {MoneyLineGraphV1Pictogram as MoneyLineGraphV1PictogramDark} from './components/pictograms/dark/MoneyLineGraphV1Pictogram';
-import {MoneyBarChartPictogram as MoneyBarChartPictogramLight} from './components/pictograms/light/MoneyBarChartPictogram';
-import {MoneyBarChartPictogram as MoneyBarChartPictogramDark} from './components/pictograms/dark/MoneyBarChartPictogram';
-import {EconomicGrowthPictogram as EconomicGrowthPictogramLight} from './components/pictograms/light/EconomicGrowthPictogram';
-import {EconomicGrowthPictogram as EconomicGrowthPictogramDark} from './components/pictograms/dark/EconomicGrowthPictogram';
-import {HandMoneyPictogram as HandMoneyPictogramLight} from './components/pictograms/light/HandMoneyPictogram';
-import {HandMoneyPictogram as HandMoneyPictogramDark} from './components/pictograms/dark/HandMoneyPictogram';
-import {SustainablePageV2Pictogram as SustainablePageV2PictogramLight} from './components/pictograms/light/SustainablePageV2Pictogram';
-import {SustainablePageV2Pictogram as SustainablePageV2PictogramDark} from './components/pictograms/dark/SustainablePageV2Pictogram';
-import {DocumentConnectPictogram as DocumentConnectPictogramLight} from './components/pictograms/light/DocumentConnectPictogram';
-import {DocumentConnectPictogram as DocumentConnectPictogramDark} from './components/pictograms/dark/DocumentConnectPictogram';
-import {SustainablePageV1Pictogram as SustainablePageV1PictogramLight} from './components/pictograms/light/SustainablePageV1Pictogram';
-import {SustainablePageV1Pictogram as SustainablePageV1PictogramDark} from './components/pictograms/dark/SustainablePageV1Pictogram';
-import {SustainableLightbulbPictogram as SustainableLightbulbPictogramLight} from './components/pictograms/light/SustainableLightbulbPictogram';
-import {SustainableLightbulbPictogram as SustainableLightbulbPictogramDark} from './components/pictograms/dark/SustainableLightbulbPictogram';
+import {MoneyCheckBoxesPictogram as MoneyCheckBoxesPictogramLight} from './components/pictograms/light';
+import {MoneyCheckBoxesPictogram as MoneyCheckBoxesPictogramDark} from './components/pictograms/dark';
+import {MoneyLineGraphV2Pictogram as MoneyLineGraphV2PictogramLight} from './components/pictograms/light';
+import {MoneyLineGraphV2Pictogram as MoneyLineGraphV2PictogramDark} from './components/pictograms/dark';
+import {MoneyLineGraphV1Pictogram as MoneyLineGraphV1PictogramLight} from './components/pictograms/light';
+import {MoneyLineGraphV1Pictogram as MoneyLineGraphV1PictogramDark} from './components/pictograms/dark';
+import {MoneyBarChartPictogram as MoneyBarChartPictogramLight} from './components/pictograms/light';
+import {MoneyBarChartPictogram as MoneyBarChartPictogramDark} from './components/pictograms/dark';
+import {EconomicGrowthPictogram as EconomicGrowthPictogramLight} from './components/pictograms/light';
+import {EconomicGrowthPictogram as EconomicGrowthPictogramDark} from './components/pictograms/dark';
+import {HandMoneyPictogram as HandMoneyPictogramLight} from './components/pictograms/light';
+import {HandMoneyPictogram as HandMoneyPictogramDark} from './components/pictograms/dark';
+import {SustainablePageV2Pictogram as SustainablePageV2PictogramLight} from './components/pictograms/light';
+import {SustainablePageV2Pictogram as SustainablePageV2PictogramDark} from './components/pictograms/dark';
+import {DocumentConnectPictogram as DocumentConnectPictogramLight} from './components/pictograms/light';
+import {DocumentConnectPictogram as DocumentConnectPictogramDark} from './components/pictograms/dark';
+import {SustainablePageV1Pictogram as SustainablePageV1PictogramLight} from './components/pictograms/light';
+import {SustainablePageV1Pictogram as SustainablePageV1PictogramDark} from './components/pictograms/dark';
+import {SustainableLightbulbPictogram as SustainableLightbulbPictogramLight} from './components/pictograms/light';
+import {SustainableLightbulbPictogram as SustainableLightbulbPictogramDark} from './components/pictograms/dark';
 
-import {MoneyPagePictogram as MoneyPagePictogramLight} from './components/pictograms/light/MoneyPagePictogram';
-import {MoneyPagePictogram as MoneyPagePictogramDark} from './components/pictograms/dark/MoneyPagePictogram';
-import {OnlineApprovalPictogram as OnlineApprovalPictogramLight} from './components/pictograms/light/OnlineApprovalPictogram';
-import {OnlineApprovalPictogram as OnlineApprovalPictogramDark} from './components/pictograms/dark/OnlineApprovalPictogram';
-import {ChatBubbleV1Pictogram as ChatBubbleV1PictogramLight} from './components/pictograms/light/ChatBubbleV1Pictogram';
-import {ChatBubbleV1Pictogram as ChatBubbleV1PictogramDark} from './components/pictograms/dark/ChatBubbleV1Pictogram';
-import {ChatBubbleV2Pictogram as ChatBubbleV2PictogramLight} from './components/pictograms/light/ChatBubbleV2Pictogram';
-import {ChatBubbleV2Pictogram as ChatBubbleV2PictogramDark} from './components/pictograms/dark/ChatBubbleV2Pictogram';
-import {GDPRPictogram as GDPRPictogramLight} from './components/pictograms/light/GDPRPictogram';
-import {GDPRPictogram as GDPRPictogramDark} from './components/pictograms/dark/GDPRPictogram';
-import {IndustryBuildingsV1Pictogram as IndustryBuildingsV1PictogramLight} from './components/pictograms/light/IndustryBuildingsV1Pictogram';
-import {IndustryBuildingsV1Pictogram as IndustryBuildingsV1PictogramDark} from './components/pictograms/dark/IndustryBuildingsV1Pictogram';
-import {IndustryBuildingsV2Pictogram as IndustryBuildingsV2PictogramLight} from './components/pictograms/light/IndustryBuildingsV2Pictogram';
-import {IndustryBuildingsV2Pictogram as IndustryBuildingsV2PictogramDark} from './components/pictograms/dark/IndustryBuildingsV2Pictogram';
-import {IndustryBuildingsV3Pictogram as IndustryBuildingsV3PictogramLight} from './components/pictograms/light/IndustryBuildingsV3Pictogram';
-import {IndustryBuildingsV3Pictogram as IndustryBuildingsV3PictogramDark} from './components/pictograms/dark/IndustryBuildingsV3Pictogram';
-import {SustainableCyclePictogram as SustainableCyclePictogramLight} from './components/pictograms/light/SustainableCyclePictogram';
-import {SustainableCyclePictogram as SustainableCyclePictogramDark} from './components/pictograms/dark/SustainableCyclePictogram';
+import {MoneyPagePictogram as MoneyPagePictogramLight} from './components/pictograms/light';
+import {MoneyPagePictogram as MoneyPagePictogramDark} from './components/pictograms/dark';
+import {OnlineApprovalPictogram as OnlineApprovalPictogramLight} from './components/pictograms/light';
+import {OnlineApprovalPictogram as OnlineApprovalPictogramDark} from './components/pictograms/dark';
+import {ChatBubbleV1Pictogram as ChatBubbleV1PictogramLight} from './components/pictograms/light';
+import {ChatBubbleV1Pictogram as ChatBubbleV1PictogramDark} from './components/pictograms/dark';
+import {ChatBubbleV2Pictogram as ChatBubbleV2PictogramLight} from './components/pictograms/light';
+import {ChatBubbleV2Pictogram as ChatBubbleV2PictogramDark} from './components/pictograms/dark';
+import {GDPRPictogram as GDPRPictogramLight} from './components/pictograms/light';
+import {GDPRPictogram as GDPRPictogramDark} from './components/pictograms/dark';
+import {IndustryBuildingsV1Pictogram as IndustryBuildingsV1PictogramLight} from './components/pictograms/light';
+import {IndustryBuildingsV1Pictogram as IndustryBuildingsV1PictogramDark} from './components/pictograms/dark';
+import {IndustryBuildingsV2Pictogram as IndustryBuildingsV2PictogramLight} from './components/pictograms/light';
+import {IndustryBuildingsV2Pictogram as IndustryBuildingsV2PictogramDark} from './components/pictograms/dark';
+import {IndustryBuildingsV3Pictogram as IndustryBuildingsV3PictogramLight} from './components/pictograms/light';
+import {IndustryBuildingsV3Pictogram as IndustryBuildingsV3PictogramDark} from './components/pictograms/dark';
+import {SustainableCyclePictogram as SustainableCyclePictogramLight} from './components/pictograms/light';
+import {SustainableCyclePictogram as SustainableCyclePictogramDark} from './components/pictograms/dark';
 
-import {PadlockCheckPictogram as PadlockCheckPictogramLight} from './components/pictograms/light/PadlockCheckPictogram';
-import {PadlockCheckPictogram as PadlockCheckPictogramDark} from './components/pictograms/dark/PadlockCheckPictogram';
-import {PadlockShieldPictogram as PadlockShieldPictogramLight} from './components/pictograms/light/PadlockShieldPictogram';
-import {PadlockShieldPictogram as PadlockShieldPictogramDark} from './components/pictograms/dark/PadlockShieldPictogram';
-import {PadlockShieldAndStarsPictogram as PadlockShieldAndStarsPictogramLight} from './components/pictograms/light/PadlockShieldAndStarsPictogram';
-import {PadlockShieldAndStarsPictogram as PadlockShieldAndStarsPictogramDark} from './components/pictograms/dark/PadlockShieldAndStarsPictogram';
+import {PadlockCheckPictogram as PadlockCheckPictogramLight} from './components/pictograms/light';
+import {PadlockCheckPictogram as PadlockCheckPictogramDark} from './components/pictograms/dark';
+import {PadlockShieldPictogram as PadlockShieldPictogramLight} from './components/pictograms/light';
+import {PadlockShieldPictogram as PadlockShieldPictogramDark} from './components/pictograms/dark';
+import {PadlockShieldAndStarsPictogram as PadlockShieldAndStarsPictogramLight} from './components/pictograms/light';
+import {PadlockShieldAndStarsPictogram as PadlockShieldAndStarsPictogramDark} from './components/pictograms/dark';
 
-import {HandChatBubbleQuestionPictogram as HandChatBubbleQuestionPictogramLight} from './components/pictograms/light/HandChatBubbleQuestionPictogram';
-import {HandChatBubbleQuestionPictogram as HandChatBubbleQuestionPictogramDark} from './components/pictograms/dark/HandChatBubbleQuestionPictogram';
-import {HandChatBubbleTextPictogram as HandChatBubbleTextPictogramLight} from './components/pictograms/light/HandChatBubbleTextPictogram';
-import {HandChatBubbleTextPictogram as HandChatBubbleTextPictogramDark} from './components/pictograms/dark/HandChatBubbleTextPictogram';
-import {HandChatBubbleDotsPictogram as HandChatBubbleDotsPictogramLight} from './components/pictograms/light/HandChatBubbleDotsPictogram';
-import {HandChatBubbleDotsPictogram as HandChatBubbleDotsPictogramDark} from './components/pictograms/dark/HandChatBubbleDotsPictogram';
+import {HandChatBubbleQuestionPictogram as HandChatBubbleQuestionPictogramLight} from './components/pictograms/light';
+import {HandChatBubbleQuestionPictogram as HandChatBubbleQuestionPictogramDark} from './components/pictograms/dark';
+import {HandChatBubbleTextPictogram as HandChatBubbleTextPictogramLight} from './components/pictograms/light';
+import {HandChatBubbleTextPictogram as HandChatBubbleTextPictogramDark} from './components/pictograms/dark';
+import {HandChatBubbleDotsPictogram as HandChatBubbleDotsPictogramLight} from './components/pictograms/light';
+import {HandChatBubbleDotsPictogram as HandChatBubbleDotsPictogramDark} from './components/pictograms/dark';
 
-import {UploadDocumentSuccessfulPictogram as UploadDocumentSuccessfulPictogramLight} from './components/pictograms/light/UploadDocumentSuccessfulPictogram';
-import {UploadDocumentSuccessfulPictogram as UploadDocumentSuccessfulPictogramDark} from './components/pictograms/dark/UploadDocumentSuccessfulPictogram';
-import {UploadDocumentFailedPictogram as UploadDocumentFailedPictogramLight} from './components/pictograms/light/UploadDocumentFailedPictogram';
-import {UploadDocumentFailedPictogram as UploadDocumentFailedPictogramDark} from './components/pictograms/dark/UploadDocumentFailedPictogram';
-import {UploadDocumentWarningPictogram as UploadDocumentWarningPictogramLight} from './components/pictograms/light/UploadDocumentWarningPictogram';
-import {UploadDocumentWarningPictogram as UploadDocumentWarningPictogramDark} from './components/pictograms/dark/UploadDocumentWarningPictogram';
-import {UploadDocumentPreUploadPictogram as UploadDocumentPreUploadPictogramLight} from './components/pictograms/light/UploadDocumentPreUploadPictogram';
-import {UploadDocumentPreUploadPictogram as UploadDocumentPreUploadPictogramDark} from './components/pictograms/dark/UploadDocumentPreUploadPictogram';
+import {UploadDocumentSuccessfulPictogram as UploadDocumentSuccessfulPictogramLight} from './components/pictograms/light';
+import {UploadDocumentSuccessfulPictogram as UploadDocumentSuccessfulPictogramDark} from './components/pictograms/dark';
+import {UploadDocumentFailedPictogram as UploadDocumentFailedPictogramLight} from './components/pictograms/light';
+import {UploadDocumentFailedPictogram as UploadDocumentFailedPictogramDark} from './components/pictograms/dark';
+import {UploadDocumentWarningPictogram as UploadDocumentWarningPictogramLight} from './components/pictograms/light';
+import {UploadDocumentWarningPictogram as UploadDocumentWarningPictogramDark} from './components/pictograms/dark';
+import {UploadDocumentPreUploadPictogram as UploadDocumentPreUploadPictogramLight} from './components/pictograms/light';
+import {UploadDocumentPreUploadPictogram as UploadDocumentPreUploadPictogramDark} from './components/pictograms/dark';
 
-import {UploadImagePreUploadRectanglePictogram as UploadImagePreUploadRectanglePictogramLight} from './components/pictograms/light/UploadImagePreUploadRectanglePictogram';
-import {UploadImagePreUploadRectanglePictogram as UploadImagePreUploadRectanglePictogramDark} from './components/pictograms/dark/UploadImagePreUploadRectanglePictogram';
-import {UploadImageSuccessfulRectanglePictogram as UploadImageSuccessfulRectanglePictogramLight} from './components/pictograms/light/UploadImageSuccessfulRectanglePictogram';
-import {UploadImageSuccessfulRectanglePictogram as UploadImageSuccessfulRectanglePictogramDark} from './components/pictograms/dark/UploadImageSuccessfulRectanglePictogram';
-import {UploadImageWarningRectanglePictogram as UploadImageWarningRectanglePictogramLight} from './components/pictograms/light/UploadImageWarningRectanglePictogram';
-import {UploadImageWarningRectanglePictogram as UploadImageWarningRectanglePictogramDark} from './components/pictograms/dark/UploadImageWarningRectanglePictogram';
-import {UploadImageFailedRectanglePictogram as UploadImageFailedRectanglePictogramLight} from './components/pictograms/light/UploadImageFailedRectanglePictogram';
-import {UploadImageFailedRectanglePictogram as UploadImageFailedRectanglePictogramDark} from './components/pictograms/dark/UploadImageFailedRectanglePictogram';
-import {UploadImagePreUploadSquarePictogram as UploadImagePreUploadSquarePictogramLight} from './components/pictograms/light/UploadImagePreUploadSquarePictogram';
-import {UploadImagePreUploadSquarePictogram as UploadImagePreUploadSquarePictogramDark} from './components/pictograms/dark/UploadImagePreUploadSquarePictogram';
-import {UploadImageSuccessfulSquarePictogram as UploadImageSuccessfulSquarePictogramLight} from './components/pictograms/light/UploadImageSuccessfulSquarePictogram';
-import {UploadImageSuccessfulSquarePictogram as UploadImageSuccessfulSquarePictogramDark} from './components/pictograms/dark/UploadImageSuccessfulSquarePictogram';
-import {UploadImageWarningSquarePictogram as UploadImageWarningSquarePictogramLight} from './components/pictograms/light/UploadImageWarningSquarePictogram';
-import {UploadImageWarningSquarePictogram as UploadImageWarningSquarePictogramDark} from './components/pictograms/dark/UploadImageWarningSquarePictogram';
-import {UploadImageFailedSquarePictogram as UploadImageFailedSquarePictogramLight} from './components/pictograms/light/UploadImageFailedSquarePictogram';
-import {UploadImageFailedSquarePictogram as UploadImageFailedSquarePictogramDark} from './components/pictograms/dark/UploadImageFailedSquarePictogram';
+import {UploadImagePreUploadRectanglePictogram as UploadImagePreUploadRectanglePictogramLight} from './components/pictograms/light';
+import {UploadImagePreUploadRectanglePictogram as UploadImagePreUploadRectanglePictogramDark} from './components/pictograms/dark';
+import {UploadImageSuccessfulRectanglePictogram as UploadImageSuccessfulRectanglePictogramLight} from './components/pictograms/light';
+import {UploadImageSuccessfulRectanglePictogram as UploadImageSuccessfulRectanglePictogramDark} from './components/pictograms/dark';
+import {UploadImageWarningRectanglePictogram as UploadImageWarningRectanglePictogramLight} from './components/pictograms/light';
+import {UploadImageWarningRectanglePictogram as UploadImageWarningRectanglePictogramDark} from './components/pictograms/dark';
+import {UploadImageFailedRectanglePictogram as UploadImageFailedRectanglePictogramLight} from './components/pictograms/light';
+import {UploadImageFailedRectanglePictogram as UploadImageFailedRectanglePictogramDark} from './components/pictograms/dark';
+import {UploadImagePreUploadSquarePictogram as UploadImagePreUploadSquarePictogramLight} from './components/pictograms/light';
+import {UploadImagePreUploadSquarePictogram as UploadImagePreUploadSquarePictogramDark} from './components/pictograms/dark';
+import {UploadImageSuccessfulSquarePictogram as UploadImageSuccessfulSquarePictogramLight} from './components/pictograms/light';
+import {UploadImageSuccessfulSquarePictogram as UploadImageSuccessfulSquarePictogramDark} from './components/pictograms/dark';
+import {UploadImageWarningSquarePictogram as UploadImageWarningSquarePictogramLight} from './components/pictograms/light';
+import {UploadImageWarningSquarePictogram as UploadImageWarningSquarePictogramDark} from './components/pictograms/dark';
+import {UploadImageFailedSquarePictogram as UploadImageFailedSquarePictogramLight} from './components/pictograms/light';
+import {UploadImageFailedSquarePictogram as UploadImageFailedSquarePictogramDark} from './components/pictograms/dark';
 
 function App() {
   return (
-    <div className="App m-40">
+    <div className="App md:m-40 m-0">
       {/* <div className="App relative top-40 left-10"> */}
 
       <div className='flex flex-wrap justify-evenly m-5 p-5 bg-teal-10'>
@@ -293,6 +293,7 @@ function App() {
         <PadlockShieldPictogramLight />
         <PadlockShieldAndStarsPictogramLight />
 
+
         <HandChatBubbleQuestionPictogramLight />
         <HandChatBubbleTextPictogramLight />
         <HandChatBubbleDotsPictogramLight />
@@ -315,7 +316,7 @@ function App() {
 
       </div>
 
-      <div className='flex flex-wrap justify-evenly m-5 p-5 bg-green-900'>
+      <div className='flex flex-wrap justify-evenly m-5 p-5 bg-black'>
 
         <CreateDocumentPictogramDark />
         <EmailPictogramDark />
@@ -420,6 +421,8 @@ function App() {
         <UploadImageSuccessfulSquarePictogramDark />
         <UploadImageWarningSquarePictogramDark />
         <UploadImageFailedSquarePictogramDark />
+
+
       </div>
 
 
