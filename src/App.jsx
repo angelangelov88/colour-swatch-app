@@ -71,7 +71,7 @@ import {MultiDocs as MultiDocsDark} from './components/pictograms/dark/MultiDocs
 import {Duplicate as DuplicateLight} from './components/pictograms/light/Duplicate';
 import {Duplicate as DuplicateDark} from './components/pictograms/dark/Duplicate';
 import {AddPage as AddPageLight} from './components/pictograms/light/AddPage';
-import {AddPage as AddPageDark} from './components/pictograms/dark/AddPage';
+import {AddPage as AddPageDark} from './components/pictograms/dark/AddPagePictogram';
 import {MailStack as MailStackLight} from './components/pictograms/light/MailStack';
 import {MailStack as MailStackDark} from './components/pictograms/dark/MailStack';
 
