@@ -14,10 +14,11 @@ import { Badge } from './components/badge/Badge';
 import Button from './components/button/Button';
 import Label from './components/label/Label';
 import Toggle from './components/toggle/Toggle';
+import ToggleEye from './components/toggleEye/ToggleEye';
 
 function App() {
   return (
-    <div className="App md:m-40 m-0">
+    <div className="App md:m-40 m-10">
       {/* <div className="App relative top-40 left-10"> */}
 
       {/* <ColourThemeSwatch color="yellow" /> */}
@@ -100,6 +101,10 @@ function App() {
         rounded="full"
         iconOnly={false}
       />  */}
+
+      <ToggleEye 
+
+      />
 
     </div>
   );
