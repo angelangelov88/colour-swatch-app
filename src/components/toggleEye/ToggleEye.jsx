@@ -5,16 +5,20 @@ import { EyeIcon, EyeOffIcon } from '@heroicons/react/outline';
 
 function ToggleEye(props) {
   const {
-    children,
     className,
     disabled,
   } = props;
 
   const [active, setActive] = React.useState(true);
-  const handleClick = (e) => {
-    e.preventDefault();
+  const handleClick = () => {
     if (!disabled) {
       setActive(!active);
+    }
+  };
+
+  const enterKeyPress = (e) => {
+    if (e.key === 'Enter' || e.code === 'Space') {
+      handleClick();
     }
   };
 
@@ -28,9 +32,9 @@ function ToggleEye(props) {
 
   const eyeClasses = classNames(
     'w-8 h-8 p-1.5',
-    active && 'bg-white rounded-lg text-gray-90',
-    active && 'group-hover:shadow-[0_1px_2px_rgba(0,0,0,0.6)] group-hover:shadow-[0_1px_3px_rgba(0,0,0,0.1)]',
-    active && 'group-focus:shadow-[0_1px_2px_rgba(0,0,0,0.6)] group-focus:shadow-[0_1px_3px_rgba(0,0,0,0.1)]',
+    active && 'bg-white rounded-lg text-gray-90 shadow-sm',
+    active && 'group-hover:shadow-sm',
+    active && 'group-focus:shadow',
     (active && disabled) && 'text-gray-40 bg-gray-10 group-hover:shadow-none group-focus:shadow-none',
     (!active && disabled) && 'group-hover:text-gray-30 group-focus:text-gray-40',
     !active && 'group-hover:text-primary-light group-focus:text-primary-light',
@@ -40,31 +44,28 @@ function ToggleEye(props) {
     'w-8 h-8  p-1.5',
     active && 'group-hover:text-primary-light',
     active && 'group-focus:text-primary-light',
-    !active && 'bg-white rounded-lg text-gray-90',
-    !active && 'group-hover:shadow-[0_1px_2px_rgba(0,0,0,0.6)] group-hover:shadow-[0_1px_3px_rgba(0,0,0,0.1)]',
-    !active && 'group-focus:shadow-[0_1px_2px_rgba(0,0,0,0.6)] group-focus:shadow-[0_1px_3px_rgba(0,0,0,0.1)]',
+    !active && 'bg-white rounded-lg text-gray-90 shadow-sm',
+    !active && 'group-hover:shadow',
+    !active && 'group-focus:shadow',
     (active && disabled) && 'group-hover:text-gray-30 group-focus:text-gray-40',
     (!active && disabled) && 'text-gray-40 bg-gray-10 group-hover:shadow-none group-focus:shadow-none',
   );
 
   return (
-    <div className={classes} onClick={handleClick} role="button" tabIndex={0} onKeyUp={(e) => e.focus()}>
+    <div className={classes} onClick={handleClick} role="button" tabIndex={0} onKeyDown={enterKeyPress}>
       <EyeIcon className={eyeClasses} />
       <EyeOffIcon className={eyeOffClasses} />
-      {children}
     </div>
   );
 }
 
 ToggleEye.defaultProps = {
   className: undefined,
-  children: undefined,
   disabled: false,
 };
 
 ToggleEye.propTypes = {
   className: PropTypes.string,
-  children: PropTypes.string,
   disabled: PropTypes.bool,
 };
 

@@ -4,13 +4,13 @@ exports[`should render with disabled state 1`] = `
 <div
   className="flex justify-center items-center group p-0.5 rounded-[10px] w-max text-gray-30 bg-gray-20 hover:bg-primary-10 focus:outline focus:outline-4 focus:outline-primary-30 focus:bg-primary-10 hover:cursor-default hover:bg-gray-20 focus:bg-gray-20"
   onClick={[Function]}
-  onKeyUp={[Function]}
+  onKeyDown={[Function]}
   role="button"
   tabIndex={0}
 >
   <svg
     aria-hidden="true"
-    className="w-8 h-8 p-1.5 bg-white rounded-lg text-gray-90 group-hover:shadow-[0_1px_2px_rgba(0,0,0,0.6)] group-hover:shadow-[0_1px_3px_rgba(0,0,0,0.1)] group-focus:shadow-[0_1px_2px_rgba(0,0,0,0.6)] group-focus:shadow-[0_1px_3px_rgba(0,0,0,0.1)] text-gray-40 bg-gray-10 group-hover:shadow-none group-focus:shadow-none"
+    className="w-8 h-8 p-1.5 bg-white rounded-lg text-gray-90 shadow-sm group-hover:shadow-sm group-focus:shadow text-gray-40 bg-gray-10 group-hover:shadow-none group-focus:shadow-none"
     fill="none"
     stroke="currentColor"
     strokeWidth={2}
@@ -50,13 +50,13 @@ exports[`should render with no props 1`] = `
 <div
   className="flex justify-center items-center group p-0.5 rounded-[10px] w-max text-gray-30 bg-gray-20 hover:bg-primary-10 focus:outline focus:outline-4 focus:outline-primary-30 focus:bg-primary-10"
   onClick={[Function]}
-  onKeyUp={[Function]}
+  onKeyDown={[Function]}
   role="button"
   tabIndex={0}
 >
   <svg
     aria-hidden="true"
-    className="w-8 h-8 p-1.5 bg-white rounded-lg text-gray-90 group-hover:shadow-[0_1px_2px_rgba(0,0,0,0.6)] group-hover:shadow-[0_1px_3px_rgba(0,0,0,0.1)] group-focus:shadow-[0_1px_2px_rgba(0,0,0,0.6)] group-focus:shadow-[0_1px_3px_rgba(0,0,0,0.1)]"
+    className="w-8 h-8 p-1.5 bg-white rounded-lg text-gray-90 shadow-sm group-hover:shadow-sm group-focus:shadow"
     fill="none"
     stroke="currentColor"
     strokeWidth={2}
@@ -96,13 +96,13 @@ exports[`should render with red as bg colour 1`] = `
 <div
   className="flex justify-center items-center group p-0.5 rounded-[10px] w-max text-gray-30 bg-gray-20 hover:bg-primary-10 focus:outline focus:outline-4 focus:outline-primary-30 focus:bg-primary-10 bg-red-80"
   onClick={[Function]}
-  onKeyUp={[Function]}
+  onKeyDown={[Function]}
   role="button"
   tabIndex={0}
 >
   <svg
     aria-hidden="true"
-    className="w-8 h-8 p-1.5 bg-white rounded-lg text-gray-90 group-hover:shadow-[0_1px_2px_rgba(0,0,0,0.6)] group-hover:shadow-[0_1px_3px_rgba(0,0,0,0.1)] group-focus:shadow-[0_1px_2px_rgba(0,0,0,0.6)] group-focus:shadow-[0_1px_3px_rgba(0,0,0,0.1)]"
+    className="w-8 h-8 p-1.5 bg-white rounded-lg text-gray-90 shadow-sm group-hover:shadow-sm group-focus:shadow"
     fill="none"
     stroke="currentColor"
     strokeWidth={2}
