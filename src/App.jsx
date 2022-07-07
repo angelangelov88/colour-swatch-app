@@ -15,6 +15,7 @@ import Button from './components/button/Button';
 import Label from './components/label/Label';
 import Toggle from './components/toggle/Toggle';
 import ToggleEye from './components/toggleEye/ToggleEye';
+import ColourPicker from './components/colourPicker/ColourPicker';
 
 function App() {
   return (
@@ -102,8 +103,13 @@ function App() {
         iconOnly={false}
       />  */}
 
-      <ToggleEye />
+      {/* <ToggleEye /> */}
 
+      
+      <ColourPicker>
+        {/* <div>hello there</div> */}
+        
+      </ColourPicker>
     </div>
   );
 }

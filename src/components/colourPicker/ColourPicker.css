@@ -1,0 +1,37 @@
+.custom-pointers .react-colorful__saturation-pointer {
+  width: 16px;
+  height: 16px;
+  border-radius: 10px;
+}
+.custom-pointers .react-colorful__hue-pointer,
+.custom-pointers .react-colorful__alpha-pointer {
+  width: 10px;
+  border-radius: 3px;
+  height: 20px;
+}
+
+.react-colorful__hue, 
+.react-colorful__last-control
+{
+  margin: 10px 0;
+  border-radius: 15px;
+  max-height: 10px;
+  cursor: pointer;
+
+}
+
+.react-colorful {
+  height: 300px !important;
+  min-width: 250px;
+  padding-bottom: 10px;
+}
+
+.react-colorful__saturation {
+  /* border: 2px red solid; */
+  border-radius: 8px !important;
+  /* min-height: 150px; */
+  margin-bottom: 20px;
+}
+.react-colorful__alpha-gradient {
+  border-radius: 10px !important;
+}
