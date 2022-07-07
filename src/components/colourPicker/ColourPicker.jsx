@@ -4,6 +4,7 @@ import PropTypes from 'prop-types';
 import { RgbaColorPicker } from 'react-colorful';
 import './ColourPicker.css';
 // import { Tooltip } from '../tooltip/Tooltip';
+import { HexColourInput } from './HexColourInput';
 
 function ColourPicker(props) {
   const {
@@ -20,48 +21,53 @@ function ColourPicker(props) {
 
   const rgba2hex = (rgba) => `#${rgba.match(/^rgba?\((\d+),\s*(\d+),\s*(\d+)(?:,\s*(\d+\.{0,1}\d*))?\)$/).slice(1).map((n, i) => (i === 3 ? Math.round(parseFloat(n) * 255) : parseFloat(n)).toString(16).padStart(2, '0').replace('NaN', '')).join('')}`;
 
+  function adjustColour(mainColor, amount) {
+    // eslint-disable-next-line no-shadow
+    return `#${mainColor.replace(/^#/, '').replace(/../g, (mainColor) => (`0${Math.min(255, Math.max(0, parseInt(mainColor, 16) + amount)).toString(16)}`).substr(-2))}`;
+  }
+
+  const borderColour = adjustColour(rgba2hex(`rgba(${chosenColour})`), -50);
+
+  // console.log(adjustColour(rgba2hex(`rgba(${chosenColour})`), 50));
+
   const classes = classNames(
-    'w-10 h-10 ',
+    'w-8 h-8 mr-2',
     'border border-black',
     'rounded-lg',
     // `bg-[rgba(${chosenColour})]`,
-    // 'bg-[rgba(180,78,78,1)]',
   );
 
   return (
-    <div className="flex group">
-      <div className={classes} style={{ backgroundColor: `rgba(${chosenColour})` }}>
+    <div className="w-40 h-14 p-4 flex items-center group border rounded-lg cursor-pointer">
+      <div className={classes} style={{ backgroundColor: `rgba(${chosenColour})`, borderColor: `${borderColour}` }}>
         <div className="relative shadow-lg">
-          <div className="hidden group-hover:block absolute -top-16 left-52 p-2 border border-black rounded-lg shadow-inner shadow-blue-400">
+          <div className="block group-hover:block absolute -top-40 left-36 p-2 border border-black rounded-lg shadow-inner shadow-blue-400">
             <RgbaColorPicker color={color} onChange={setColor} className=" custom-pointers example" />
-            <div className="flex items-center">
+            <div className="">
               rgba(
               {chosenColour}
               )
+              <br />
+              HEX:
+              {rgba2hex(`rgba(${chosenColour})`)}
             </div>
-
-            {/* <HexColorInput color={color} onChange={setColor} /> */}
-
+            <HexColourInput />
           </div>
           {children}
         </div>
-
       </div>
       <div>
+        {/* <div>
+          rgba(
+          {chosenColour}
+          )
+        </div> */}
         <div>
-          <h2>
-            RGBA: rgba(
-            <span>{chosenColour}</span>
-            )
-          </h2>
-
-        </div>
-        <div>
-          HEX:
           {rgba2hex(`rgba(${chosenColour})`)}
 
         </div>
       </div>
+      <div />
     </div>
 
   );

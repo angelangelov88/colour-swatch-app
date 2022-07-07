@@ -16,6 +16,7 @@ import Label from './components/label/Label';
 import Toggle from './components/toggle/Toggle';
 import ToggleEye from './components/toggleEye/ToggleEye';
 import ColourPicker from './components/colourPicker/ColourPicker';
+import HexColourInput from './components/colourPicker/HexColourInput';
 
 function App() {
   return (
@@ -106,10 +107,9 @@ function App() {
       {/* <ToggleEye /> */}
 
       
-      <ColourPicker>
-        {/* <div>hello there</div> */}
-        
-      </ColourPicker>
+      <ColourPicker />    
+
+      {/* <HexColourInput /> */}
     </div>
   );
 }
