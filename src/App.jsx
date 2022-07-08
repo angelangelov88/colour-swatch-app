@@ -15,8 +15,7 @@ import Button from './components/button/Button';
 import Label from './components/label/Label';
 import Toggle from './components/toggle/Toggle';
 import ToggleEye from './components/toggleEye/ToggleEye';
-import ColourPicker from './components/colourPicker/ColourPicker';
-import HexColourInput from './components/colourPicker/HexColourInput';
+import RgbaColourPicker from './components/colourPicker/RgbaColourPicker';
 import HexColourPicker from './components/colourPicker/HexColourPicker';
 
 function App() {
@@ -108,11 +107,13 @@ function App() {
       {/* <ToggleEye /> */}
 
       
-      {/* <ColourPicker />     */}
+      {/* <RgbaColourPicker />     */}
 
       {/* <HexColourInput /> */}
 
-      <HexColourPicker />
+      <HexColourPicker
+        position="top-9 left-0"
+      />
     </div>
   );
 }
