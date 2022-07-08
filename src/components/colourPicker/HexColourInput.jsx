@@ -7,7 +7,7 @@ function HexColourInput() {
 
   return (
     <div>
-      {/* <HexColorPicker color={color} onChange={setColor} /> */}
+      <HexColorPicker color={color} onChange={setColor} />
       <p>
         HEX:
         <span><HexColorInput color={color} onChange={setColor} /></span>

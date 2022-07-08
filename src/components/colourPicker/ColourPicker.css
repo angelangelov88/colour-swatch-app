@@ -14,7 +14,7 @@
 .react-colorful__last-control
 {
   margin: 10px 0;
-  border-radius: 15px;
+  border-radius: 15px !important;
   max-height: 10px;
   cursor: pointer;
 
@@ -34,4 +34,9 @@
 }
 .react-colorful__alpha-gradient {
   border-radius: 10px !important;
+}
+
+/* This is the property to make the opacity  visible */
+.react-colorful__alpha {
+  display: none;
 }
