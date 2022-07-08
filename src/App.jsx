@@ -109,10 +109,10 @@ function App() {
       
       {/* <RgbaColourPicker />     */}
 
-      {/* <HexColourInput /> */}
 
       <HexColourPicker
-        position="top-9 left-0"
+        // colourValue='#406024'
+        // position="top-9 left-0"
       />
     </div>
   );

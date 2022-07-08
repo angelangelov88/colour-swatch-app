@@ -8,11 +8,11 @@ import { DuplicateIcon } from '@heroicons/react/outline';
 function ColourPicker(props) {
   const {
     // children,
+    colourValue,
     position,
   } = props;
 
-  const [color, setColor] = useState('#ffffff');
-  const [copySuccess, setCopySuccess] = useState('');
+  const [color, setColor] = useState(`${colourValue}`);
   const [showSuccess, setShowSuccess] = useState(false);
 
   function adjustColour(mainColor, amount) {
@@ -24,7 +24,6 @@ function ColourPicker(props) {
 
   function copyTextToClipboard() {
     navigator.clipboard.writeText(color);
-    setCopySuccess('Copied!');
     setShowSuccess(true);
   }
 
@@ -57,9 +56,13 @@ function ColourPicker(props) {
       </div>
 
       <div className={containerClasses}>
-        <HexColorPicker color={color} onChange={setColor} className=" custom-pointers example" />
+        <HexColorPicker
+          color={color}
+          onChange={setColor}
+          className=" custom-pointers example"
+        />
         <div className="flex justify-evenly items-center">
-          <h1 className="font-medium">Hex:</h1>
+          <div className="font-medium">Hex:</div>
           <div className={colourSquareContainerClasses}>
             <div className="flex justify-evenly">
               <div className={colourSquareClasses} style={{ backgroundColor: `${color}`, borderColor: `${borderColour}` }} />
@@ -71,10 +74,10 @@ function ColourPicker(props) {
               />
             </div>
           </div>
-          <div className="w-8 h-8 border rounded-lg shadow-sm p-1 active:text-black">
+          <div className="w-8 h-8 border rounded-lg shadow-sm p-1">
             <DuplicateIcon className="w-6 h-6 text-gray-80 " onClick={() => copyTextToClipboard()} />
             {showSuccess
-                && <p className="absolute bottom-2 -right-12 bg-white shadow-lg rounded-lg p-2">{copySuccess}</p>}
+                && <p className="absolute bottom-2 -right-12 bg-white shadow-lg rounded-lg p-2">Copied!</p>}
           </div>
         </div>
       </div>
@@ -87,11 +90,13 @@ function ColourPicker(props) {
 ColourPicker.defaultProps = {
   // children: undefined,
   position: '-top-40 left-[120px]',
+  colourValue: '#ffffff',
 };
 
 ColourPicker.propTypes = {
   // children: PropTypes.node,
   position: PropTypes.string,
+  colourValue: PropTypes.string,
 };
 
 export default ColourPicker;

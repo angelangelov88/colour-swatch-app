@@ -47,17 +47,18 @@ function ColourPicker(props) {
           <div className="block group-hover:block absolute -top-40 left-36 p-2 rounded-lg shadow-lg">
             <RgbaColorPicker color={color} onChange={setColor} className=" custom-pointers example" />
             <div className="">
-              {/* rgba(
+              rgba(
               {chosenColour}
               )
-              <br /> */}
-              {/* HEX:
-              {hexColour} */}
+              <br />
+              HEX:
+              {hexColour}
               {/* {(rgba2hex(`rgba(${chosenColour})`).toUpperCase())} */}
             </div>
             {/* <HexColourInput /> */}
             <div>
               HEX: #
+              {/* @todo the component does not allow input because the color value is rgba not hex */}
               <span><HexColorInput color={hexColour} onChange={setColor} /></span>
             </div>
 

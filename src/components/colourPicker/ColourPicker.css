@@ -1,7 +1,6 @@
 .custom-pointers .react-colorful__saturation-pointer {
-  width: 16px;
-  height: 16px;
-  border-radius: 10px;
+  width: 20px;
+  height: 20px;
 }
 .custom-pointers .react-colorful__hue-pointer,
 .custom-pointers .react-colorful__alpha-pointer {
@@ -17,7 +16,6 @@
   border-radius: 15px !important;
   max-height: 10px;
   cursor: pointer;
-
 }
 
 .react-colorful {
@@ -27,16 +25,11 @@
 }
 
 .react-colorful__saturation {
-  /* border: 2px red solid; */
   border-radius: 8px !important;
-  /* min-height: 150px; */
   margin-bottom: 20px;
-}
-.react-colorful__alpha-gradient {
-  border-radius: 10px !important;
 }
 
 /* This is the property to make the opacity  visible */
 .react-colorful__alpha {
-  display: none;
+  display: block;
 }
