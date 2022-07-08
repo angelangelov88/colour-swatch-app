@@ -40,6 +40,8 @@ exports[`should render with BtnIcon bell" 1`] = `
 </div>
 `;
 
+exports[`should render with SubmitButton prop set as a plain button and onClick function handleConfirm 1`] = `null`;
+
 exports[`should render with all default settings 1`] = `
 <div
   onClick={[Function]}
@@ -72,6 +74,8 @@ exports[`should render with children as text 1`] = `
 </div>
 `;
 
+exports[`should render with children just as text and the rest default 1`] = `null`;
+
 exports[`should render with function for the button which displays handled! in console" 1`] = `
 <div
   onClick={[Function]}
@@ -79,6 +83,20 @@ exports[`should render with function for the button which displays handled! in c
   Open Modal
 </div>
 `;
+
+exports[`should render with green colour 1`] = `null`;
+
+exports[`should render with info text and heading in it saying: Test which is bold and warning text here 1`] = `null`;
+
+exports[`should render with open prop set to showDialog and onClose to handleClose 1`] = `null`;
+
+exports[`should render with primary colour 1`] = `null`;
+
+exports[`should render with red colour 1`] = `null`;
+
+exports[`should render with text Warning! which is font-weight 500 and no more text 1`] = `null`;
+
+exports[`should render with text as a string 1`] = `null`;
 
 exports[`should render with text in children" 1`] = `
 <div
@@ -103,3 +121,7 @@ exports[`should render with title 1`] = `
   Open Modal
 </div>
 `;
+
+exports[`should render with title Open your app 1`] = `null`;
+
+exports[`should render with yellow colour 1`] = `null`;

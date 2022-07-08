@@ -1,152 +1,138 @@
-import renderer from 'react-test-renderer'
-import {Modal} from "../Modal"
-import { BellIcon } from '@heroicons/react/outline'
-
+import React from 'react';
+import renderer from 'react-test-renderer';
+import Modal from '../Modal';
 
 it('should render with all default settings', () => {
   const component = renderer.create(
-  <Modal />,
+    <Modal />,
   );
-  let tree = component.toJSON()
-  expect(tree).toMatchSnapshot()
+  const tree = component.toJSON();
+  expect(tree).toMatchSnapshot();
 });
 
-
-it('should render with children as text', () => {
+it('should render with children just as text and the rest default', () => {
   const component = renderer.create(
-    <Modal 
-      children="Hello there"
+    <Modal>Hello there</Modal>,
+  );
+  const tree = component.toJSON();
+  expect(tree).toMatchSnapshot();
+});
+
+it('should render with red colour', () => {
+  const component = renderer.create(
+    <Modal
+      color="red"
     />,
   );
-  let tree = component.toJSON()
-  expect(tree).toMatchSnapshot()
+  const tree = component.toJSON();
+  expect(tree).toMatchSnapshot();
 });
 
-
-it('should render with children as html', () => {
+it('should render with yellow colour', () => {
   const component = renderer.create(
-  <Modal 
-    children={
-      <div>
-        <h1>This is a children title</h1>
-        <p>This is a children paragraph</p>
-        <p>This is the text in the children element</p>
-      </div>
+    <Modal
+      color="yellow"
+    />,
+  );
+  const tree = component.toJSON();
+  expect(tree).toMatchSnapshot();
+});
+
+it('should render with primary colour', () => {
+  const component = renderer.create(
+    <Modal
+      color="primary"
+    />,
+  );
+  const tree = component.toJSON();
+  expect(tree).toMatchSnapshot();
+});
+
+it('should render with green colour', () => {
+  const component = renderer.create(
+    <Modal
+      color="green"
+    />,
+  );
+  const tree = component.toJSON();
+  expect(tree).toMatchSnapshot();
+});
+
+it('should render with info text and heading in it saying: Test which is bold and warning text here', () => {
+  const component = renderer.create(
+    <Modal
+      text={(
+        <p>
+          <span className="font-medium">Test:</span>
+          {' '}
+          Warning text here
+        </p>
+    )}
+    />,
+  );
+  const tree = component.toJSON();
+  expect(tree).toMatchSnapshot();
+});
+
+it('should render with text Warning! which is font-weight 500 and no more text', () => {
+  const component = renderer.create(
+    <Modal
+      text={
+        <p><span className="font-medium">Warning:</span></p>
     }
-  />,
+    />,
   );
-  let tree = component.toJSON()
-  expect(tree).toMatchSnapshot()
+  const tree = component.toJSON();
+  expect(tree).toMatchSnapshot();
 });
 
-
-it('should render with title', () => {
+it('should render with text as a string', () => {
   const component = renderer.create(
-  <Modal 
-    title="This is a title"
-  />,
+    <Modal
+      text="This is just some text"
+    />,
   );
-  let tree = component.toJSON()
-  expect(tree).toMatchSnapshot()
+  const tree = component.toJSON();
+  expect(tree).toMatchSnapshot();
 });
 
-
-it('should render with text in children"', () => {
+it('should render with title Open your app', () => {
   const component = renderer.create(
-  <Modal 
-    infoTextChildren="This is the text in the children element"
-  />,
+    <Modal
+      title="Open your app"
+    />,
   );
-  let tree = component.toJSON()
-  expect(tree).toMatchSnapshot()
+  const tree = component.toJSON();
+  expect(tree).toMatchSnapshot();
 });
 
-
-it('should render with text in children"', () => {
+it('should render with open prop set to showDialog and onClose to handleClose', () => {
+  const setState = jest.fn();
+  const useStateSpy = jest.spyOn(React, 'useState');
+  useStateSpy.mockImplementation((initialState) => [initialState, setState]);
+  const [showDialog, setShowDialog] = React.useState(false);
+  const handleClose = () => setShowDialog(false);
   const component = renderer.create(
-  <Modal 
-    infoTextChildren={
-      <p><span className="font-medium">Test:</span> Warning text here</p> 
-    }
-  />,
+    <Modal
+      open={showDialog}
+      onClose={handleClose}
+    />,
   );
-  let tree = component.toJSON()
-  expect(tree).toMatchSnapshot()
+  const tree = component.toJSON();
+  expect(tree).toMatchSnapshot();
 });
 
-
-it('should render in primary"', () => {
+it('should render with SubmitButton prop set as a plain button and onClick function handleConfirm', () => {
+  const setState = jest.fn();
+  const useStateSpy = jest.spyOn(React, 'useState');
+  useStateSpy.mockImplementation((initialState) => [initialState, setState]);
+  const [showDialog, setShowDialog] = React.useState(false);
+  const handleConfirm = () => { alert(123); setShowDialog(false); };
   const component = renderer.create(
-  <Modal 
-    color="primary"
-  />,
+    <Modal
+      SubmitButton={() => <button onClick={handleConfirm}>button</button>}
+    />,
   );
-  let tree = component.toJSON()
-  expect(tree).toMatchSnapshot()
-});
-
-
-it('should render in green"', () => {
-  const component = renderer.create(
-  <Modal 
-    color="green"
-  />,
-  );
-  let tree = component.toJSON()
-  expect(tree).toMatchSnapshot()
-});
-
-
-it('should render in yellow"', () => {
-  const component = renderer.create(
-  <Modal 
-    color="yellow"
-  />,
-  );
-  let tree = component.toJSON()
-  expect(tree).toMatchSnapshot()
-});
-
-
-it('should render in red"', () => {
-  const component = renderer.create(
-  <Modal 
-    color="red"
-  />,
-  );
-  let tree = component.toJSON()
-  expect(tree).toMatchSnapshot()
-});
-
-
-it('should render with btnText Again"', () => {
-  const component = renderer.create(
-  <Modal 
-    btnText="Again"
-  />,
-  );
-  let tree = component.toJSON()
-  expect(tree).toMatchSnapshot()
-});
-
-
-it('should render with BtnIcon bell"', () => {
-  const component = renderer.create(
-  <Modal 
-    BtnIcon={BellIcon}
-  />,
-  );
-  let tree = component.toJSON()
-  expect(tree).toMatchSnapshot()
-});
-
-
-it('should render with function for the button which displays handled! in console"', () => {
-  const component = renderer.create(
-  <Modal 
-    handleClick={() => {}}
-  />,
-  );
-  let tree = component.toJSON()
-  expect(tree).toMatchSnapshot()
+  const tree = component.toJSON();
+  expect(tree).toMatchSnapshot();
 });
