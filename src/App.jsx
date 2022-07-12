@@ -104,16 +104,16 @@ function App() {
         iconOnly={false}
       />  */}
 
-      {/* <ToggleEye /> */}
+      <ToggleEye />
 
       
       {/* <RgbaColourPicker />     */}
 
 
-      <HexColourPicker
+      {/* <HexColourPicker
         // colourValue='#406024'
         // position="top-9 left-0"
-      />
+      /> */}
 
 
     </div>
