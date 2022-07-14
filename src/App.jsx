@@ -17,6 +17,7 @@ import Toggle from './components/toggle/Toggle';
 import ToggleEye from './components/toggleEye/ToggleEye';
 import RgbaColourPicker from './components/colourPicker/RgbaColourPicker';
 import HexColourPicker from './components/colourPicker/HexColourPicker';
+import { ApprovalWitnessing } from 'libs/le-pictograms/carouselSVGs';
 
 function App() {
   return (
@@ -104,7 +105,7 @@ function App() {
         iconOnly={false}
       />  */}
 
-      <ToggleEye />
+      {/* <ToggleEye /> */}
 
       
       {/* <RgbaColourPicker />     */}
