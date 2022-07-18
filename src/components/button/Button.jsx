@@ -23,10 +23,12 @@ function Button(props) {
     variant === 'primary' && 'disabled:text-primary-20 text-white hover:bg-primary-blue active:bg-primary-dark disabled:bg-primary-10 bg-primary-light shadow',
     variant === 'secondary' && 'disabled:text-gray-40 active:text-gray-100 text-gray-90 hover:bg-gray-10 active:bg-gray-20 disabled:bg-gray-10 bg-white shadow border-gray-50',
     variant === 'tertiary' && 'disabled:text-primary-30 hover:text-primary-blue text-primary-light hover:bg-primary-10 active:bg-primary-20 disabled:bg-white bg-white disabled:border-primary-20',
+    variant === 'delete' && 'text-white hover:bg-red-60 disabled:bg-red-10 bg-red-50 shadow',
     variant === 'primary' && outline === true && 'border border-primary-dark disabled:border-primary-20',
     variant === 'secondary' && outline === true && 'border border-gray-50 disabled:border-gray-40',
     variant === 'tertiary' && outline === true && 'border border-primary-10 disabled:border-primary-20',
-    size === 'base' && '',
+    variant === 'delete' && outline === true && 'border border-red-70 disabled:border-red-30',
+    size === 'base' && '', // removes padding, good for full circles with rounded="full"
     size === 'sm' && 'text-sm py-2 px-4',
     size === 'md' && 'text-lg py-2.5 px-5',
     size === 'lg' && 'text-xl py-3 px-6',
@@ -60,7 +62,7 @@ Button.defaultProps = {
   outline: false,
   variant: 'primary',
   size: 'sm',
-  rounded: 'full',
+  rounded: 'lg',
   type: 'button',
   disabled: false,
   tabIndex: undefined,
@@ -72,7 +74,7 @@ Button.defaultProps = {
 Button.propTypes = {
   children: PropTypes.node,
   outline: PropTypes.bool,
-  variant: PropTypes.oneOf(['primary', 'secondary', 'tertiary']),
+  variant: PropTypes.oneOf(['primary', 'secondary', 'tertiary', 'delete']),
   size: PropTypes.oneOf(['base', 'sm', 'md', 'lg', 'icon']), // @todo base
   rounded: PropTypes.oneOf(['none', 'sm', 'md', 'lg', 'full']),
   type: PropTypes.oneOf(['button', 'submit', 'reset']),
@@ -83,5 +85,5 @@ Button.propTypes = {
   ariaLabel: PropTypes.string,
 };
 
-export default Button;
 export { Button };
+export default Button;

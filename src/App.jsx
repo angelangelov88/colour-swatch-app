@@ -17,7 +17,6 @@ import Toggle from './components/toggle/Toggle';
 import ToggleEye from './components/toggleEye/ToggleEye';
 import RgbaColourPicker from './components/colourPicker/RgbaColourPicker';
 import HexColourPicker from './components/colourPicker/HexColourPicker';
-import { ApprovalWitnessing } from 'libs/le-pictograms/carouselSVGs';
 
 function App() {
   return (
@@ -115,6 +114,15 @@ function App() {
         // colourValue='#406024'
         // position="top-9 left-0"
       /> */}
+
+      {/* <Button 
+        children="Cancel"
+        variant="delete"
+        outline={true}
+        disabled={true}
+        tabIndex="0"
+      /> */}
+
 
 
     </div>
