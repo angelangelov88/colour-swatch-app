@@ -1,7 +1,7 @@
 /* eslint-disable */
 import React from 'react';
 import {
-  InformationCircleIcon, DocumentIcon, BellIcon, InboxIcon, DotsHorizontalIcon, DotsVerticalIcon,
+  InformationCircleIcon, DocumentIcon, BellIcon, InboxIcon, DotsHorizontalIcon, DotsVerticalIcon, DownloadIcon, ClipboardListIcon, PrinterIcon, ArrowsExpandIcon
 } from '@heroicons/react/outline';
 import { ColourThemeSwatch } from './components/colourThemeSwatch/ColourThemeSwatch';
 import { IdentifierIcon } from './components/identifierIcon/IdentifierIcon';
@@ -20,8 +20,8 @@ import HexColourPicker from './components/colourPicker/HexColourPicker';
 
 function App() {
   return (
-    <div className="App md:m-40 m-10">
-      {/* <div className="App relative top-40 left-10"> */}
+    // <div className="App md:m-40 m-10">
+      <div className="App relative top-40 left-10">
 
       {/* <ColourThemeSwatch color="yellow" /> */}
       {/* <IdentifierIcon
@@ -40,24 +40,43 @@ function App() {
         pointerPosition="top"
         // arrowPosition="centre"
         // tooltipWidth="w-36"
-      >
-        <h3 className="m-1 font-semibold">Info Header</h3>
+      > */}
+        {/* <h3 className="m-1 font-semibold">Info Header</h3>
         <p className="m-1 font-redhat">Please use this field to add additional information</p>
-        <a href="https://test.com" className="m-1 text-blue-60 dark:text-blue-50">Link</a>
+        <a href="https://test.com" className="m-1 text-blue-60 dark:text-blue-50">Link</a> */}
+      {/* </IconTooltip> */}
+      
+      <div className="border-rose-500 border w-full">
+      <div className="text-base font-semibold flex justify-between border border-green-80 border-b-8 border-b-yellow-600 p-6">
+        <div>Send Count by User</div>
+        <div className="flex border border-gray-30 rounded-lg">
+          <ClipboardListIcon className="h-5 w-5 text-gray-80 m-2" />
+          <ArrowsExpandIcon className="h-5 w-5 text-gray-80 m-2" />
+          <PrinterIcon className="h-5 w-5 text-gray-80 m-2" />
+          <DownloadIcon className="h-5 w-5 text-gray-80 m-2" />
+          <Tooltip
+            text="Download a Copy"
+          >
+            <DownloadIcon className="w-5 h-5" />
+          </Tooltip>
 
-      </IconTooltip> */}
+        </div>
+      </div>
+      <div>Hello from reports page</div>
+    </div>
 
-      {/* <Tooltip
+      <Tooltip
         // text={
         // <>
         //   <h3 className="m-1 font-semibold">Info Header</h3>
         //   <p className="m-1 font-redhat">Please use this field to add additional information</p>
         // </>
         // }
-        text="tooltip Please use this field to add additional informationPlease use this field to add additional informationPlease use this field to add additional informationPlease use this field to add additional informationPlease use this field to add additional information"
+        text="Download a Copy"
       >
-        <p>Click here</p>
-      </Tooltip> */}
+        {/* <p>Click here</p> */}
+        <DownloadIcon className="w-5 h-5" />
+      </Tooltip>
 
       {/* <AddTag
         // children="Remove Tag"
