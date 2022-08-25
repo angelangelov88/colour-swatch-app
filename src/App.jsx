@@ -46,26 +46,7 @@ function App() {
         <a href="https://test.com" className="m-1 text-blue-60 dark:text-blue-50">Link</a> */}
       {/* </IconTooltip> */}
       
-      <div className="border-rose-500 border w-full">
-      <div className="text-base font-semibold flex justify-between border border-green-80 border-b-8 border-b-yellow-600 p-6">
-        <div>Send Count by User</div>
-        <div className="flex border border-gray-30 rounded-lg">
-          <ClipboardListIcon className="h-5 w-5 text-gray-80 m-2" />
-          <ArrowsExpandIcon className="h-5 w-5 text-gray-80 m-2" />
-          <PrinterIcon className="h-5 w-5 text-gray-80 m-2" />
-          <DownloadIcon className="h-5 w-5 text-gray-80 m-2" />
-          <Tooltip
-            text="Download a Copy"
-          >
-            <DownloadIcon className="w-5 h-5" />
-          </Tooltip>
-
-        </div>
-      </div>
-      <div>Hello from reports page</div>
-    </div>
-
-      <Tooltip
+      {/* <Tooltip
         // text={
         // <>
         //   <h3 className="m-1 font-semibold">Info Header</h3>
@@ -73,10 +54,10 @@ function App() {
         // </>
         // }
         text="Download a Copy"
-      >
+      > */}
         {/* <p>Click here</p> */}
-        <DownloadIcon className="w-5 h-5" />
-      </Tooltip>
+        {/* <DownloadIcon className="w-5 h-5" /> */}
+      {/* </Tooltip> */}
 
       {/* <AddTag
         // children="Remove Tag"
@@ -129,10 +110,10 @@ function App() {
       {/* <RgbaColourPicker />     */}
 
 
-      {/* <HexColourPicker
+      <HexColourPicker
         // colourValue='#406024'
         // position="top-9 left-0"
-      /> */}
+      />
 
       {/* <Button 
         children="Cancel"
