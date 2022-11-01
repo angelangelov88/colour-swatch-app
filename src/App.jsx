@@ -17,6 +17,7 @@ import Toggle from './components/toggle/Toggle';
 import ToggleEye from './components/toggleEye/ToggleEye';
 import RgbaColourPicker from './components/colourPicker/RgbaColourPicker';
 import HexColourPicker from './components/colourPicker/HexColourPicker';
+import FormikForm from './components/formikForm/FormikForm';
 
 function App() {
   return (
@@ -110,10 +111,10 @@ function App() {
       {/* <RgbaColourPicker />     */}
 
 
-      <HexColourPicker
+      {/* <HexColourPicker
         // colourValue='#406024'
         // position="top-9 left-0"
-      />
+      /> */}
 
       {/* <Button 
         children="Cancel"
@@ -123,7 +124,7 @@ function App() {
         tabIndex="0"
       /> */}
 
-
+      <FormikForm />
 
     </div>
   );
