@@ -21,8 +21,8 @@ import FormikForm from './components/formikForm/FormikForm';
 
 function App() {
   return (
-    // <div className="App md:m-40 m-10">
-      <div className="App relative top-40 left-10">
+    <div className="App md:m-40 m-10">
+      {/* <div className="App relative top-40 left-10"> */}
 
       {/* <ColourThemeSwatch color="yellow" /> */}
       {/* <IdentifierIcon

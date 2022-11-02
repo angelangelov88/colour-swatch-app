@@ -82,7 +82,7 @@ function ToggleEye(props) {
     className,
     disabled,
     active,
-    setActive
+    setActive,
   } = props;
 
   const handleClick = () => {
@@ -137,11 +137,15 @@ function ToggleEye(props) {
 ToggleEye.defaultProps = {
   className: undefined,
   disabled: false,
+  active: false,
+  setActive: undefined,
 };
 
 ToggleEye.propTypes = {
   className: PropTypes.string,
   disabled: PropTypes.bool,
+  active: PropTypes.bool,
+  setActive: PropTypes.bool,
 };
 
 export default ToggleEye;
