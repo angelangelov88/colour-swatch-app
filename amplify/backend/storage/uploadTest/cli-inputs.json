@@ -1,0 +1,12 @@
+{
+  "resourceName": "uploadTest",
+  "policyUUID": "81b537f4",
+  "bucketName": "uploadapptestfa0b636d2ca24d53994f69f3b8b6e690",
+  "storageAccess": "auth",
+  "guestAccess": [],
+  "authAccess": [
+    "CREATE_AND_UPDATE"
+  ],
+  "triggerFunction": "NONE",
+  "groupAccess": {}
+}
