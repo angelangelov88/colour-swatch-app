@@ -20,8 +20,18 @@ import HexColourPicker from './components/colourPicker/HexColourPicker';
 import FormikForm from './components/formikForm/FormikForm';
 
 function App() {
+
+    const [file, setFile] = React.useState();
+    function handleChange(e) {
+        console.log(e.target.files);
+        setFile(URL.createObjectURL(e.target.files[0]));
+    }
+
   return (
     <div className="App md:m-40 m-10">
+      <input type="file" onChange={handleChange} />
+      <img src={file} />
+
       {/* <div className="App relative top-40 left-10"> */}
 
       {/* <ColourThemeSwatch color="yellow" /> */}
@@ -124,7 +134,8 @@ function App() {
         tabIndex="0"
       /> */}
 
-      <FormikForm />
+      {/* <FormikForm /> */}
+
 
     </div>
   );
